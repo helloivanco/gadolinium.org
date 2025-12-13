@@ -20,6 +20,14 @@ export const metadata: Metadata = {
       'Find chelation clinics and treatment centers for Gadolinium Deposition Disease (GDD) worldwide.',
     url: 'https://gadolinium.org/clinics',
     type: 'website',
+    images: [
+      {
+        url: '/chelation.webp',
+        width: 1200,
+        height: 630,
+        alt: 'Chelation Clinics - Find Treatment Centers for Gadolinium Toxicity',
+      },
+    ],
   },
   alternates: {
     canonical: 'https://gadolinium.org/clinics',

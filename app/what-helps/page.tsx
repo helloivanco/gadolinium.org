@@ -26,6 +26,14 @@ export const metadata: Metadata = {
       'Comprehensive guide to remedies and approaches for Gadolinium Deposition Disease (GDD) and toxicity.',
     url: 'https://gadolinium.org/what-helps',
     type: 'article',
+    images: [
+      {
+        url: '/foods.webp',
+        width: 1200,
+        height: 630,
+        alt: 'What Helps - Remedies & Approaches for Gadolinium Toxicity',
+      },
+    ],
   },
   alternates: {
     canonical: 'https://gadolinium.org/what-helps',

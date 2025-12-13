@@ -58,7 +58,7 @@ export const metadata: Metadata = {
       'Comprehensive resource guide for gadolinium toxicity. Find leading medical professionals, chelation clinics, and support communities.',
     images: [
       {
-        url: '/og-image.jpg',
+        url: '/mri.webp',
         width: 1200,
         height: 630,
         alt: 'Gadolinium Toxicity Resources',
@@ -71,7 +71,7 @@ export const metadata: Metadata = {
       'Gadolinium Toxicity Resources | Leading Doctors, Clinics & Support Groups',
     description:
       'Comprehensive resource guide for gadolinium toxicity. Find leading medical professionals, chelation clinics, and support communities.',
-    images: ['/og-image.jpg'],
+    images: ['/mri.webp'],
   },
   robots: {
     index: true,

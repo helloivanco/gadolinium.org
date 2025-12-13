@@ -24,6 +24,14 @@ export const metadata: Metadata = {
       'Comprehensive patient survey report on symptoms after gadolinium-based contrast agent (GBCA) administration.',
     url: 'https://gadolinium.org/symptoms',
     type: 'article',
+    images: [
+      {
+        url: '/pain.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Signs & Symptoms after Gadolinium Administration',
+      },
+    ],
   },
   alternates: {
     canonical: 'https://gadolinium.org/symptoms',
