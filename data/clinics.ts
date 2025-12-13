@@ -295,6 +295,7 @@ export const clinics: Clinic[] = [
   {
     name: 'TASH SIMONS',
     clinicName: 'The IV Room Pty, Ltd',
+    city: 'Perth',
     email: 'admin@jointmedicine.com.au',
     region: 'PERTH AUSTRALIA',
     category: 'international',
