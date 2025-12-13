@@ -1,0 +1,24 @@
+<svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Modern medical cross with molecular structure inspiration -->
+  <defs>
+    <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#007AFF;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#5856D6;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Outer circle with subtle glow -->
+  <circle cx="100" cy="100" r="90" fill="url(#logoGradient)" opacity="0.1"/>
+  
+  <!-- Main cross symbol -->
+  <rect x="85" y="50" width="30" height="100" rx="15" fill="url(#logoGradient)"/>
+  <rect x="50" y="85" width="100" height="30" rx="15" fill="url(#logoGradient)"/>
+  
+  <!-- Molecular structure dots -->
+  <circle cx="100" cy="100" r="6" fill="white"/>
+  <circle cx="60" cy="100" r="4" fill="url(#logoGradient)" opacity="0.6"/>
+  <circle cx="140" cy="100" r="4" fill="url(#logoGradient)" opacity="0.6"/>
+  <circle cx="100" cy="60" r="4" fill="url(#logoGradient)" opacity="0.6"/>
+  <circle cx="100" cy="140" r="4" fill="url(#logoGradient)" opacity="0.6"/>
+</svg>
+
