@@ -1,0 +1,22 @@
+{
+  "name": "Gadolinium Toxicity Resources",
+  "short_name": "Gadolinium.org",
+  "description": "Comprehensive resource guide for gadolinium toxicity. Find leading medical professionals, chelation clinics, and support communities.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#007aff",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    },
+    {
+      "src": "/logo.svg",
+      "sizes": "512x512",
+      "type": "image/svg+xml"
+    }
+  ]
+}
+
