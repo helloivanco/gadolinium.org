@@ -29,6 +29,13 @@ export const metadata: Metadata = {
       },
     ],
   },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Chelation Clinics - Find Treatment Centers for Gadolinium Toxicity',
+    description:
+      'Find chelation clinics and treatment centers for Gadolinium Deposition Disease (GDD) worldwide.',
+    images: ['/chelation.webp'],
+  },
   alternates: {
     canonical: 'https://gadolinium.org/clinics',
   },
@@ -41,4 +48,3 @@ export default function ClinicsLayout({
 }) {
   return children;
 }
-

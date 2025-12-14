@@ -35,6 +35,13 @@ export const metadata: Metadata = {
       },
     ],
   },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'What Helps - Remedies & Approaches for Gadolinium Toxicity',
+    description:
+      'Comprehensive guide to remedies and approaches for Gadolinium Deposition Disease (GDD) and toxicity.',
+    images: ['/foods.webp'],
+  },
   alternates: {
     canonical: 'https://gadolinium.org/what-helps',
   },

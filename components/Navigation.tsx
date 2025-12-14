@@ -53,6 +53,11 @@ const Navigation = () => {
               What Helps
             </Link>
             <Link
+              href='/detox'
+              className='px-4 py-2 text-sm font-medium text-gray-700 hover:text-gray-900 rounded-lg hover:bg-gray-50 transition-all duration-200'>
+              Detox
+            </Link>
+            <Link
               href='/symptoms'
               className='px-4 py-2 text-sm font-medium text-gray-700 hover:text-gray-900 rounded-lg hover:bg-gray-50 transition-all duration-200'>
               Symptoms
@@ -61,6 +66,11 @@ const Navigation = () => {
               href='/clinics'
               className='px-4 py-2 text-sm font-medium text-gray-700 hover:text-gray-900 rounded-lg hover:bg-gray-50 transition-all duration-200'>
               Clinics
+            </Link>
+            <Link
+              href='/resources'
+              className='px-4 py-2 text-sm font-medium text-gray-700 hover:text-gray-900 rounded-lg hover:bg-gray-50 transition-all duration-200'>
+              Resources
             </Link>
           </div>
 
@@ -98,6 +108,12 @@ const Navigation = () => {
                 Home
               </Link>
               <Link
+                href='/detox'
+                onClick={handleLinkClick}
+                className='px-4 py-3 text-base font-medium text-gray-700 hover:text-gray-900 rounded-lg hover:bg-gray-50 transition-all duration-200'>
+                Detox
+              </Link>
+              <Link
                 href='/what-helps'
                 onClick={handleLinkClick}
                 className='px-4 py-3 text-base font-medium text-gray-700 hover:text-gray-900 rounded-lg hover:bg-gray-50 transition-all duration-200'>
@@ -114,6 +130,12 @@ const Navigation = () => {
                 onClick={handleLinkClick}
                 className='px-4 py-3 text-base font-medium text-gray-700 hover:text-gray-900 rounded-lg hover:bg-gray-50 transition-all duration-200'>
                 Clinics
+              </Link>
+              <Link
+                href='/resources'
+                onClick={handleLinkClick}
+                className='px-4 py-3 text-base font-medium text-gray-700 hover:text-gray-900 rounded-lg hover:bg-gray-50 transition-all duration-200'>
+                Resources
               </Link>
             </div>
           </div>

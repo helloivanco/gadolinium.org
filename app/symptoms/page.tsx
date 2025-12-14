@@ -2,6 +2,7 @@ import Footer from '@/components/Footer';
 import StructuredData from '@/components/StructuredData';
 import type { Metadata } from 'next';
 import Image from 'next/image';
+import Link from 'next/link';
 
 export const metadata: Metadata = {
   title: 'Signs & Symptoms after Gadolinium Administration',
@@ -32,6 +33,13 @@ export const metadata: Metadata = {
         alt: 'Signs & Symptoms after Gadolinium Administration',
       },
     ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Signs & Symptoms after Gadolinium Administration',
+    description:
+      'Comprehensive patient survey report on symptoms after gadolinium-based contrast agent (GBCA) administration.',
+    images: ['/pain.jpg'],
   },
   alternates: {
     canonical: 'https://gadolinium.org/symptoms',
@@ -482,6 +490,27 @@ const SymptomsPage = () => {
                   className='text-blue-600 hover:text-blue-800 underline'>
                   GadoliniumToxicity.com
                 </a>
+              </p>
+            </div>
+          </section>
+
+          {/* Book Recommendation Snippet */}
+          <section className='mb-20'>
+            <div className='bg-blue-50 rounded-lg p-6 md:p-8 border border-blue-100'>
+              <p className='text-gray-700 leading-relaxed mb-4'>
+                <strong>
+                  Gadolinium Deposition and Toxicity: Humanizing a Life-Changing
+                  Event
+                </strong>{' '}
+                by Debbie Heist Lambert shares personal experiences from
+                patients affected by gadolinium toxicity, providing insight into
+                how those affected navigate this life-changing event.{' '}
+                <Link
+                  href='/resources#book'
+                  className='text-blue-600 hover:text-blue-800 underline font-medium'>
+                  Learn more about this book
+                </Link>
+                .
               </p>
             </div>
           </section>

@@ -45,8 +45,8 @@ const SupportGroupsSection = () => {
                 Main Groups:
               </h4>
               <ul className='list-none space-y-4 ml-0'>
-                <li className='flex items-start group'>
-                  <span className='text-blue-500 mr-4 mt-2 text-lg group-hover:scale-110 transition-transform'>
+                <li className='flex items-center group'>
+                  <span className='text-blue-500 mr-4 text-lg group-hover:scale-110 transition-transform flex-shrink-0'>
                     •
                   </span>
                   <a
@@ -72,8 +72,8 @@ const SupportGroupsSection = () => {
                     </svg>
                   </a>
                 </li>
-                <li className='flex items-start group'>
-                  <span className='text-blue-500 mr-4 mt-2 text-lg group-hover:scale-110 transition-transform'>
+                <li className='flex items-center group'>
+                  <span className='text-blue-500 mr-4 text-lg group-hover:scale-110 transition-transform flex-shrink-0'>
                     •
                   </span>
                   <a

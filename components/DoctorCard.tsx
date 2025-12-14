@@ -178,9 +178,9 @@ const DoctorCard = ({
           </h4>
           <ul className='list-none space-y-3 ml-0'>
             {whatWorks.map((item, index) => (
-              <li key={index} className='flex items-start group'>
+              <li key={index} className='flex items-center group'>
                 <span
-                  className={`${colors.bullet} mr-4 mt-2 text-lg group-hover:scale-110 transition-transform`}>
+                  className={`${colors.bullet} mr-4 text-lg group-hover:scale-110 transition-transform flex-shrink-0`}>
                   •
                 </span>
                 <span className='text-gray-600 leading-relaxed text-[15px] flex-1'>
