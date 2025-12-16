@@ -1,11 +1,11 @@
 'use client';
 
-import { useState, useMemo } from 'react';
-import Image from 'next/image';
 import ClinicCard from '@/components/ClinicCard';
-import { clinics, Clinic } from '@/data/clinics';
 import Footer from '@/components/Footer';
 import StructuredData from '@/components/StructuredData';
+import { clinics } from '@/data/clinics';
+import Image from 'next/image';
+import { useMemo, useState } from 'react';
 
 const categoryLabels: Record<string, string> = {
   all: 'All Clinics',
@@ -25,7 +25,9 @@ const ClinicsPage = () => {
 
     // Filter by category
     if (selectedCategory !== 'all') {
-      filtered = filtered.filter((clinic) => clinic.category === selectedCategory);
+      filtered = filtered.filter(
+        (clinic) => clinic.category === selectedCategory
+      );
     }
 
     // Filter by search query
@@ -60,7 +62,7 @@ const ClinicsPage = () => {
       <div className='min-h-screen bg-white'>
         {/* Header with Background Image */}
         <header className='relative bg-gradient-to-b from-gray-50 via-white to-white border-b border-gray-100'>
-          <div className='relative w-full h-64 md:h-96 lg:h-[500px] overflow-hidden'>
+          <div className='relative w-full h-[70vh] min-h-[500px] max-h-[800px] overflow-hidden'>
             {/* Background Image */}
             <Image
               src='/chelation.webp'
@@ -74,61 +76,66 @@ const ClinicsPage = () => {
             {/* Overlay for better text readability */}
             <div className='absolute inset-0 bg-gradient-to-b from-black/50 via-black/40 to-black/60 z-10' />
             {/* Content */}
-            <div className='absolute inset-0 flex items-center justify-center z-20'>
+            <div className='absolute inset-0 flex items-center justify-center z-20 py-8'>
               <div className='relative max-w-7xl mx-auto px-6 sm:px-8 w-full'>
-                <h1 className='text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-semibold text-white mb-6 tracking-tight leading-tight'>
-                  Chelation Clinics
-                </h1>
-                <p className='text-xl md:text-2xl lg:text-3xl text-white/95 max-w-3xl font-light leading-relaxed mb-8'>
-                  GadTTRAC nonprofit corporation is organized exclusively for charitable
-                  care, patient assistance, education, treatment, scientific, and
-                  research purposes for patients with GDD (Gadolinium Deposition
-                  Disease) and other heavy metal-induced diseases.
-                </p>
-                <div className='flex flex-col sm:flex-row gap-4 items-center'>
-                  <a
-                    href='https://gadttrac.org/'
-                    target='_blank'
-                    rel='noopener noreferrer'
-                    className='text-white hover:text-blue-300 hover:underline font-medium transition-all duration-200 flex items-center gap-2 group cursor-pointer relative z-30'
-                    aria-label='Visit GadTTRAC website'>
-                    gadttrac.org
-                    <svg
-                      className='w-4 h-4 group-hover:translate-x-0.5 transition-transform'
-                      fill='none'
-                      stroke='currentColor'
-                      viewBox='0 0 24 24'
-                      aria-hidden='true'>
-                      <path
-                        strokeLinecap='round'
-                        strokeLinejoin='round'
-                        strokeWidth={2}
-                        d='M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14'
-                      />
-                    </svg>
-                  </a>
-                  <span className='text-white/60 hidden sm:inline relative z-20'>•</span>
-                  <a
-                    href='https://gadttrac.org/gdd-treating-practices'
-                    target='_blank'
-                    rel='noopener noreferrer'
-                    className='text-white hover:text-blue-300 hover:underline font-medium transition-all duration-200 flex items-center gap-2 group cursor-pointer relative z-30'
-                    aria-label='View full list of GDD treating practices'>
-                    Full list of practices
-                    <svg
-                      className='w-4 h-4 group-hover:translate-x-0.5 transition-transform'
-                      fill='none'
-                      stroke='currentColor'
-                      viewBox='0 0 24 24'
-                      aria-hidden='true'>
-                      <path
-                        strokeLinecap='round'
-                        strokeLinejoin='round'
-                        strokeWidth={2}
-                        d='M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14'
-                      />
-                    </svg>
-                  </a>
+                <div className='text-center max-w-4xl mx-auto space-y-4 md:space-y-6'>
+                  <h1 className='text-4xl md:text-5xl lg:text-6xl font-semibold text-white tracking-tight leading-tight drop-shadow-lg px-4'>
+                    Chelation Clinics
+                  </h1>
+                  <p className='text-base md:text-lg lg:text-xl text-white/95 max-w-3xl mx-auto font-light leading-relaxed drop-shadow-md px-4'>
+                    GadTTRAC nonprofit corporation is organized exclusively for
+                    charitable care, patient assistance, education, treatment,
+                    scientific, and research purposes for patients with GDD
+                    (Gadolinium Deposition Disease) and other heavy
+                    metal-induced diseases.
+                  </p>
+                  <div className='flex flex-col sm:flex-row gap-4 items-center justify-center pt-2'>
+                    <a
+                      href='https://gadttrac.org/'
+                      target='_blank'
+                      rel='noopener noreferrer'
+                      className='text-white hover:text-blue-300 hover:underline font-medium transition-all duration-200 flex items-center gap-2 group cursor-pointer relative z-30'
+                      aria-label='Visit GadTTRAC website'>
+                      gadttrac.org
+                      <svg
+                        className='w-4 h-4 group-hover:translate-x-0.5 transition-transform'
+                        fill='none'
+                        stroke='currentColor'
+                        viewBox='0 0 24 24'
+                        aria-hidden='true'>
+                        <path
+                          strokeLinecap='round'
+                          strokeLinejoin='round'
+                          strokeWidth={2}
+                          d='M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14'
+                        />
+                      </svg>
+                    </a>
+                    <span className='text-white/60 hidden sm:inline relative z-20'>
+                      •
+                    </span>
+                    <a
+                      href='https://gadttrac.org/gdd-treating-practices'
+                      target='_blank'
+                      rel='noopener noreferrer'
+                      className='text-white hover:text-blue-300 hover:underline font-medium transition-all duration-200 flex items-center gap-2 group cursor-pointer relative z-30'
+                      aria-label='View full list of GDD treating practices'>
+                      Full list of practices
+                      <svg
+                        className='w-4 h-4 group-hover:translate-x-0.5 transition-transform'
+                        fill='none'
+                        stroke='currentColor'
+                        viewBox='0 0 24 24'
+                        aria-hidden='true'>
+                        <path
+                          strokeLinecap='round'
+                          strokeLinejoin='round'
+                          strokeWidth={2}
+                          d='M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14'
+                        />
+                      </svg>
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -191,8 +198,15 @@ const ClinicsPage = () => {
 
             {/* Results Count */}
             <div className='text-gray-600 text-sm md:text-base'>
-              Showing <span className='font-semibold text-gray-900'>{filteredClinics.length}</span> of{' '}
-              <span className='font-semibold text-gray-900'>{clinics.length - 1}</span> clinics
+              Showing{' '}
+              <span className='font-semibold text-gray-900'>
+                {filteredClinics.length}
+              </span>{' '}
+              of{' '}
+              <span className='font-semibold text-gray-900'>
+                {clinics.length - 1}
+              </span>{' '}
+              clinics
               {featuredClinic && (
                 <span className='text-gray-500 ml-2'>
                   (plus 1 featured specialist)
@@ -232,7 +246,10 @@ const ClinicsPage = () => {
           {filteredClinics.length > 0 ? (
             <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6'>
               {filteredClinics.map((clinic, index) => (
-                <ClinicCard key={`${clinic.name}-${clinic.city}-${index}`} {...clinic} />
+                <ClinicCard
+                  key={`${clinic.name}-${clinic.city}-${index}`}
+                  {...clinic}
+                />
               ))}
             </div>
           ) : (
@@ -254,17 +271,17 @@ const ClinicsPage = () => {
                 No clinics found
               </h3>
               <p className='mt-3 text-gray-600 max-w-md mx-auto'>
-                Try adjusting your search or filter criteria to find what you're looking for.
+                Try adjusting your search or filter criteria to find what
+                you&apos;re looking for.
               </p>
             </div>
           )}
-      </main>
+        </main>
 
-      <Footer />
-    </div>
+        <Footer />
+      </div>
     </>
   );
 };
 
 export default ClinicsPage;
-

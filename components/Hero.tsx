@@ -23,14 +23,14 @@ const Hero = () => {
         {/* Title and Description Overlay */}
         <div className='absolute inset-0 flex items-center justify-center'>
           <div className='max-w-7xl mx-auto px-6 sm:px-8 w-full'>
-            <div className='text-center max-w-4xl mx-auto space-y-8'>
-              <h1 className='text-4xl md:text-5xl lg:text-6xl font-semibold text-white mb-6 tracking-tight leading-tight drop-shadow-lg'>
+            <div className='text-center max-w-4xl mx-auto space-y-6'>
+              <h1 className='text-4xl md:text-5xl lg:text-6xl font-semibold text-white tracking-tight leading-tight drop-shadow-lg'>
                 <span className='block'>Gadolinium</span>
                 <span className='block text-gray-100 mt-2 font-light'>
                   Toxicity Resources
                 </span>
               </h1>
-              <p className='text-xl md:text-2xl text-white leading-relaxed font-light max-w-2xl mx-auto drop-shadow-md'>
+              <p className='text-lg md:text-xl lg:text-2xl text-white leading-relaxed font-light max-w-2xl mx-auto drop-shadow-md px-4'>
                 A comprehensive guide connecting you with leading medical
                 professionals, treatment options, and supportive communities.
               </p>
