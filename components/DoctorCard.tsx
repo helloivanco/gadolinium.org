@@ -109,7 +109,7 @@ const DoctorCard = ({
   };
 
   return (
-    <article className='bg-white rounded-3xl shadow-sm border border-gray-100/80 p-8 md:p-12 hover:shadow-xl hover:border-gray-200 transition-all duration-300 ease-out'>
+    <article className='bg-white rounded-3xl shadow-[0_1px_3px_rgba(0,0,0,0.08)] border border-gray-200/60 p-8 md:p-12 hover:shadow-[0_4px_12px_rgba(0,0,0,0.12)] hover:border-gray-300/80 transition-all duration-300 ease-[cubic-bezier(0.4,0,0.2,1)] group'>
       <div className='flex flex-col md:flex-row gap-8 mb-10'>
         {/* Doctor Image */}
         <div className='flex-shrink-0'>
@@ -146,7 +146,7 @@ const DoctorCard = ({
           </div>
         </div>
         <div className='flex-1'>
-          <h3 className='text-3xl md:text-4xl font-semibold text-gray-900 mb-3 tracking-tight leading-tight'>
+          <h3 className='text-3xl md:text-4xl font-semibold text-gray-900 mb-3 tracking-tight leading-tight group-hover:text-blue-600 transition-colors duration-200'>
             {name}
           </h3>
           <p className='text-lg md:text-xl text-gray-600 mb-2 font-medium'>

@@ -37,12 +37,12 @@ const ClinicCard = ({
     [address, city, state, zip].filter(Boolean).join(', ') || city;
 
   return (
-    <article className='bg-white rounded-2xl shadow-sm border border-gray-100/80 p-6 md:p-8 hover:shadow-xl hover:border-gray-200 transition-all duration-300 ease-out h-full flex flex-col'>
+    <article className='bg-white rounded-2xl shadow-[0_1px_3px_rgba(0,0,0,0.08)] border border-gray-200/60 p-6 md:p-8 hover:shadow-[0_4px_12px_rgba(0,0,0,0.12)] hover:border-gray-300/80 transition-all duration-300 ease-[cubic-bezier(0.4,0,0.2,1)] h-full flex flex-col group'>
       <div className='mb-6'>
         <p className='text-xs font-semibold text-blue-600 mb-4 uppercase tracking-wider'>
           {region}
         </p>
-        <h3 className='text-xl md:text-2xl font-semibold text-gray-900 mb-3 tracking-tight leading-tight'>
+        <h3 className='text-xl md:text-2xl font-semibold text-gray-900 mb-3 tracking-tight leading-tight group-hover:text-blue-600 transition-colors duration-200'>
           {name}
         </h3>
         {title && (
@@ -98,7 +98,7 @@ const ClinicCard = ({
             </svg>
             <a
               href={`tel:${phone.replace(/\s/g, '')}`}
-              className='text-gray-700 hover:text-blue-600 transition-colors duration-200 text-[15px]'>
+              className='text-gray-700 hover:text-blue-600 transition-colors duration-200 text-[15px] font-medium'>
               {phone}
             </a>
           </div>

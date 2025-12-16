@@ -73,7 +73,7 @@ const ChelationSection = () => {
       {/* Featured Section - Dr. Semelka */}
       {featuredClinic && (
         <div className='mb-20'>
-          <div className='bg-white rounded-3xl shadow-sm border border-gray-100/80 p-8 md:p-12 hover:shadow-xl hover:border-gray-200 transition-all duration-300'>
+          <div className='bg-white rounded-3xl shadow-[0_1px_3px_rgba(0,0,0,0.08)] border border-gray-200/60 p-8 md:p-12 hover:shadow-[0_4px_12px_rgba(0,0,0,0.12)] hover:border-gray-300/80 transition-all duration-300 ease-[cubic-bezier(0.4,0,0.2,1)]'>
             <div className='mb-10 rounded-2xl overflow-hidden ring-1 ring-black/5'>
               <div className='relative w-full h-64 md:h-80 bg-gray-100'>
                 <Image
@@ -129,7 +129,7 @@ const ChelationSection = () => {
         <div className='mt-12 text-center'>
           <Link
             href='/clinics'
-            className='inline-flex items-center px-8 py-4 bg-blue-600 text-white font-medium rounded-xl hover:bg-blue-700 transition-all duration-200 shadow-sm hover:shadow-md'>
+            className='inline-flex items-center px-8 py-4 bg-blue-600 text-white font-semibold rounded-xl hover:bg-blue-700 active:bg-blue-800 transition-all duration-200 shadow-[0_2px_8px_rgba(0,122,255,0.3)] hover:shadow-[0_4px_12px_rgba(0,122,255,0.4)] active:scale-[0.98]'>
             View All {clinics.length} Clinics
             <svg
               className='w-5 h-5 ml-2'

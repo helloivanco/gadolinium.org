@@ -61,7 +61,7 @@ const ClinicsPage = () => {
       />
       <div className='min-h-screen bg-white'>
         {/* Header with Background Image */}
-        <header className='relative bg-gradient-to-b from-gray-50 via-white to-white border-b border-gray-100'>
+        <header className='relative bg-white'>
           <div className='relative w-full h-[70vh] min-h-[500px] max-h-[800px] overflow-hidden'>
             {/* Background Image */}
             <Image
@@ -73,16 +73,16 @@ const ClinicsPage = () => {
               sizes='100vw'
               quality={85}
             />
-            {/* Overlay for better text readability */}
-            <div className='absolute inset-0 bg-gradient-to-b from-black/50 via-black/40 to-black/60 z-10' />
+            {/* Overlay for better text readability - Apple-style subtle depth */}
+            <div className='absolute inset-0 bg-gradient-to-b from-black/55 via-black/45 to-black/65 z-10' />
             {/* Content */}
             <div className='absolute inset-0 flex items-center justify-center z-20 py-8'>
               <div className='relative max-w-7xl mx-auto px-6 sm:px-8 w-full'>
-                <div className='text-center max-w-4xl mx-auto space-y-4 md:space-y-6'>
-                  <h1 className='text-4xl md:text-5xl lg:text-6xl font-semibold text-white tracking-tight leading-tight drop-shadow-lg px-4'>
+                <div className='text-center max-w-4xl mx-auto space-y-8'>
+                  <h1 className='text-5xl md:text-6xl lg:text-7xl font-semibold text-white tracking-tight leading-[1.1] drop-shadow-[0_2px_8px_rgba(0,0,0,0.3)] px-4'>
                     Chelation Clinics
                   </h1>
-                  <p className='text-base md:text-lg lg:text-xl text-white/95 max-w-3xl mx-auto font-light leading-relaxed drop-shadow-md px-4'>
+                  <p className='text-xl md:text-2xl lg:text-3xl text-white/90 max-w-3xl mx-auto font-light leading-relaxed drop-shadow-[0_1px_4px_rgba(0,0,0,0.2)] px-4'>
                     GadTTRAC nonprofit corporation is organized exclusively for
                     charitable care, patient assistance, education, treatment,
                     scientific, and research purposes for patients with GDD
@@ -139,8 +139,6 @@ const ClinicsPage = () => {
                 </div>
               </div>
             </div>
-            {/* Subtle bottom fade */}
-            <div className='absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-white to-transparent' />
           </div>
         </header>
 
@@ -173,7 +171,7 @@ const ClinicsPage = () => {
                 placeholder='Search by name, location, or region...'
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
-                className='block w-full pl-12 pr-4 py-4 border border-gray-200 rounded-xl text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent bg-white shadow-sm hover:shadow-md transition-shadow duration-200'
+                className='block w-full pl-12 pr-4 py-4 border border-gray-200/80 rounded-xl text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-500/50 focus:border-blue-500/50 bg-white shadow-[0_1px_2px_rgba(0,0,0,0.05)] hover:shadow-[0_2px_4px_rgba(0,0,0,0.08)] focus:shadow-[0_0_0_3px_rgba(0,122,255,0.1)] transition-all duration-200'
                 aria-label='Search clinics'
               />
             </div>
@@ -184,11 +182,11 @@ const ClinicsPage = () => {
                 <button
                   key={key}
                   onClick={() => setSelectedCategory(key)}
-                  className={`px-5 py-2.5 rounded-lg font-medium transition-all duration-200 ${
-                    selectedCategory === key
-                      ? 'bg-blue-600 text-white shadow-md hover:bg-blue-700'
-                      : 'bg-white text-gray-700 border border-gray-200 hover:bg-gray-50 hover:border-gray-300 shadow-sm'
-                  }`}
+                className={`px-5 py-2.5 rounded-xl font-semibold transition-all duration-200 ${
+                  selectedCategory === key
+                    ? 'bg-blue-600 text-white shadow-[0_2px_8px_rgba(0,122,255,0.3)] hover:bg-blue-700 hover:shadow-[0_4px_12px_rgba(0,122,255,0.4)] active:scale-[0.98]'
+                    : 'bg-white text-gray-700 border border-gray-200/80 hover:bg-gray-50 hover:border-gray-300/80 shadow-[0_1px_2px_rgba(0,0,0,0.05)] hover:shadow-[0_2px_4px_rgba(0,0,0,0.08)]'
+                }`}
                   aria-pressed={selectedCategory === key}
                   aria-label={`Filter by ${label}`}>
                   {label}
@@ -218,7 +216,7 @@ const ClinicsPage = () => {
           {/* Featured Clinic */}
           {featuredClinic && selectedCategory === 'all' && !searchQuery && (
             <div className='mb-20'>
-              <div className='bg-white rounded-3xl shadow-sm border border-gray-100/80 p-8 md:p-12 hover:shadow-xl hover:border-gray-200 transition-all duration-300'>
+              <div className='bg-white rounded-3xl shadow-[0_1px_3px_rgba(0,0,0,0.08)] border border-gray-200/60 p-8 md:p-12 hover:shadow-[0_4px_12px_rgba(0,0,0,0.12)] hover:border-gray-300/80 transition-all duration-300 ease-[cubic-bezier(0.4,0,0.2,1)]'>
                 <div className='mb-10 rounded-2xl overflow-hidden ring-1 ring-black/5'>
                   <div className='relative w-full h-64 md:h-80 bg-gray-100'>
                     <Image

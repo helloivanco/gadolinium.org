@@ -57,7 +57,7 @@ const DetoxPage = () => {
       />
       <div className='min-h-screen bg-white'>
         {/* Hero Section */}
-        <header className='relative bg-gradient-to-b from-gray-50 via-white to-white border-b border-gray-100'>
+        <header className='relative bg-white'>
           <div className='relative w-full h-[70vh] min-h-[500px] max-h-[800px] overflow-hidden'>
             {/* Background Image */}
             <Image
@@ -69,31 +69,27 @@ const DetoxPage = () => {
               sizes='100vw'
               quality={85}
             />
-            {/* Refined Gradient Overlay */}
+            {/* Refined Gradient Overlay - Apple-style subtle depth */}
             <div
-              className='absolute inset-0 bg-gradient-to-b from-black/50 via-black/40 to-black/60'
+              className='absolute inset-0 bg-gradient-to-b from-black/55 via-black/45 to-black/65'
               aria-hidden='true'></div>
             {/* Content */}
             <div className='absolute inset-0 flex items-center justify-center'>
               <div className='max-w-7xl mx-auto px-6 sm:px-8 w-full'>
-                <div className='text-center max-w-4xl mx-auto space-y-6'>
-                  <h1 className='text-4xl md:text-5xl lg:text-6xl font-semibold text-white tracking-tight leading-tight drop-shadow-lg'>
+                <div className='text-center max-w-4xl mx-auto space-y-8'>
+                  <h1 className='text-5xl md:text-6xl lg:text-7xl font-semibold text-white tracking-tight leading-[1.1] drop-shadow-[0_2px_8px_rgba(0,0,0,0.3)]'>
                     <span className='block'>Detox Methods</span>
-                    <span className='block text-gray-100 mt-2 font-light'>
+                    <span className='block text-white/95 mt-3 font-light text-4xl md:text-5xl lg:text-6xl'>
                       For Gadolinium Toxicity
                     </span>
                   </h1>
-                  <p className='text-lg md:text-xl lg:text-2xl text-white leading-relaxed font-light max-w-2xl mx-auto drop-shadow-md px-4'>
+                  <p className='text-xl md:text-2xl lg:text-3xl text-white/90 leading-relaxed font-light max-w-2xl mx-auto drop-shadow-[0_1px_4px_rgba(0,0,0,0.2)] px-4'>
                     Main approaches to help your body eliminate retained
                     gadolinium
                   </p>
                 </div>
               </div>
             </div>
-            {/* Subtle bottom fade */}
-            <div
-              className='absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-white to-transparent'
-              aria-hidden='true'></div>
           </div>
         </header>
 
@@ -104,7 +100,7 @@ const DetoxPage = () => {
           aria-label='Main content'>
           {/* Introduction */}
           <section className='mb-20'>
-            <div className='bg-blue-50 rounded-lg p-8 md:p-12 border border-blue-100'>
+            <div className='bg-blue-50/80 rounded-2xl p-8 md:p-12 border border-blue-200/60 shadow-[0_1px_3px_rgba(0,0,0,0.06)]'>
               <h2 className='text-3xl md:text-4xl font-semibold text-gray-900 mb-6'>
                 Overview
               </h2>
@@ -124,7 +120,7 @@ const DetoxPage = () => {
 
           {/* IR Sauna / Niacin Protocol Section */}
           <section className='mb-20'>
-            <div className='bg-white border border-gray-200 rounded-lg p-8 md:p-12 shadow-sm'>
+            <div className='bg-white border border-gray-200/80 rounded-2xl p-8 md:p-12 shadow-[0_1px_3px_rgba(0,0,0,0.08)]'>
               <div className='flex flex-col md:flex-row gap-8 md:gap-12 items-start'>
                 {/* IR Image */}
                 <div className='w-full md:w-1/3 flex-shrink-0'>
@@ -154,7 +150,7 @@ const DetoxPage = () => {
                     circulation.
                   </p>
 
-                  <div className='bg-gray-50 rounded-lg p-6 mb-6 border border-gray-200'>
+                  <div className='bg-gray-50/80 rounded-2xl p-6 mb-6 border border-gray-200/60 shadow-[0_1px_3px_rgba(0,0,0,0.06)]'>
                     <h3 className='text-xl font-semibold text-gray-900 mb-4'>
                       How It Works
                     </h3>
@@ -187,7 +183,7 @@ const DetoxPage = () => {
                   </div>
 
                   {/* Book Link */}
-                  <div className='bg-white border-2 border-blue-200 rounded-lg p-6 hover:border-blue-300 transition-colors'>
+                  <div className='bg-white border-2 border-blue-200/80 rounded-2xl p-6 hover:border-blue-300/80 shadow-[0_1px_3px_rgba(0,0,0,0.08)] hover:shadow-[0_2px_6px_rgba(0,0,0,0.12)] transition-all duration-300'>
                     <div className='flex flex-col sm:flex-row gap-4 items-start'>
                       <div className='flex-shrink-0'>
                         <div className='relative w-32 h-44 rounded-lg overflow-hidden border border-gray-300 shadow-md'>
@@ -214,7 +210,7 @@ const DetoxPage = () => {
                           href='https://amzn.to/4pE1JL7'
                           target='_blank'
                           rel='noopener noreferrer'
-                          className='inline-flex items-center gap-2 px-6 py-3 bg-blue-600 text-white font-medium rounded-lg hover:bg-blue-700 transition-colors duration-200'>
+                          className='inline-flex items-center gap-2 px-6 py-3 bg-blue-600 text-white font-semibold rounded-xl hover:bg-blue-700 active:bg-blue-800 transition-all duration-200 shadow-[0_2px_8px_rgba(0,122,255,0.3)] hover:shadow-[0_4px_12px_rgba(0,122,255,0.4)] active:scale-[0.98]'>
                           <span>View Dan Root&apos;s Book</span>
                           <svg
                             className='w-5 h-5'
@@ -245,7 +241,7 @@ const DetoxPage = () => {
                       href='https://www.facebook.com/groups/Detox.iNation'
                       target='_blank'
                       rel='noopener noreferrer'
-                      className='inline-flex items-center gap-2 px-6 py-3 bg-blue-600 text-white font-medium rounded-lg hover:bg-blue-700 transition-colors duration-200'>
+                      className='inline-flex items-center gap-2 px-6 py-3 bg-blue-600 text-white font-semibold rounded-xl hover:bg-blue-700 active:bg-blue-800 transition-all duration-200 shadow-[0_2px_8px_rgba(0,122,255,0.3)] hover:shadow-[0_4px_12px_rgba(0,122,255,0.4)] active:scale-[0.98]'>
                       <span>Join Detox.iNation Group</span>
                       <svg
                         className='w-5 h-5'
@@ -266,7 +262,7 @@ const DetoxPage = () => {
 
           {/* Chelation Therapy Section */}
           <section className='mb-20'>
-            <div className='bg-white border border-gray-200 rounded-lg p-8 md:p-12 shadow-sm'>
+            <div className='bg-white border border-gray-200/80 rounded-2xl p-8 md:p-12 shadow-[0_1px_3px_rgba(0,0,0,0.08)]'>
               <div className='flex flex-col md:flex-row gap-8 md:gap-12 items-start'>
                 {/* Chelation Image */}
                 <div className='w-full md:w-1/3 flex-shrink-0'>
@@ -294,12 +290,12 @@ const DetoxPage = () => {
                     compounds.
                   </p>
 
-                  <div className='bg-gray-50 rounded-lg p-6 mb-6 border border-gray-200'>
+                  <div className='bg-gray-50/80 rounded-2xl p-6 mb-6 border border-gray-200/60 shadow-[0_1px_3px_rgba(0,0,0,0.06)]'>
                     <h3 className='text-xl font-semibold text-gray-900 mb-4'>
                       Treatment Protocol
                     </h3>
                     <div className='space-y-4'>
-                      <div className='bg-white rounded-lg p-5 border border-gray-200'>
+                      <div className='bg-white rounded-2xl p-5 border border-gray-200/80 shadow-[0_1px_2px_rgba(0,0,0,0.05)]'>
                         <h4 className='text-lg font-semibold text-gray-900 mb-2'>
                           Day 1: Ca-DTPA (Calcium DTPA)
                         </h4>
@@ -321,7 +317,7 @@ const DetoxPage = () => {
                           Gd-DTPA complex through the kidneys.
                         </p>
                       </div>
-                      <div className='bg-white rounded-lg p-5 border border-gray-200'>
+                      <div className='bg-white rounded-2xl p-5 border border-gray-200/80 shadow-[0_1px_2px_rgba(0,0,0,0.05)]'>
                         <h4 className='text-lg font-semibold text-gray-900 mb-2'>
                           Day 2: Zn-DTPA (Zinc DTPA)
                         </h4>
@@ -350,7 +346,7 @@ const DetoxPage = () => {
                     </div>
                   </div>
 
-                  <div className='bg-amber-50 rounded-lg p-6 mb-6 border border-amber-200'>
+                  <div className='bg-amber-50/80 rounded-2xl p-6 mb-6 border border-amber-200/60 shadow-[0_1px_3px_rgba(0,0,0,0.06)]'>
                     <h3 className='text-xl font-semibold text-gray-900 mb-3'>
                       Important Considerations
                     </h3>
@@ -408,7 +404,7 @@ const DetoxPage = () => {
                   </div>
 
                   {/* Dr. Semelka Blog Link */}
-                  <div className='bg-blue-50 rounded-lg p-6 mb-6 border border-blue-200'>
+                  <div className='bg-blue-50/80 rounded-2xl p-6 mb-6 border border-blue-200/60 shadow-[0_1px_3px_rgba(0,0,0,0.06)]'>
                     <h3 className='text-xl font-semibold text-gray-900 mb-3'>
                       Learn More from Dr. Richard Semelka
                     </h3>
@@ -423,7 +419,7 @@ const DetoxPage = () => {
                       href='https://www.richardsemelka.com/single-post/chelation-with-dtpa'
                       target='_blank'
                       rel='noopener noreferrer'
-                      className='inline-flex items-center gap-2 px-6 py-3 bg-blue-600 text-white font-medium rounded-lg hover:bg-blue-700 transition-colors duration-200'>
+                      className='inline-flex items-center gap-2 px-6 py-3 bg-blue-600 text-white font-semibold rounded-xl hover:bg-blue-700 active:bg-blue-800 transition-all duration-200 shadow-[0_2px_8px_rgba(0,122,255,0.3)] hover:shadow-[0_4px_12px_rgba(0,122,255,0.4)] active:scale-[0.98]'>
                       <span>Read Dr. Semelka&apos;s DTPA Chelation Blog</span>
                       <svg
                         className='w-5 h-5'
@@ -451,7 +447,7 @@ const DetoxPage = () => {
                     </p>
                     <Link
                       href='/clinics'
-                      className='inline-flex items-center gap-2 px-6 py-3 bg-blue-600 text-white font-medium rounded-lg hover:bg-blue-700 transition-colors duration-200'>
+                      className='inline-flex items-center gap-2 px-6 py-3 bg-blue-600 text-white font-semibold rounded-xl hover:bg-blue-700 active:bg-blue-800 transition-all duration-200 shadow-[0_2px_8px_rgba(0,122,255,0.3)] hover:shadow-[0_4px_12px_rgba(0,122,255,0.4)] active:scale-[0.98]'>
                       <span>View Clinics</span>
                       <svg
                         className='w-5 h-5'
@@ -476,7 +472,7 @@ const DetoxPage = () => {
               Choosing the Right Approach
             </h2>
             <div className='grid md:grid-cols-2 gap-6'>
-              <div className='bg-white border border-gray-200 rounded-lg p-8 shadow-sm'>
+              <div className='bg-white border border-gray-200/80 rounded-2xl p-8 shadow-[0_1px_3px_rgba(0,0,0,0.08)]'>
                 <h3 className='text-2xl font-semibold text-gray-900 mb-4'>
                   IR Sauna / Niacin Protocol
                 </h3>
@@ -507,7 +503,7 @@ const DetoxPage = () => {
                   </li>
                 </ul>
               </div>
-              <div className='bg-white border border-gray-200 rounded-lg p-8 shadow-sm'>
+              <div className='bg-white border border-gray-200/80 rounded-2xl p-8 shadow-[0_1px_3px_rgba(0,0,0,0.08)]'>
                 <h3 className='text-2xl font-semibold text-gray-900 mb-4'>
                   Chelation Therapy
                 </h3>
@@ -546,7 +542,7 @@ const DetoxPage = () => {
 
           {/* Time and Natural Detox Pathways Section */}
           <section className='mb-20'>
-            <div className='bg-white border border-gray-200 rounded-lg p-8 md:p-12 shadow-sm'>
+            <div className='bg-white border border-gray-200/80 rounded-2xl p-8 md:p-12 shadow-[0_1px_3px_rgba(0,0,0,0.08)]'>
               <div className='flex flex-col md:flex-row gap-8 md:gap-12 items-start'>
                 {/* Time Image */}
                 <div className='w-full md:w-1/3 flex-shrink-0'>
@@ -576,7 +572,7 @@ const DetoxPage = () => {
                     components of a comprehensive detoxification strategy.
                   </p>
 
-                  <div className='bg-gray-50 rounded-lg p-6 mb-6 border border-gray-200'>
+                  <div className='bg-gray-50/80 rounded-2xl p-6 mb-6 border border-gray-200/60 shadow-[0_1px_3px_rgba(0,0,0,0.06)]'>
                     <h3 className='text-xl font-semibold text-gray-900 mb-4'>
                       Supporting Natural Detoxification
                     </h3>
@@ -656,7 +652,7 @@ const DetoxPage = () => {
                     </p>
                     <Link
                       href='/what-helps'
-                      className='inline-flex items-center gap-2 px-6 py-3 bg-blue-600 text-white font-medium rounded-lg hover:bg-blue-700 transition-colors duration-200'>
+                      className='inline-flex items-center gap-2 px-6 py-3 bg-blue-600 text-white font-semibold rounded-xl hover:bg-blue-700 active:bg-blue-800 transition-all duration-200 shadow-[0_2px_8px_rgba(0,122,255,0.3)] hover:shadow-[0_4px_12px_rgba(0,122,255,0.4)] active:scale-[0.98]'>
                       <span>View What Helps Page</span>
                       <svg
                         className='w-5 h-5'
@@ -677,7 +673,7 @@ const DetoxPage = () => {
 
           {/* Disclaimer */}
           <section className='mb-20'>
-            <div className='bg-red-50 rounded-lg p-8 md:p-12 border border-red-200'>
+            <div className='bg-red-50/80 rounded-2xl p-8 md:p-12 border border-red-200/60 shadow-[0_1px_3px_rgba(0,0,0,0.06)]'>
               <h2 className='text-2xl md:text-3xl font-semibold text-gray-900 mb-4'>
                 Important Medical Disclaimer
               </h2>

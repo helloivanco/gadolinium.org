@@ -55,7 +55,7 @@ const ResourcesPage = () => {
       />
       <div className='min-h-screen bg-white'>
         {/* Hero Section */}
-        <header className='relative bg-gradient-to-b from-gray-50 via-white to-white border-b border-gray-100'>
+        <header className='relative bg-white'>
           <div className='relative w-full h-[70vh] min-h-[500px] max-h-[800px] overflow-hidden'>
             {/* Background Image */}
             <Image
@@ -67,28 +67,24 @@ const ResourcesPage = () => {
               sizes='100vw'
               quality={85}
             />
-            {/* Refined Gradient Overlay */}
+            {/* Refined Gradient Overlay - Apple-style subtle depth */}
             <div
-              className='absolute inset-0 bg-gradient-to-b from-black/50 via-black/40 to-black/60'
+              className='absolute inset-0 bg-gradient-to-b from-black/55 via-black/45 to-black/65'
               aria-hidden='true'></div>
             {/* Content */}
             <div className='absolute inset-0 flex items-center justify-center'>
               <div className='max-w-7xl mx-auto px-6 sm:px-8 w-full'>
-                <div className='text-center max-w-4xl mx-auto space-y-6'>
-                  <h1 className='text-4xl md:text-5xl lg:text-6xl font-semibold text-white tracking-tight leading-tight drop-shadow-lg'>
+                <div className='text-center max-w-4xl mx-auto space-y-8'>
+                  <h1 className='text-5xl md:text-6xl lg:text-7xl font-semibold text-white tracking-tight leading-[1.1] drop-shadow-[0_2px_8px_rgba(0,0,0,0.3)]'>
                     Resources
                   </h1>
-                  <p className='text-lg md:text-xl lg:text-2xl text-white leading-relaxed font-light max-w-2xl mx-auto drop-shadow-md px-4'>
+                  <p className='text-xl md:text-2xl lg:text-3xl text-white/90 leading-relaxed font-light max-w-2xl mx-auto drop-shadow-[0_1px_4px_rgba(0,0,0,0.2)] px-4'>
                     Helpful links and resources for gadolinium toxicity
                     information and support
                   </p>
                 </div>
               </div>
             </div>
-            {/* Subtle bottom fade */}
-            <div
-              className='absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-white to-transparent'
-              aria-hidden='true'></div>
           </div>
         </header>
 
@@ -103,7 +99,7 @@ const ResourcesPage = () => {
               Organizations & Websites
             </h2>
             <div className='grid md:grid-cols-2 gap-6'>
-              <div className='bg-white border border-gray-200 rounded-lg p-8 shadow-sm hover:shadow-md transition-shadow'>
+              <div className='bg-white border border-gray-200/80 rounded-2xl p-8 shadow-[0_1px_3px_rgba(0,0,0,0.08)] hover:shadow-[0_4px_12px_rgba(0,0,0,0.12)] hover:border-gray-300/80 transition-all duration-300 ease-[cubic-bezier(0.4,0,0.2,1)]'>
                 <h3 className='text-2xl font-semibold text-gray-900 mb-4'>
                   Living With Gadolinium, LLC
                 </h3>
@@ -116,7 +112,7 @@ const ResourcesPage = () => {
                   href='https://www.livingwithgadolinium.com'
                   target='_blank'
                   rel='noopener noreferrer'
-                  className='inline-flex items-center gap-2 px-6 py-3 bg-blue-600 text-white font-medium rounded-lg hover:bg-blue-700 transition-colors duration-200'>
+                  className='inline-flex items-center gap-2 px-6 py-3 bg-blue-600 text-white font-semibold rounded-xl hover:bg-blue-700 active:bg-blue-800 transition-all duration-200 shadow-[0_2px_8px_rgba(0,122,255,0.3)] hover:shadow-[0_4px_12px_rgba(0,122,255,0.4)] active:scale-[0.98]'>
                   <span>Visit Living With Gadolinium</span>
                   <svg
                     className='w-5 h-5'
@@ -143,7 +139,7 @@ const ResourcesPage = () => {
                   href='https://www.livingwithgadolinium.com'
                   target='_blank'
                   rel='noopener noreferrer'
-                  className='inline-flex items-center gap-2 px-6 py-3 bg-blue-600 text-white font-medium rounded-lg hover:bg-blue-700 transition-colors duration-200'>
+                  className='inline-flex items-center gap-2 px-6 py-3 bg-blue-600 text-white font-semibold rounded-xl hover:bg-blue-700 active:bg-blue-800 transition-all duration-200 shadow-[0_2px_8px_rgba(0,122,255,0.3)] hover:shadow-[0_4px_12px_rgba(0,122,255,0.4)] active:scale-[0.98]'>
                   <span>Visit LivingwithGadolinium.com</span>
                   <svg
                     className='w-5 h-5'
@@ -170,7 +166,7 @@ const ResourcesPage = () => {
                   href='https://www.gadolinium64.com'
                   target='_blank'
                   rel='noopener noreferrer'
-                  className='inline-flex items-center gap-2 px-6 py-3 bg-blue-600 text-white font-medium rounded-lg hover:bg-blue-700 transition-colors duration-200'>
+                  className='inline-flex items-center gap-2 px-6 py-3 bg-blue-600 text-white font-semibold rounded-xl hover:bg-blue-700 active:bg-blue-800 transition-all duration-200 shadow-[0_2px_8px_rgba(0,122,255,0.3)] hover:shadow-[0_4px_12px_rgba(0,122,255,0.4)] active:scale-[0.98]'>
                   <span>Visit Gadolinium64.com</span>
                   <svg
                     className='w-5 h-5'
@@ -198,7 +194,7 @@ const ResourcesPage = () => {
                   href='https://www.gadtrac.org'
                   target='_blank'
                   rel='noopener noreferrer'
-                  className='inline-flex items-center gap-2 px-6 py-3 bg-blue-600 text-white font-medium rounded-lg hover:bg-blue-700 transition-colors duration-200'>
+                  className='inline-flex items-center gap-2 px-6 py-3 bg-blue-600 text-white font-semibold rounded-xl hover:bg-blue-700 active:bg-blue-800 transition-all duration-200 shadow-[0_2px_8px_rgba(0,122,255,0.3)] hover:shadow-[0_4px_12px_rgba(0,122,255,0.4)] active:scale-[0.98]'>
                   <span>Visit GADTRAC.org</span>
                   <svg
                     className='w-5 h-5'
@@ -220,7 +216,7 @@ const ResourcesPage = () => {
             <h2 className='text-3xl md:text-4xl font-semibold text-gray-900 mb-8 tracking-tight'>
               Support Groups
             </h2>
-            <div className='bg-white border border-gray-200 rounded-lg p-8 md:p-10 shadow-sm'>
+            <div className='bg-white border border-gray-200/80 rounded-2xl p-8 md:p-10 shadow-[0_1px_3px_rgba(0,0,0,0.08)]'>
               <h3 className='text-2xl md:text-3xl font-semibold text-gray-900 mb-6 tracking-tight'>
                 Facebook Groups
               </h3>
@@ -231,7 +227,7 @@ const ResourcesPage = () => {
                 doctors.
               </p>
               <div className='space-y-4'>
-                <div className='bg-gray-50 rounded-lg p-6 border border-gray-200'>
+                <div className='bg-gray-50/80 rounded-2xl p-6 border border-gray-200/60 shadow-[0_1px_3px_rgba(0,0,0,0.06)]'>
                   <h4 className='text-lg font-semibold text-gray-900 mb-3'>
                     MRI Gadolinium Contrast Safety Side Effects & Toxicity
                     Research
@@ -261,7 +257,7 @@ const ResourcesPage = () => {
                   </Link>
                 </div>
 
-                <div className='bg-gray-50 rounded-lg p-6 border border-gray-200'>
+                <div className='bg-gray-50/80 rounded-2xl p-6 border border-gray-200/60 shadow-[0_1px_3px_rgba(0,0,0,0.06)]'>
                   <h4 className='text-lg font-semibold text-gray-900 mb-3'>
                     MRI Gadolinium Contrast Support Group
                   </h4>
@@ -348,7 +344,7 @@ const ResourcesPage = () => {
             <h2 className='text-3xl md:text-4xl font-semibold text-gray-900 mb-8 tracking-tight'>
               Medical Resources & Blogs
             </h2>
-            <div className='bg-white border border-gray-200 rounded-lg p-8 md:p-10 shadow-sm'>
+            <div className='bg-white border border-gray-200/80 rounded-2xl p-8 md:p-10 shadow-[0_1px_3px_rgba(0,0,0,0.08)]'>
               <h3 className='text-2xl md:text-3xl font-semibold text-gray-900 mb-6 tracking-tight'>
                 Dr. Richard Semelka Blog
               </h3>
@@ -381,7 +377,7 @@ const ResourcesPage = () => {
 
           {/* Book Recommendation */}
           <section id='book' className='mb-20'>
-            <div className='bg-white border border-gray-200 rounded-lg p-8 md:p-12 shadow-sm'>
+            <div className='bg-white border border-gray-200/80 rounded-2xl p-8 md:p-12 shadow-[0_1px_3px_rgba(0,0,0,0.08)]'>
               <div className='flex flex-col md:flex-row gap-8 md:gap-12 items-start'>
                 {/* Book Image */}
                 <div className='w-full md:w-1/3 flex-shrink-0'>
@@ -437,7 +433,7 @@ const ResourcesPage = () => {
                     href='https://amzn.to/4aL7oKz'
                     target='_blank'
                     rel='noopener noreferrer'
-                    className='inline-flex items-center gap-2 px-6 py-3 bg-blue-600 text-white font-medium rounded-lg hover:bg-blue-700 transition-colors duration-200'>
+                    className='inline-flex items-center gap-2 px-6 py-3 bg-blue-600 text-white font-semibold rounded-xl hover:bg-blue-700 active:bg-blue-800 transition-all duration-200 shadow-[0_2px_8px_rgba(0,122,255,0.3)] hover:shadow-[0_4px_12px_rgba(0,122,255,0.4)] active:scale-[0.98]'>
                     <span>View Book on Amazon</span>
                     <svg
                       className='w-5 h-5'

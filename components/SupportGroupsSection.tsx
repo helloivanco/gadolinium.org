@@ -13,7 +13,7 @@ const SupportGroupsSection = () => {
       </div>
       <div className='grid md:grid-cols-2 gap-8'>
         {/* Facebook Groups */}
-        <article className='bg-white rounded-3xl shadow-sm border border-gray-100/80 p-8 md:p-10 hover:shadow-xl hover:border-gray-200 transition-all duration-300 ease-out'>
+        <article className='bg-white rounded-3xl shadow-[0_1px_3px_rgba(0,0,0,0.08)] border border-gray-200/60 p-8 md:p-10 hover:shadow-[0_4px_12px_rgba(0,0,0,0.12)] hover:border-gray-300/80 transition-all duration-300 ease-[cubic-bezier(0.4,0,0.2,1)] group'>
           <div className='mb-8 rounded-2xl overflow-hidden ring-1 ring-black/5'>
             <div className='relative w-full h-40 bg-gradient-to-br from-blue-50 to-indigo-50 flex items-center justify-center border border-blue-100/50'>
               <div className='text-center'>
@@ -104,7 +104,7 @@ const SupportGroupsSection = () => {
         </article>
 
         {/* Groups.io */}
-        <article className='bg-white rounded-3xl shadow-sm border border-gray-100/80 p-8 md:p-10 hover:shadow-xl hover:border-gray-200 transition-all duration-300 ease-out'>
+        <article className='bg-white rounded-3xl shadow-[0_1px_3px_rgba(0,0,0,0.08)] border border-gray-200/60 p-8 md:p-10 hover:shadow-[0_4px_12px_rgba(0,0,0,0.12)] hover:border-gray-300/80 transition-all duration-300 ease-[cubic-bezier(0.4,0,0.2,1)] group'>
           <div className='mb-8 rounded-2xl overflow-hidden ring-1 ring-black/5'>
             <div className='relative w-full h-40 bg-gradient-to-br from-indigo-50 to-purple-50 flex items-center justify-center border border-indigo-100/50'>
               <div className='text-center'>

@@ -1,59 +1,56 @@
+import DoctorsSection from '@/components/DoctorsSection';
 import Footer from '@/components/Footer';
 import StructuredData from '@/components/StructuredData';
-import WhatHelpsSection from '@/components/WhatHelpsSection';
 import type { Metadata } from 'next';
 import Image from 'next/image';
 
 export const metadata: Metadata = {
-  title: 'What Helps - Remedies & Approaches for Gadolinium Toxicity',
+  title: 'Leading Doctors for Gadolinium Toxicity & GDD',
   description:
-    'Comprehensive guide to remedies and approaches for Gadolinium Deposition Disease (GDD) and toxicity. Learn about diet, hydration, lifestyle, supplements, and personalized treatment protocols from leading experts.',
+    'Meet leading medical professionals treating gadolinium toxicity and Gadolinium Deposition Disease (GDD), including Dr. Richard Semelka, Dr. Brent Wagner, and Dr. Catriona Walsh.',
   keywords: [
-    'gadolinium toxicity remedies',
-    'gadolinium detox',
-    'gadolinium treatment',
-    'gadolinium diet',
-    'gadolinium supplements',
-    'GDD treatment',
-    'gadolinium chelation',
-    'gadolinium lifestyle',
-    'gadolinium recovery',
-    'gadolinium detoxification',
+    'gadolinium doctors',
+    'GDD specialists',
+    'gadolinium toxicity treatment doctors',
+    'Dr. Richard Semelka',
+    'Dr. Brent Wagner',
+    'Dr. Catriona Walsh',
+    'gadolinium deposition disease',
   ],
   openGraph: {
-    title: 'What Helps - Remedies & Approaches for Gadolinium Toxicity',
+    title: 'Leading Doctors for Gadolinium Toxicity & GDD',
     description:
-      'Comprehensive guide to remedies and approaches for Gadolinium Deposition Disease (GDD) and toxicity.',
-    url: 'https://gadolinium.org/what-helps',
+      'Learn about the leading doctors and specialists treating gadolinium toxicity and Gadolinium Deposition Disease (GDD).',
+    url: 'https://gadolinium.org/doctors',
     type: 'article',
     images: [
       {
-        url: '/foods.webp',
+        url: '/medical.jpg',
         width: 1200,
         height: 630,
-        alt: 'What Helps - Remedies & Approaches for Gadolinium Toxicity',
+        alt: 'Medical professionals treating gadolinium toxicity',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'What Helps - Remedies & Approaches for Gadolinium Toxicity',
+    title: 'Leading Doctors for Gadolinium Toxicity & GDD',
     description:
-      'Comprehensive guide to remedies and approaches for Gadolinium Deposition Disease (GDD) and toxicity.',
-    images: ['/foods.webp'],
+      'Meet experts in gadolinium toxicity and Gadolinium Deposition Disease (GDD).',
+    images: ['/medical.jpg'],
   },
   alternates: {
-    canonical: 'https://gadolinium.org/what-helps',
+    canonical: 'https://gadolinium.org/doctors',
   },
 };
 
-const WhatHelpsPage = () => {
+const DoctorsPage = () => {
   return (
     <>
       <StructuredData
-        pathname='/what-helps'
-        pageTitle='What Helps - Remedies & Approaches for Gadolinium Toxicity'
-        pageDescription='Comprehensive guide to remedies and approaches for Gadolinium Deposition Disease (GDD) and toxicity. Learn about diet, hydration, lifestyle, supplements, and personalized treatment protocols from leading experts.'
+        pathname='/doctors'
+        pageTitle='Leading Doctors for Gadolinium Toxicity & GDD'
+        pageDescription='Meet leading medical professionals treating gadolinium toxicity and Gadolinium Deposition Disease (GDD), including Dr. Richard Semelka, Dr. Brent Wagner, and Dr. Catriona Walsh.'
       />
       <div className='min-h-screen bg-white'>
         {/* Hero Section */}
@@ -61,8 +58,8 @@ const WhatHelpsPage = () => {
           <div className='relative w-full h-[70vh] min-h-[500px] max-h-[800px] overflow-hidden'>
             {/* Background Image */}
             <Image
-              src='/foods.webp'
-              alt='Healthy foods and natural remedies for gadolinium detoxification'
+              src='/medical.jpg'
+              alt='Medical professionals caring for patients with gadolinium toxicity'
               fill
               className='object-cover'
               priority
@@ -78,14 +75,14 @@ const WhatHelpsPage = () => {
               <div className='max-w-7xl mx-auto px-6 sm:px-8 w-full'>
                 <div className='text-center max-w-4xl mx-auto space-y-8'>
                   <h1 className='text-5xl md:text-6xl lg:text-7xl font-semibold text-white tracking-tight leading-[1.1] drop-shadow-[0_2px_8px_rgba(0,0,0,0.3)]'>
-                    <span className='block'>What Helps</span>
+                    <span className='block'>Leading Doctors</span>
                     <span className='block text-white/95 mt-3 font-light text-4xl md:text-5xl lg:text-6xl'>
-                      Remedies & Approaches for Gadolinium Toxicity
+                      For Gadolinium Toxicity &amp; GDD
                     </span>
                   </h1>
                   <p className='text-xl md:text-2xl lg:text-3xl text-white/90 leading-relaxed font-light max-w-2xl mx-auto drop-shadow-[0_1px_4px_rgba(0,0,0,0.2)] px-4'>
-                    A holistic approach focusing on diet, lifestyle, and
-                    supporting the body&apos;s natural processes
+                    Expert care from specialists dedicated to understanding and
+                    treating gadolinium toxicity.
                   </p>
                 </div>
               </div>
@@ -98,7 +95,7 @@ const WhatHelpsPage = () => {
           className='max-w-7xl mx-auto px-6 sm:px-8 py-24 md:py-32'
           role='main'
           aria-label='Main content'>
-          <WhatHelpsSection />
+          <DoctorsSection />
         </main>
 
         <Footer />
@@ -107,4 +104,6 @@ const WhatHelpsPage = () => {
   );
 };
 
-export default WhatHelpsPage;
+export default DoctorsPage;
+
+
