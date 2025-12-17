@@ -375,77 +375,271 @@ const ResourcesPage = () => {
             </div>
           </section>
 
-          {/* Book Recommendation */}
-          <section id='book' className='mb-20'>
-            <div className='bg-white border border-gray-200/80 rounded-2xl p-8 md:p-12 shadow-[0_1px_3px_rgba(0,0,0,0.08)]'>
-              <div className='flex flex-col md:flex-row gap-8 md:gap-12 items-start'>
-                {/* Book Image */}
-                <div className='w-full md:w-1/3 flex-shrink-0'>
-                  <div className='relative w-full aspect-[2/3] bg-gray-100 rounded-lg overflow-hidden border border-gray-300'>
-                    <Image
-                      src='/gadtoxicity-book.jpg'
-                      alt='Gadolinium Deposition and Toxicity: Humanizing a Life-Changing Event by Debbie Heist Lambert'
-                      fill
-                      className='object-cover'
-                      sizes='(max-width: 768px) 100vw, 33vw'
-                    />
+          {/* Books Section */}
+          <section id='books' className='mb-20'>
+            <h2 className='text-3xl md:text-4xl font-semibold text-gray-900 mb-8 tracking-tight'>
+              Recommended Books
+            </h2>
+            <div className='space-y-8'>
+              {/* Book 1: Heavy Metals. The White Sabbath of Toxins */}
+              <div className='bg-white border border-gray-200/80 rounded-2xl p-8 md:p-12 shadow-[0_1px_3px_rgba(0,0,0,0.08)] hover:shadow-[0_4px_12px_rgba(0,0,0,0.12)] hover:border-gray-300/80 transition-all duration-300 ease-[cubic-bezier(0.4,0,0.2,1)]'>
+                <div className='flex flex-col md:flex-row gap-8 md:gap-12 items-start'>
+                  {/* Book Image */}
+                  <div className='w-full md:w-1/3 flex-shrink-0'>
+                    <div className='relative w-full aspect-[2/3] bg-gray-100 rounded-lg overflow-hidden border border-gray-300'>
+                      <Image
+                        src='/whitesabbath.jpg'
+                        alt='Heavy Metals. The White Sabbath of Toxins by Richard C Semelka'
+                        fill
+                        className='object-cover'
+                        sizes='(max-width: 768px) 100vw, 33vw'
+                      />
+                    </div>
+                  </div>
+
+                  {/* Content */}
+                  <div className='flex-1'>
+                    <h3 className='text-2xl md:text-3xl font-semibold text-gray-900 mb-4'>
+                      Heavy Metals. The White Sabbath of Toxins
+                    </h3>
+                    <p className='text-lg text-gray-700 leading-relaxed mb-6'>
+                      <strong>By Richard C Semelka</strong>
+                    </p>
+                    <p className='text-gray-700 leading-relaxed mb-4'>
+                      Heavy Metals. The White Sabbath of Toxins. The subject is
+                      Heavy Metals. White Sabbath is both a play on the concept
+                      of heavy metal band and white because heavy metals are the
+                      one large group of toxins which is treatable. This book
+                      provides the most comprehensive look at a broad range of
+                      heavy metals, and with a focus on the most up-to-date
+                      treatments. It focuses only on the critical aspects that an
+                      informed general public would need to know about heavy
+                      metal toxicity and treatment.
+                    </p>
+                    <a
+                      href='https://amzn.to/4pF7hov'
+                      target='_blank'
+                      rel='noopener noreferrer'
+                      className='inline-flex items-center gap-2 px-6 py-3 bg-blue-600 text-white font-semibold rounded-xl hover:bg-blue-700 active:bg-blue-800 transition-all duration-200 shadow-[0_2px_8px_rgba(0,122,255,0.3)] hover:shadow-[0_4px_12px_rgba(0,122,255,0.4)] active:scale-[0.98]'>
+                      <span>View Book on Amazon</span>
+                      <svg
+                        className='w-5 h-5'
+                        fill='none'
+                        strokeLinecap='round'
+                        strokeLinejoin='round'
+                        strokeWidth='2'
+                        viewBox='0 0 24 24'
+                        stroke='currentColor'>
+                        <path d='M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14' />
+                      </svg>
+                    </a>
                   </div>
                 </div>
+              </div>
 
-                {/* Content */}
-                <div className='flex-1'>
-                  <h2 className='text-3xl md:text-4xl font-semibold text-gray-900 mb-6'>
-                    Gadolinium Deposition and Toxicity: Humanizing a
-                    Life-Changing Event
-                  </h2>
-                  <p className='text-lg text-gray-700 leading-relaxed mb-6'>
-                    <strong>By Debbie Heist Lambert</strong>
-                  </p>
-                  <p className='text-lg text-gray-700 leading-relaxed mb-4'>
-                    This book offers a patient perspective on gadolinium
-                    deposition and toxicity, humanizing this life-changing event
-                    through personal experiences shared by patients from around
-                    the world. The heartfelt stories in these pages represent
-                    real examples of adverse reactions and events following one
-                    or more injections of GBCA (gadolinium-based contrast
-                    agent).
-                  </p>
-                  <p className='text-lg text-gray-700 leading-relaxed mb-4'>
-                    Through these personal accounts, the book provides insight
-                    into the signs, side-effects, symptoms, and associations
-                    that patients report, highlighting what industry knows and
-                    doesn&apos;t know, where gaps exist, and where to go to
-                    learn more. The authors hope these stories will create new
-                    awareness and generate open dialogue about the use of
-                    gadolinium in medical imaging.
-                  </p>
-                  <p className='text-lg text-gray-700 leading-relaxed mb-6'>
-                    The book emphasizes the importance of{' '}
-                    <strong>#InformedConsent</strong>, <strong>#Truth</strong>,
-                    and <strong>#Transparency</strong> as gold standards in
-                    healthcare. It reminds readers that gadolinium is a toxic
-                    rare earth metal with no biological reason to ever be found
-                    in the human body, and encourages patients to ask questions,
-                    be curious, and be advocates for themselves and their loved
-                    ones.
-                  </p>
-                  <a
-                    href='https://amzn.to/4aL7oKz'
-                    target='_blank'
-                    rel='noopener noreferrer'
-                    className='inline-flex items-center gap-2 px-6 py-3 bg-blue-600 text-white font-semibold rounded-xl hover:bg-blue-700 active:bg-blue-800 transition-all duration-200 shadow-[0_2px_8px_rgba(0,122,255,0.3)] hover:shadow-[0_4px_12px_rgba(0,122,255,0.4)] active:scale-[0.98]'>
-                    <span>View Book on Amazon</span>
-                    <svg
-                      className='w-5 h-5'
-                      fill='none'
-                      strokeLinecap='round'
-                      strokeLinejoin='round'
-                      strokeWidth='2'
-                      viewBox='0 0 24 24'
-                      stroke='currentColor'>
-                      <path d='M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14' />
-                    </svg>
-                  </a>
+              {/* Book 2: Gadolinium Deposition and Toxicity */}
+              <div className='bg-white border border-gray-200/80 rounded-2xl p-8 md:p-12 shadow-[0_1px_3px_rgba(0,0,0,0.08)] hover:shadow-[0_4px_12px_rgba(0,0,0,0.12)] hover:border-gray-300/80 transition-all duration-300 ease-[cubic-bezier(0.4,0,0.2,1)]'>
+                <div className='flex flex-col md:flex-row gap-8 md:gap-12 items-start'>
+                  {/* Book Image */}
+                  <div className='w-full md:w-1/3 flex-shrink-0'>
+                    <div className='relative w-full aspect-[2/3] bg-gray-100 rounded-lg overflow-hidden border border-gray-300'>
+                      <Image
+                        src='/gadtoxicity-book.jpg'
+                        alt='Gadolinium Deposition and Toxicity: Humanizing a Life-Changing Event by Debbie Heist Lambert'
+                        fill
+                        className='object-cover'
+                        sizes='(max-width: 768px) 100vw, 33vw'
+                      />
+                    </div>
+                  </div>
+
+                  {/* Content */}
+                  <div className='flex-1'>
+                    <h3 className='text-2xl md:text-3xl font-semibold text-gray-900 mb-4'>
+                      Gadolinium Deposition and Toxicity: Humanizing a
+                      Life-Changing Event
+                    </h3>
+                    <p className='text-lg text-gray-700 leading-relaxed mb-6'>
+                      <strong>By Debbie Heist Lambert</strong>
+                    </p>
+                    <p className='text-gray-700 leading-relaxed mb-4'>
+                      This book offers a patient perspective on gadolinium
+                      deposition and toxicity, humanizing this life-changing
+                      event through personal experiences shared by patients from
+                      around the world. The heartfelt stories in these pages
+                      represent real examples of adverse reactions and events
+                      following one or more injections of GBCA (gadolinium-based
+                      contrast agent).
+                    </p>
+                    <p className='text-gray-700 leading-relaxed mb-4'>
+                      Through these personal accounts, the book provides insight
+                      into the signs, side-effects, symptoms, and associations
+                      that patients report, highlighting what industry knows and
+                      doesn&apos;t know, where gaps exist, and where to go to
+                      learn more. The authors hope these stories will create new
+                      awareness and generate open dialogue about the use of
+                      gadolinium in medical imaging.
+                    </p>
+                    <p className='text-gray-700 leading-relaxed mb-6'>
+                      The book emphasizes the importance of{' '}
+                      <strong>#InformedConsent</strong>, <strong>#Truth</strong>
+                      , and <strong>#Transparency</strong> as gold standards in
+                      healthcare. It reminds readers that gadolinium is a toxic
+                      rare earth metal with no biological reason to ever be
+                      found in the human body, and encourages patients to ask
+                      questions, be curious, and be advocates for themselves and
+                      their loved ones.
+                    </p>
+                    <a
+                      href='https://amzn.to/4aL7oKz'
+                      target='_blank'
+                      rel='noopener noreferrer'
+                      className='inline-flex items-center gap-2 px-6 py-3 bg-blue-600 text-white font-semibold rounded-xl hover:bg-blue-700 active:bg-blue-800 transition-all duration-200 shadow-[0_2px_8px_rgba(0,122,255,0.3)] hover:shadow-[0_4px_12px_rgba(0,122,255,0.4)] active:scale-[0.98]'>
+                      <span>View Book on Amazon</span>
+                      <svg
+                        className='w-5 h-5'
+                        fill='none'
+                        strokeLinecap='round'
+                        strokeLinejoin='round'
+                        strokeWidth='2'
+                        viewBox='0 0 24 24'
+                        stroke='currentColor'>
+                        <path d='M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14' />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              {/* Book 3: Contrasts: More than meets the MRI */}
+              <div className='bg-white border border-gray-200/80 rounded-2xl p-8 md:p-12 shadow-[0_1px_3px_rgba(0,0,0,0.08)] hover:shadow-[0_4px_12px_rgba(0,0,0,0.12)] hover:border-gray-300/80 transition-all duration-300 ease-[cubic-bezier(0.4,0,0.2,1)]'>
+                <div className='flex flex-col md:flex-row gap-8 md:gap-12 items-start'>
+                  {/* Book Image */}
+                  <div className='w-full md:w-1/3 flex-shrink-0'>
+                    <div className='relative w-full aspect-[2/3] bg-gray-100 rounded-lg overflow-hidden border border-gray-300'>
+                      <Image
+                        src='/moremri.jpg'
+                        alt='Contrasts: More than meets the MRI by Catriona Walsh'
+                        fill
+                        className='object-cover'
+                        sizes='(max-width: 768px) 100vw, 33vw'
+                      />
+                    </div>
+                  </div>
+
+                  {/* Content */}
+                  <div className='flex-1'>
+                    <h3 className='text-2xl md:text-3xl font-semibold text-gray-900 mb-4'>
+                      Contrasts: More than meets the MRI
+                    </h3>
+                    <p className='text-lg text-gray-700 leading-relaxed mb-6'>
+                      <strong>By Catriona Walsh</strong>
+                    </p>
+                    <p className='text-gray-700 leading-relaxed mb-4'>
+                      What if there&apos;s a scandal lurking in healthcare,
+                      waiting to break? MRI contrasts are a billion-dollar
+                      industry, with over one hundred million people around the
+                      globe having been injected, believing in good faith that it
+                      was necessary and safe. But what if we got it wrong? What
+                      if that trust was misplaced?
+                    </p>
+                    <p className='text-gray-700 leading-relaxed mb-4'>
+                      Do MRI contrasts genuinely cause gadolinium toxicity in
+                      vulnerable and unsuspecting people? What do we really know
+                      about gadolinium, the toxic heavy metal used in MRI
+                      contrasts? How reassured can we be that gadolinium contrast
+                      retention in the brain has no longterm side effects?
+                    </p>
+                    <p className='text-gray-700 leading-relaxed mb-4'>
+                      You&apos;ll find the answers to these questions and more
+                      inside this book. Nutrition and lifestyle expert, Dr
+                      Catriona Walsh, explains how MRI contrast can contribute
+                      to you feeling run-down, burnt-out, unwell, hopeless, and
+                      in pain. Her own experiences recovering from MRI contrast
+                      toxicity, combined with her medical training and education
+                      in nutrition and lifestyle coaching, place her in a unique
+                      position to understand the science behind gadolinium
+                      toxicity and come up with powerful, natural strategies to
+                      help you combat it.
+                    </p>
+                    <a
+                      href='https://amzn.to/4oYo2da'
+                      target='_blank'
+                      rel='noopener noreferrer'
+                      className='inline-flex items-center gap-2 px-6 py-3 bg-blue-600 text-white font-semibold rounded-xl hover:bg-blue-700 active:bg-blue-800 transition-all duration-200 shadow-[0_2px_8px_rgba(0,122,255,0.3)] hover:shadow-[0_4px_12px_rgba(0,122,255,0.4)] active:scale-[0.98]'>
+                      <span>View Book on Amazon</span>
+                      <svg
+                        className='w-5 h-5'
+                        fill='none'
+                        strokeLinecap='round'
+                        strokeLinejoin='round'
+                        strokeWidth='2'
+                        viewBox='0 0 24 24'
+                        stroke='currentColor'>
+                        <path d='M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14' />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              {/* Book 4: Sauna Detoxification Using Niacin */}
+              <div className='bg-white border border-gray-200/80 rounded-2xl p-8 md:p-12 shadow-[0_1px_3px_rgba(0,0,0,0.08)] hover:shadow-[0_4px_12px_rgba(0,0,0,0.12)] hover:border-gray-300/80 transition-all duration-300 ease-[cubic-bezier(0.4,0,0.2,1)]'>
+                <div className='flex flex-col md:flex-row gap-8 md:gap-12 items-start'>
+                  {/* Book Image */}
+                  <div className='w-full md:w-1/3 flex-shrink-0'>
+                    <div className='relative w-full aspect-[2/3] bg-gray-100 rounded-lg overflow-hidden border border-gray-300'>
+                      <Image
+                        src='/niacinbook.jpg'
+                        alt='Sauna Detoxification Using Niacin: Following The Recommended Protocol Of Dr. David E. Root by Dan Root'
+                        fill
+                        className='object-cover'
+                        sizes='(max-width: 768px) 100vw, 33vw'
+                      />
+                    </div>
+                  </div>
+
+                  {/* Content */}
+                  <div className='flex-1'>
+                    <h3 className='text-2xl md:text-3xl font-semibold text-gray-900 mb-4'>
+                      Sauna Detoxification Using Niacin: Following The Recommended
+                      Protocol Of Dr. David E. Root
+                    </h3>
+                    <p className='text-lg text-gray-700 leading-relaxed mb-6'>
+                      <strong>By Dan Root</strong>
+                    </p>
+                    <p className='text-gray-700 leading-relaxed mb-4'>
+                      The infrared sauna and niacin protocol, developed by Dan
+                      Root, is a natural detoxification method that combines the
+                      use of infrared sauna therapy with niacin (vitamin B3)
+                      supplementation. This protocol is designed to help mobilize
+                      and eliminate toxins, including gadolinium, through enhanced
+                      sweating and improved circulation.
+                    </p>
+                    <p className='text-gray-700 leading-relaxed mb-4'>
+                      For detailed information about the IR sauna and niacin
+                      protocol, including specific dosing instructions, safety
+                      guidelines, and personal experiences, refer to Dan
+                      Root&apos;s comprehensive book on the subject.
+                    </p>
+                    <a
+                      href='https://amzn.to/4pE1JL7'
+                      target='_blank'
+                      rel='noopener noreferrer'
+                      className='inline-flex items-center gap-2 px-6 py-3 bg-blue-600 text-white font-semibold rounded-xl hover:bg-blue-700 active:bg-blue-800 transition-all duration-200 shadow-[0_2px_8px_rgba(0,122,255,0.3)] hover:shadow-[0_4px_12px_rgba(0,122,255,0.4)] active:scale-[0.98]'>
+                      <span>View Book on Amazon</span>
+                      <svg
+                        className='w-5 h-5'
+                        fill='none'
+                        strokeLinecap='round'
+                        strokeLinejoin='round'
+                        strokeWidth='2'
+                        viewBox='0 0 24 24'
+                        stroke='currentColor'>
+                        <path d='M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14' />
+                      </svg>
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>

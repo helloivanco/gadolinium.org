@@ -496,22 +496,57 @@ const SymptomsPage = () => {
 
           {/* Book Recommendation Snippet */}
           <section className='mb-20'>
-            <div className='bg-blue-50/80 rounded-2xl p-6 md:p-8 border border-blue-200/60 shadow-[0_1px_3px_rgba(0,0,0,0.06)]'>
-              <p className='text-gray-700 leading-relaxed mb-4'>
-                <strong>
-                  Gadolinium Deposition and Toxicity: Humanizing a Life-Changing
-                  Event
-                </strong>{' '}
-                by Debbie Heist Lambert shares personal experiences from
-                patients affected by gadolinium toxicity, providing insight into
-                how those affected navigate this life-changing event.{' '}
-                <Link
-                  href='/resources#book'
-                  className='text-blue-600 hover:text-blue-800 underline font-medium'>
-                  Learn more about this book
-                </Link>
-                .
-              </p>
+            <div className='bg-white border-2 border-blue-200/80 rounded-2xl p-6 hover:border-blue-300/80 shadow-[0_1px_3px_rgba(0,0,0,0.08)] hover:shadow-[0_2px_6px_rgba(0,0,0,0.12)] transition-all duration-300'>
+              <div className='flex flex-col sm:flex-row gap-4 items-start'>
+                <div className='flex-shrink-0'>
+                  <div className='relative w-32 h-44 rounded-lg overflow-hidden border border-gray-300 shadow-md'>
+                    <Image
+                      src='/gadtoxicity-book.jpg'
+                      alt="Debbie Heist Lambert's book: Gadolinium Deposition and Toxicity"
+                      fill
+                      className='object-cover'
+                      sizes='128px'
+                    />
+                  </div>
+                </div>
+                <div className='flex-1'>
+                  <h3 className='text-xl font-semibold text-gray-900 mb-3'>
+                    Learn More About Patient Experiences
+                  </h3>
+                  <p className='text-gray-700 mb-4 leading-relaxed'>
+                    <strong>
+                      Gadolinium Deposition and Toxicity: Humanizing a
+                      Life-Changing Event
+                    </strong>{' '}
+                    by Debbie Heist Lambert offers a patient perspective on
+                    gadolinium deposition and toxicity, humanizing this
+                    life-changing event through personal experiences shared by
+                    patients from around the world. The heartfelt stories in
+                    these pages represent real examples of adverse reactions and
+                    events following one or more injections of GBCA (gadolinium-based
+                    contrast agent), providing insight into the signs,
+                    side-effects, symptoms, and associations that patients
+                    report.
+                  </p>
+                  <Link
+                    href='https://amzn.to/4aL7oKz'
+                    target='_blank'
+                    rel='noopener noreferrer'
+                    className='inline-flex items-center gap-2 px-6 py-3 bg-blue-600 text-white font-semibold rounded-xl hover:bg-blue-700 active:bg-blue-800 transition-all duration-200 shadow-[0_2px_8px_rgba(0,122,255,0.3)] hover:shadow-[0_4px_12px_rgba(0,122,255,0.4)] active:scale-[0.98]'>
+                    <span>View Book on Amazon</span>
+                    <svg
+                      className='w-5 h-5'
+                      fill='none'
+                      strokeLinecap='round'
+                      strokeLinejoin='round'
+                      strokeWidth='2'
+                      viewBox='0 0 24 24'
+                      stroke='currentColor'>
+                      <path d='M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14' />
+                    </svg>
+                  </Link>
+                </div>
+              </div>
             </div>
           </section>
         </main>

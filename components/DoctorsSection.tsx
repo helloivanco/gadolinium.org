@@ -26,6 +26,14 @@ const DoctorsSection = () => {
       ],
       howToReach:
         'Website and blog: https://www.richardsemelka.com/ | Contact: https://www.richardsemelka.com/contact-dr-semelka | Dr. Semelka practices at his Medical Clinic in North Carolina, focusing on treating patients with Gadolinium Deposition Disease. He has been consulted by people from around the world, with the majority in the US, Canada, UK, and Europe.',
+      book: {
+        title: 'Heavy Metals. The White Sabbath of Toxins',
+        image: '/whitesabbath.jpg',
+        description:
+          'For comprehensive information about heavy metal toxicity and treatment, including the most up-to-date approaches, refer to Dr. Semelka\'s book. This book provides the most comprehensive look at a broad range of heavy metals, focusing on the critical aspects that an informed general public would need to know about heavy metal toxicity and treatment.',
+        link: 'https://amzn.to/4pF7hov',
+        linkText: 'View Dr. Semelka\'s Book',
+      },
     },
     {
       name: 'Dr. Brent Wagner',
@@ -49,6 +57,19 @@ const DoctorsSection = () => {
       ],
       howToReach:
         'Contact the Kidney Institute of New Mexico: Julie A Harris at JuHarris@salud.unm.edu | Dr. Wagner practices at the University of New Mexico School of Medicine and the New Mexico Veterans Administration Health Care System in Albuquerque, New Mexico.',
+      registry: {
+        title: 'LEGACY OF LATENCY: THE NATURAL HISTORY OF SYMPTOMS STEMMING FROM TOXIC EXPOSURES',
+        image: '/gadregistry.jpg',
+        imageFullSize: '/gadregistry.jpg',
+        description:
+          'HRRC ID 24-413. People are exposed to toxicants, including metals, from the environment (such as in drinking water) or as patients in the healthcare system (such as gadolinium). This registry tracks the history of medically unexplained symptoms and, if any, related to toxic exposures. We will obtain your history and conduct a physical examination during your participation. We will ask for a 24-hour urine collection to measure toxicants (e.g., gadolinium) and time this with exposure—e.g., the administration of the magnetic resonance imaging contrast. We will also obtain other samples (blood, nail clippings, and hair tufts) to analyze how metal exposure triggers chemicals that may promote disease. You are free to provide any additional information relevant to your symptoms. We will repeat blood, urine, hair, and nail testing at 6-month intervals. By participating in this registry, we aim to define the natural history of medically unexplained symptoms and how these relate to toxic exposures. Your participation in this research will last for the duration of the study. Upon completion participants will receive a $50 Merchandise Card. We are conducting this registry through the University of New Mexico Health Sciences Center, Division of Nephrology, Department of Medicine.',
+        criteria: [
+          'Adults 18 years of age or older',
+          'Willing and able to comply with a scheduled 90-minute visit, blood sample collection, and urine collection',
+        ],
+        contact:
+          'If you are interested in participating and think you may qualify, contact the Kidney Institute of New Mexico: Julie A Harris at JuHarris@salud.unm.edu',
+      },
     },
     {
       name: 'Dr. Catriona Walsh',
@@ -78,6 +99,14 @@ const DoctorsSection = () => {
       ],
       howToReach:
         'Website: https://thefoodphoenix.co.uk/ | Contact & Free Clarity Call: https://thefoodphoenix.co.uk/contact-me/ | Dr. Walsh is based in Belfast and Mid Ulster, Northern Ireland, and works with clients worldwide through remote consultations. She offers a free 30-minute discovery call to discuss your health needs. She is also co-creating a group coaching experience for professionals suffering from or at risk of burnout.',
+      book: {
+        title: 'Contrasts: More than meets the MRI',
+        image: '/moremri.jpg',
+        description:
+          'For detailed information about MRI contrast toxicity, including how MRI contrast can contribute to feeling run-down, burnt-out, unwell, hopeless, and in pain, refer to Dr. Walsh\'s book. Her own experiences recovering from MRI contrast toxicity, combined with her medical training and education in nutrition and lifestyle coaching, place her in a unique position to understand the science behind gadolinium toxicity and provide powerful, natural strategies to help combat it.',
+        link: 'https://amzn.to/4oYo2da',
+        linkText: 'View Dr. Walsh\'s Book',
+      },
     },
   ];
 
