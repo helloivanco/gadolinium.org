@@ -171,7 +171,7 @@ const ClinicsPage = () => {
                 placeholder='Search by name, location, or region...'
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
-                className='block w-full pl-12 pr-4 py-4 border border-gray-200/80 rounded-xl text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-500/50 focus:border-blue-500/50 bg-white shadow-[0_1px_2px_rgba(0,0,0,0.05)] hover:shadow-[0_2px_4px_rgba(0,0,0,0.08)] focus:shadow-[0_0_0_3px_rgba(0,122,255,0.1)] transition-all duration-200'
+                className='block w-full pl-12 pr-4 py-4 border border-gray-200/60 rounded-xl text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-500/40 focus:border-blue-500/60 bg-white shadow-[0_2px_4px_rgba(0,0,0,0.04)] hover:shadow-[0_4px_8px_rgba(0,0,0,0.08)] focus:shadow-[0_0_0_4px_rgba(0,122,255,0.08)] transition-all duration-300'
                 aria-label='Search clinics'
               />
             </div>
@@ -182,10 +182,10 @@ const ClinicsPage = () => {
                 <button
                   key={key}
                   onClick={() => setSelectedCategory(key)}
-                className={`px-5 py-2.5 rounded-xl font-semibold transition-all duration-200 ${
+                className={`px-5 py-2.5 rounded-xl font-semibold transition-all duration-300 ${
                   selectedCategory === key
-                    ? 'bg-blue-600 text-white shadow-[0_2px_8px_rgba(0,122,255,0.3)] hover:bg-blue-700 hover:shadow-[0_4px_12px_rgba(0,122,255,0.4)] active:scale-[0.98]'
-                    : 'bg-white text-gray-700 border border-gray-200/80 hover:bg-gray-50 hover:border-gray-300/80 shadow-[0_1px_2px_rgba(0,0,0,0.05)] hover:shadow-[0_2px_4px_rgba(0,0,0,0.08)]'
+                    ? 'bg-blue-600 text-white shadow-[0_4px_12px_rgba(0,122,255,0.25)] hover:bg-blue-700 hover:shadow-[0_6px_20px_rgba(0,122,255,0.35)] active:scale-[0.97]'
+                    : 'bg-white text-gray-700 border border-gray-200/60 hover:bg-gray-50 hover:border-gray-300/80 shadow-[0_2px_4px_rgba(0,0,0,0.04)] hover:shadow-[0_4px_8px_rgba(0,0,0,0.08)]'
                 }`}
                   aria-pressed={selectedCategory === key}
                   aria-label={`Filter by ${label}`}>
@@ -216,7 +216,7 @@ const ClinicsPage = () => {
           {/* Featured Clinic */}
           {featuredClinic && selectedCategory === 'all' && !searchQuery && (
             <div className='mb-20'>
-              <div className='bg-white rounded-3xl shadow-[0_1px_3px_rgba(0,0,0,0.08)] border border-gray-200/60 p-8 md:p-12 hover:shadow-[0_4px_12px_rgba(0,0,0,0.12)] hover:border-gray-300/80 transition-all duration-300 ease-[cubic-bezier(0.4,0,0.2,1)]'>
+              <div className='bg-white rounded-3xl shadow-[0_2px_8px_rgba(0,0,0,0.06)] border border-gray-200/60 p-8 md:p-12 hover:shadow-[0_8px_24px_rgba(0,0,0,0.12)] hover:border-gray-300/80 transition-all duration-500 ease-[cubic-bezier(0.4,0,0.2,1)]'>
                 <div className='mb-10 rounded-2xl overflow-hidden ring-1 ring-black/5'>
                   <div className='relative w-full h-64 md:h-80 bg-gray-100'>
                     <Image

@@ -20,6 +20,18 @@ export async function GET() {
     <priority>0.95</priority>
   </url>
   <url>
+    <loc>${baseUrl}/clinics</loc>
+    <lastmod>${now}</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.95</priority>
+  </url>
+  <url>
+    <loc>${baseUrl}/detox</loc>
+    <lastmod>${now}</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
     <loc>${baseUrl}/what-helps</loc>
     <lastmod>${now}</lastmod>
     <changefreq>monthly</changefreq>
@@ -32,22 +44,10 @@ export async function GET() {
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>${baseUrl}/clinics</loc>
-    <lastmod>${now}</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
     <loc>${baseUrl}/resources</loc>
     <lastmod>${now}</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>${baseUrl}/detox</loc>
-    <lastmod>${now}</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.85</priority>
   </url>
 </urlset>`;
 

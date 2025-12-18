@@ -127,7 +127,7 @@ const DoctorCard = ({
   };
 
   return (
-    <article className='bg-white rounded-3xl shadow-[0_1px_3px_rgba(0,0,0,0.08)] border border-gray-200/60 p-8 md:p-12 hover:shadow-[0_4px_12px_rgba(0,0,0,0.12)] hover:border-gray-300/80 transition-all duration-300 ease-[cubic-bezier(0.4,0,0.2,1)] group'>
+    <article className='bg-white rounded-3xl shadow-[0_2px_8px_rgba(0,0,0,0.06)] border border-gray-200/60 p-8 md:p-12 hover:shadow-[0_8px_24px_rgba(0,0,0,0.12)] hover:border-gray-300/80 transition-all duration-500 ease-[cubic-bezier(0.4,0,0.2,1)] group'>
       <div className='flex flex-col md:flex-row gap-8 mb-10'>
         {/* Doctor Image */}
         <div className='flex-shrink-0'>
@@ -241,10 +241,10 @@ const DoctorCard = ({
                   href={book.link}
                   target='_blank'
                   rel='noopener noreferrer'
-                  className='inline-flex items-center gap-2 px-6 py-3 bg-blue-600 text-white font-semibold rounded-xl hover:bg-blue-700 active:bg-blue-800 transition-all duration-200 shadow-[0_2px_8px_rgba(0,122,255,0.3)] hover:shadow-[0_4px_12px_rgba(0,122,255,0.4)] active:scale-[0.98]'>
+                  className='inline-flex items-center gap-2 px-6 py-3.5 bg-blue-600 text-white font-semibold rounded-xl hover:bg-blue-700 active:bg-blue-800 transition-all duration-300 shadow-[0_4px_12px_rgba(0,122,255,0.25)] hover:shadow-[0_6px_20px_rgba(0,122,255,0.35)] active:scale-[0.97]'>
                   <span>{book.linkText || 'View Book on Amazon'}</span>
                   <svg
-                    className='w-5 h-5'
+                    className='w-5 h-5 transition-transform duration-300 group-hover:translate-x-0.5'
                     fill='none'
                     strokeLinecap='round'
                     strokeLinejoin='round'

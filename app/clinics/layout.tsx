@@ -13,6 +13,10 @@ export const metadata: Metadata = {
     'heavy metal chelation',
     'gadolinium removal clinics',
     'GadTTRAC',
+    'gadolinium chelation centers',
+    'DTPA chelation clinics',
+    'gadolinium detoxification centers',
+    'GBCA treatment facilities',
   ],
   openGraph: {
     title: 'Chelation Clinics - Find Treatment Centers for Gadolinium Toxicity',

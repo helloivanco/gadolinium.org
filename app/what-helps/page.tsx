@@ -19,6 +19,11 @@ export const metadata: Metadata = {
     'gadolinium lifestyle',
     'gadolinium recovery',
     'gadolinium detoxification',
+    'gadolinium natural remedies',
+    'gadolinium nutrition',
+    'gadolinium hydration',
+    'gadolinium management',
+    'gadolinium support protocols',
   ],
   openGraph: {
     title: 'What Helps - Remedies & Approaches for Gadolinium Toxicity',

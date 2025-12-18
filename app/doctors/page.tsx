@@ -16,6 +16,11 @@ export const metadata: Metadata = {
     'Dr. Brent Wagner',
     'Dr. Catriona Walsh',
     'gadolinium deposition disease',
+    'gadolinium toxicity specialists',
+    'gadolinium treatment physicians',
+    'GBCA toxicity doctors',
+    'chelation therapy doctors',
+    'gadolinium expert physicians',
   ],
   openGraph: {
     title: 'Leading Doctors for Gadolinium Toxicity & GDD',

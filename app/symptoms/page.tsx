@@ -18,6 +18,11 @@ export const metadata: Metadata = {
     'gadolinium patient survey',
     'gadolinium nervous system',
     'gadolinium calcium channels',
+    'gadolinium adverse effects',
+    'GBCA symptoms',
+    'gadolinium deposition symptoms',
+    'gadolinium toxicity signs',
+    'gadolinium health effects',
   ],
   openGraph: {
     title: 'Signs & Symptoms after Gadolinium Administration',

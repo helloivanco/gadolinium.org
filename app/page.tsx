@@ -23,6 +23,13 @@ export const metadata: Metadata = {
     'Dr. Catriona Walsh',
     'chelation therapy',
     'gadolinium removal',
+    'Gadolinium Deposition Disease',
+    'GDD',
+    'gadolinium-based contrast agents',
+    'GBCA toxicity',
+    'gadolinium symptoms',
+    'gadolinium detoxification',
+    'gadolinium resources',
   ],
   openGraph: {
     title:
@@ -69,8 +76,8 @@ export default function Home() {
           role='main'
           aria-label='Main content'>
           {/* Overview Intro */}
-          <section className='mb-20 text-center'>
-            <h1 className='text-4xl md:text-5xl lg:text-6xl font-semibold text-gray-900 mb-6 tracking-tight'>
+          <section className='mb-24 text-center'>
+            <h1 className='text-4xl md:text-5xl lg:text-6xl font-semibold text-gray-900 mb-6 tracking-tight leading-[1.1]'>
               Navigate Gadolinium Toxicity with Clarity
             </h1>
             <p className='text-xl md:text-2xl text-gray-600 max-w-3xl mx-auto font-light leading-relaxed'>
@@ -85,38 +92,38 @@ export default function Home() {
             aria-label='Site sections overview'
             className='grid gap-8 md:gap-10 md:grid-cols-2 lg:grid-cols-3'>
             {/* Doctors */}
-            <article className='bg-white rounded-3xl shadow-[0_1px_3px_rgba(0,0,0,0.08)] border border-gray-200/80 overflow-hidden flex flex-col'>
-              <div className='relative w-full h-40'>
+            <article className='bg-white rounded-3xl shadow-[0_2px_8px_rgba(0,0,0,0.06)] border border-gray-200/60 overflow-hidden flex flex-col group hover:shadow-[0_8px_24px_rgba(0,0,0,0.12)] hover:border-gray-300/80 transition-all duration-500 ease-[cubic-bezier(0.4,0,0.2,1)]'>
+              <div className='relative w-full h-40 overflow-hidden'>
                 <Image
                   src='/medical.jpg'
                   alt='Doctors treating gadolinium toxicity'
                   fill
-                  className='object-cover'
+                  className='object-cover transition-transform duration-700 group-hover:scale-105'
                   sizes='(max-width: 768px) 100vw, 33vw'
                   priority
                 />
-                <div className='absolute inset-0 bg-gradient-to-t from-black/60 via-black/30 to-transparent' />
+                <div className='absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent' />
                 <div className='absolute bottom-4 left-4 right-4'>
-                  <p className='inline-flex items-center rounded-full bg-white/90 px-3 py-1 text-xs font-semibold text-gray-900 shadow-sm'>
+                  <p className='inline-flex items-center rounded-full bg-white/95 backdrop-blur-sm px-3.5 py-1.5 text-xs font-semibold text-gray-900 shadow-lg'>
                     Core Care Team
                   </p>
                 </div>
               </div>
-              <div className='p-6 md:p-7 flex flex-col flex-1'>
-                <h2 className='text-2xl md:text-3xl font-semibold text-gray-900 mb-3 tracking-tight'>
+              <div className='p-7 md:p-8 flex flex-col flex-1'>
+                <h2 className='text-2xl md:text-3xl font-semibold text-gray-900 mb-4 tracking-tight group-hover:text-blue-600 transition-colors duration-300'>
                   Doctors
                 </h2>
-                <p className='text-gray-600 text-sm md:text-base leading-relaxed mb-5 flex-1'>
+                <p className='text-gray-600 text-sm md:text-base leading-relaxed mb-6 flex-1'>
                   Learn about leading specialists including Dr. Richard Semelka,
                   Dr. Brent Wagner, and Dr. Catriona Walsh — their backgrounds,
                   approaches, and how to reach them.
                 </p>
                 <Link
                   href='/doctors'
-                  className='inline-flex items-center justify-center px-5 py-3 rounded-xl bg-blue-600 text-white font-semibold text-sm md:text-base hover:bg-blue-700 active:bg-blue-800 shadow-[0_2px_8px_rgba(0,122,255,0.3)] hover:shadow-[0_4px_12px_rgba(0,122,255,0.4)] active:scale-[0.98] transition-all duration-200'>
+                  className='inline-flex items-center justify-center px-6 py-3.5 rounded-xl bg-blue-600 text-white font-semibold text-sm md:text-base hover:bg-blue-700 active:bg-blue-800 shadow-[0_4px_12px_rgba(0,122,255,0.25)] hover:shadow-[0_6px_20px_rgba(0,122,255,0.35)] active:scale-[0.97] transition-all duration-300'>
                   View Doctors
                   <svg
-                    className='w-4 h-4 ml-2'
+                    className='w-4 h-4 ml-2 transition-transform duration-300 group-hover:translate-x-1'
                     fill='none'
                     stroke='currentColor'
                     strokeWidth='2'
@@ -133,37 +140,37 @@ export default function Home() {
             </article>
 
             {/* What Helps */}
-            <article className='bg-white rounded-3xl shadow-[0_1px_3px_rgba(0,0,0,0.08)] border border-gray-200/80 overflow-hidden flex flex-col'>
-              <div className='relative w-full h-40'>
+            <article className='bg-white rounded-3xl shadow-[0_2px_8px_rgba(0,0,0,0.06)] border border-gray-200/60 overflow-hidden flex flex-col group hover:shadow-[0_8px_24px_rgba(0,0,0,0.12)] hover:border-gray-300/80 transition-all duration-500 ease-[cubic-bezier(0.4,0,0.2,1)]'>
+              <div className='relative w-full h-40 overflow-hidden'>
                 <Image
                   src='/foods.webp'
                   alt='Healthy foods and natural remedies for gadolinium detoxification'
                   fill
-                  className='object-cover'
+                  className='object-cover transition-transform duration-700 group-hover:scale-105'
                   sizes='(max-width: 768px) 100vw, 33vw'
                 />
-                <div className='absolute inset-0 bg-gradient-to-t from-black/60 via-black/30 to-transparent' />
+                <div className='absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent' />
                 <div className='absolute bottom-4 left-4 right-4'>
-                  <p className='inline-flex items-center rounded-full bg-white/90 px-3 py-1 text-xs font-semibold text-gray-900 shadow-sm'>
+                  <p className='inline-flex items-center rounded-full bg-white/95 backdrop-blur-sm px-3.5 py-1.5 text-xs font-semibold text-gray-900 shadow-lg'>
                     Day-to-day Support
                   </p>
                 </div>
               </div>
-              <div className='p-6 md:p-7 flex flex-col flex-1'>
-                <h2 className='text-2xl md:text-3xl font-semibold text-gray-900 mb-3 tracking-tight'>
+              <div className='p-7 md:p-8 flex flex-col flex-1'>
+                <h2 className='text-2xl md:text-3xl font-semibold text-gray-900 mb-4 tracking-tight group-hover:text-blue-600 transition-colors duration-300'>
                   What Helps
                 </h2>
-                <p className='text-gray-600 text-sm md:text-base leading-relaxed mb-5 flex-1'>
+                <p className='text-gray-600 text-sm md:text-base leading-relaxed mb-6 flex-1'>
                   Holistic guidance on diet, hydration, lifestyle, supplements, and
                   personalized protocols from leading experts for managing
                   gadolinium toxicity.
                 </p>
                 <Link
                   href='/what-helps'
-                  className='inline-flex items-center justify-center px-5 py-3 rounded-xl bg-blue-600 text-white font-semibold text-sm md:text-base hover:bg-blue-700 active:bg-blue-800 shadow-[0_2px_8px_rgba(0,122,255,0.3)] hover:shadow-[0_4px_12px_rgba(0,122,255,0.4)] active:scale-[0.98] transition-all duration-200'>
+                  className='inline-flex items-center justify-center px-6 py-3.5 rounded-xl bg-blue-600 text-white font-semibold text-sm md:text-base hover:bg-blue-700 active:bg-blue-800 shadow-[0_4px_12px_rgba(0,122,255,0.25)] hover:shadow-[0_6px_20px_rgba(0,122,255,0.35)] active:scale-[0.97] transition-all duration-300'>
                   Explore What Helps
                   <svg
-                    className='w-4 h-4 ml-2'
+                    className='w-4 h-4 ml-2 transition-transform duration-300 group-hover:translate-x-1'
                     fill='none'
                     stroke='currentColor'
                     strokeWidth='2'
@@ -180,36 +187,36 @@ export default function Home() {
             </article>
 
             {/* Detox */}
-            <article className='bg-white rounded-3xl shadow-[0_1px_3px_rgba(0,0,0,0.08)] border border-gray-200/80 overflow-hidden flex flex-col'>
-              <div className='relative w-full h-40'>
+            <article className='bg-white rounded-3xl shadow-[0_2px_8px_rgba(0,0,0,0.06)] border border-gray-200/60 overflow-hidden flex flex-col group hover:shadow-[0_8px_24px_rgba(0,0,0,0.12)] hover:border-gray-300/80 transition-all duration-500 ease-[cubic-bezier(0.4,0,0.2,1)]'>
+              <div className='relative w-full h-40 overflow-hidden'>
                 <Image
                   src='/detox.webp'
                   alt='Detox methods for gadolinium toxicity'
                   fill
-                  className='object-cover'
+                  className='object-cover transition-transform duration-700 group-hover:scale-105'
                   sizes='(max-width: 768px) 100vw, 33vw'
                 />
-                <div className='absolute inset-0 bg-gradient-to-t from-black/60 via-black/30 to-transparent' />
+                <div className='absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent' />
                 <div className='absolute bottom-4 left-4 right-4'>
-                  <p className='inline-flex items-center rounded-full bg-white/90 px-3 py-1 text-xs font-semibold text-gray-900 shadow-sm'>
+                  <p className='inline-flex items-center rounded-full bg-white/95 backdrop-blur-sm px-3.5 py-1.5 text-xs font-semibold text-gray-900 shadow-lg'>
                     Structured Detox
                   </p>
                 </div>
               </div>
-              <div className='p-6 md:p-7 flex flex-col flex-1'>
-                <h2 className='text-2xl md:text-3xl font-semibold text-gray-900 mb-3 tracking-tight'>
+              <div className='p-7 md:p-8 flex flex-col flex-1'>
+                <h2 className='text-2xl md:text-3xl font-semibold text-gray-900 mb-4 tracking-tight group-hover:text-blue-600 transition-colors duration-300'>
                   Detox Methods
                 </h2>
-                <p className='text-gray-600 text-sm md:text-base leading-relaxed mb-5 flex-1'>
+                <p className='text-gray-600 text-sm md:text-base leading-relaxed mb-6 flex-1'>
                   Deep dive into IR sauna and niacin protocols, DTPA chelation,
                   and how to choose the right approach with medical guidance.
                 </p>
                 <Link
                   href='/detox'
-                  className='inline-flex items-center justify-center px-5 py-3 rounded-xl bg-blue-600 text-white font-semibold text-sm md:text-base hover:bg-blue-700 active:bg-blue-800 shadow-[0_2px_8px_rgba(0,122,255,0.3)] hover:shadow-[0_4px_12px_rgba(0,122,255,0.4)] active:scale-[0.98] transition-all duration-200'>
+                  className='inline-flex items-center justify-center px-6 py-3.5 rounded-xl bg-blue-600 text-white font-semibold text-sm md:text-base hover:bg-blue-700 active:bg-blue-800 shadow-[0_4px_12px_rgba(0,122,255,0.25)] hover:shadow-[0_6px_20px_rgba(0,122,255,0.35)] active:scale-[0.97] transition-all duration-300'>
                   View Detox Options
                   <svg
-                    className='w-4 h-4 ml-2'
+                    className='w-4 h-4 ml-2 transition-transform duration-300 group-hover:translate-x-1'
                     fill='none'
                     stroke='currentColor'
                     strokeWidth='2'
@@ -226,37 +233,37 @@ export default function Home() {
             </article>
 
             {/* Symptoms */}
-            <article className='bg-white rounded-3xl shadow-[0_1px_3px_rgba(0,0,0,0.08)] border border-gray-200/80 overflow-hidden flex flex-col'>
-              <div className='relative w-full h-40'>
+            <article className='bg-white rounded-3xl shadow-[0_2px_8px_rgba(0,0,0,0.06)] border border-gray-200/60 overflow-hidden flex flex-col group hover:shadow-[0_8px_24px_rgba(0,0,0,0.12)] hover:border-gray-300/80 transition-all duration-500 ease-[cubic-bezier(0.4,0,0.2,1)]'>
+              <div className='relative w-full h-40 overflow-hidden'>
                 <Image
                   src='/pain.jpg'
                   alt='Symptoms after gadolinium exposure'
                   fill
-                  className='object-cover'
+                  className='object-cover transition-transform duration-700 group-hover:scale-105'
                   sizes='(max-width: 768px) 100vw, 33vw'
                 />
-                <div className='absolute inset-0 bg-gradient-to-t from-black/60 via-black/30 to-transparent' />
+                <div className='absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent' />
                 <div className='absolute bottom-4 left-4 right-4'>
-                  <p className='inline-flex items-center rounded-full bg-white/90 px-3 py-1 text-xs font-semibold text-gray-900 shadow-sm'>
+                  <p className='inline-flex items-center rounded-full bg-white/95 backdrop-blur-sm px-3.5 py-1.5 text-xs font-semibold text-gray-900 shadow-lg'>
                     Symptom Patterns
                   </p>
                 </div>
               </div>
-              <div className='p-6 md:p-7 flex flex-col flex-1'>
-                <h2 className='text-2xl md:text-3xl font-semibold text-gray-900 mb-3 tracking-tight'>
+              <div className='p-7 md:p-8 flex flex-col flex-1'>
+                <h2 className='text-2xl md:text-3xl font-semibold text-gray-900 mb-4 tracking-tight group-hover:text-blue-600 transition-colors duration-300'>
                   Symptoms
                 </h2>
-                <p className='text-gray-600 text-sm md:text-base leading-relaxed mb-5 flex-1'>
+                <p className='text-gray-600 text-sm md:text-base leading-relaxed mb-6 flex-1'>
                   Review patient survey data on early-phase NSF-like symptoms,
                   nervous system involvement, and key findings from published
                   research.
                 </p>
                 <Link
                   href='/symptoms'
-                  className='inline-flex items-center justify-center px-5 py-3 rounded-xl bg-blue-600 text-white font-semibold text-sm md:text-base hover:bg-blue-700 active:bg-blue-800 shadow-[0_2px_8px_rgba(0,122,255,0.3)] hover:shadow-[0_4px_12px_rgba(0,122,255,0.4)] active:scale-[0.98] transition-all duration-200'>
+                  className='inline-flex items-center justify-center px-6 py-3.5 rounded-xl bg-blue-600 text-white font-semibold text-sm md:text-base hover:bg-blue-700 active:bg-blue-800 shadow-[0_4px_12px_rgba(0,122,255,0.25)] hover:shadow-[0_6px_20px_rgba(0,122,255,0.35)] active:scale-[0.97] transition-all duration-300'>
                   Explore Symptoms
                   <svg
-                    className='w-4 h-4 ml-2'
+                    className='w-4 h-4 ml-2 transition-transform duration-300 group-hover:translate-x-1'
                     fill='none'
                     stroke='currentColor'
                     strokeWidth='2'
@@ -273,36 +280,36 @@ export default function Home() {
             </article>
 
             {/* Clinics */}
-            <article className='bg-white rounded-3xl shadow-[0_1px_3px_rgba(0,0,0,0.08)] border border-gray-200/80 overflow-hidden flex flex-col'>
-              <div className='relative w-full h-40'>
+            <article className='bg-white rounded-3xl shadow-[0_2px_8px_rgba(0,0,0,0.06)] border border-gray-200/60 overflow-hidden flex flex-col group hover:shadow-[0_8px_24px_rgba(0,0,0,0.12)] hover:border-gray-300/80 transition-all duration-500 ease-[cubic-bezier(0.4,0,0.2,1)]'>
+              <div className='relative w-full h-40 overflow-hidden'>
                 <Image
                   src='/chelation.webp'
                   alt='Chelation therapy treatment'
                   fill
-                  className='object-cover'
+                  className='object-cover transition-transform duration-700 group-hover:scale-105'
                   sizes='(max-width: 768px) 100vw, 33vw'
                 />
-                <div className='absolute inset-0 bg-gradient-to-t from-black/60 via-black/30 to-transparent' />
+                <div className='absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent' />
                 <div className='absolute bottom-4 left-4 right-4'>
-                  <p className='inline-flex items-center rounded-full bg-white/90 px-3 py-1 text-xs font-semibold text-gray-900 shadow-sm'>
+                  <p className='inline-flex items-center rounded-full bg-white/95 backdrop-blur-sm px-3.5 py-1.5 text-xs font-semibold text-gray-900 shadow-lg'>
                     Where to Go
                   </p>
                 </div>
               </div>
-              <div className='p-6 md:p-7 flex flex-col flex-1'>
-                <h2 className='text-2xl md:text-3xl font-semibold text-gray-900 mb-3 tracking-tight'>
+              <div className='p-7 md:p-8 flex flex-col flex-1'>
+                <h2 className='text-2xl md:text-3xl font-semibold text-gray-900 mb-4 tracking-tight group-hover:text-blue-600 transition-colors duration-300'>
                   Chelation Clinics
                 </h2>
-                <p className='text-gray-600 text-sm md:text-base leading-relaxed mb-5 flex-1'>
+                <p className='text-gray-600 text-sm md:text-base leading-relaxed mb-6 flex-1'>
                   Browse GadTTRAC-linked clinics and treatment centers worldwide,
                   filter by region, and view a featured specialist clinic.
                 </p>
                 <Link
                   href='/clinics'
-                  className='inline-flex items-center justify-center px-5 py-3 rounded-xl bg-blue-600 text-white font-semibold text-sm md:text-base hover:bg-blue-700 active:bg-blue-800 shadow-[0_2px_8px_rgba(0,122,255,0.3)] hover:shadow-[0_4px_12px_rgba(0,122,255,0.4)] active:scale-[0.98] transition-all duration-200'>
+                  className='inline-flex items-center justify-center px-6 py-3.5 rounded-xl bg-blue-600 text-white font-semibold text-sm md:text-base hover:bg-blue-700 active:bg-blue-800 shadow-[0_4px_12px_rgba(0,122,255,0.25)] hover:shadow-[0_6px_20px_rgba(0,122,255,0.35)] active:scale-[0.97] transition-all duration-300'>
                   Find Clinics
                   <svg
-                    className='w-4 h-4 ml-2'
+                    className='w-4 h-4 ml-2 transition-transform duration-300 group-hover:translate-x-1'
                     fill='none'
                     stroke='currentColor'
                     strokeWidth='2'
@@ -319,37 +326,37 @@ export default function Home() {
             </article>
 
             {/* Resources */}
-            <article className='bg-white rounded-3xl shadow-[0_1px_3px_rgba(0,0,0,0.08)] border border-gray-200/80 overflow-hidden flex flex-col'>
-              <div className='relative w-full h-40'>
+            <article className='bg-white rounded-3xl shadow-[0_2px_8px_rgba(0,0,0,0.06)] border border-gray-200/60 overflow-hidden flex flex-col group hover:shadow-[0_8px_24px_rgba(0,0,0,0.12)] hover:border-gray-300/80 transition-all duration-500 ease-[cubic-bezier(0.4,0,0.2,1)]'>
+              <div className='relative w-full h-40 overflow-hidden'>
                 <Image
                   src='/resources.jpg'
                   alt='Resources for gadolinium toxicity information and support'
                   fill
-                  className='object-cover'
+                  className='object-cover transition-transform duration-700 group-hover:scale-105'
                   sizes='(max-width: 768px) 100vw, 33vw'
                 />
-                <div className='absolute inset-0 bg-gradient-to-t from-black/60 via-black/30 to-transparent' />
+                <div className='absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent' />
                 <div className='absolute bottom-4 left-4 right-4'>
-                  <p className='inline-flex items-center rounded-full bg-white/90 px-3 py-1 text-xs font-semibold text-gray-900 shadow-sm'>
+                  <p className='inline-flex items-center rounded-full bg-white/95 backdrop-blur-sm px-3.5 py-1.5 text-xs font-semibold text-gray-900 shadow-lg'>
                     Learn &amp; Connect
                   </p>
                 </div>
               </div>
-              <div className='p-6 md:p-7 flex flex-col flex-1'>
-                <h2 className='text-2xl md:text-3xl font-semibold text-gray-900 mb-3 tracking-tight'>
+              <div className='p-7 md:p-8 flex flex-col flex-1'>
+                <h2 className='text-2xl md:text-3xl font-semibold text-gray-900 mb-4 tracking-tight group-hover:text-blue-600 transition-colors duration-300'>
                   Resources &amp; Support
                 </h2>
-                <p className='text-gray-600 text-sm md:text-base leading-relaxed mb-5 flex-1'>
+                <p className='text-gray-600 text-sm md:text-base leading-relaxed mb-6 flex-1'>
                   Access support groups, email communities, key websites,
                   Semelka&apos;s blog, and book recommendations to stay informed
                   and connected.
                 </p>
                 <Link
                   href='/resources'
-                  className='inline-flex items-center justify-center px-5 py-3 rounded-xl bg-blue-600 text-white font-semibold text-sm md:text-base hover:bg-blue-700 active:bg-blue-800 shadow-[0_2px_8px_rgba(0,122,255,0.3)] hover:shadow-[0_4px_12px_rgba(0,122,255,0.4)] active:scale-[0.98] transition-all duration-200'>
+                  className='inline-flex items-center justify-center px-6 py-3.5 rounded-xl bg-blue-600 text-white font-semibold text-sm md:text-base hover:bg-blue-700 active:bg-blue-800 shadow-[0_4px_12px_rgba(0,122,255,0.25)] hover:shadow-[0_6px_20px_rgba(0,122,255,0.35)] active:scale-[0.97] transition-all duration-300'>
                   View Resources
                   <svg
-                    className='w-4 h-4 ml-2'
+                    className='w-4 h-4 ml-2 transition-transform duration-300 group-hover:translate-x-1'
                     fill='none'
                     stroke='currentColor'
                     strokeWidth='2'

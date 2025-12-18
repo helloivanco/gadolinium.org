@@ -17,6 +17,11 @@ export const metadata: Metadata = {
     'Dr. Semelka blog',
     'GADTRAC',
     'gadolinium information',
+    'gadolinium support groups',
+    'gadolinium communities',
+    'gadolinium education',
+    'gadolinium research',
+    'gadolinium advocacy',
   ],
   openGraph: {
     title: 'Resources - Gadolinium Toxicity Support & Information',

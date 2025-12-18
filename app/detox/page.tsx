@@ -19,6 +19,11 @@ export const metadata: Metadata = {
     'gadolinium removal',
     'gadolinium detoxification',
     'chelation therapy',
+    'gadolinium detox methods',
+    'infrared sauna gadolinium',
+    'gadolinium chelation protocol',
+    'DTPA chelation therapy',
+    'gadolinium elimination',
   ],
   openGraph: {
     title: 'Detox Methods - IR Sauna, Niacin Protocol & Chelation Therapy',

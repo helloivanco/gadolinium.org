@@ -17,20 +17,20 @@ const Hero = () => {
         />
         {/* Refined Gradient Overlay - Apple-style subtle depth */}
         <div
-          className='absolute inset-0 bg-gradient-to-b from-black/55 via-black/45 to-black/65'
+          className='absolute inset-0 bg-gradient-to-b from-black/60 via-black/50 to-black/70'
           aria-hidden='true'></div>
 
         {/* Title and Description Overlay */}
         <div className='absolute inset-0 flex items-center justify-center'>
           <div className='max-w-7xl mx-auto px-6 sm:px-8 w-full'>
-            <div className='text-center max-w-4xl mx-auto space-y-8'>
-              <h1 className='text-5xl md:text-6xl lg:text-7xl font-semibold text-white tracking-tight leading-[1.1] drop-shadow-[0_2px_8px_rgba(0,0,0,0.3)]'>
+            <div className='text-center max-w-4xl mx-auto space-y-10'>
+              <h1 className='text-5xl md:text-6xl lg:text-7xl font-semibold text-white tracking-tight leading-[1.08] drop-shadow-[0_2px_12px_rgba(0,0,0,0.4)]'>
                 <span className='block'>Gadolinium</span>
-                <span className='block text-white/95 mt-3 font-light text-4xl md:text-5xl lg:text-6xl'>
+                <span className='block text-white/96 mt-4 font-light text-4xl md:text-5xl lg:text-6xl'>
                   Toxicity Resources
                 </span>
               </h1>
-              <p className='text-xl md:text-2xl lg:text-3xl text-white/90 leading-relaxed font-light max-w-2xl mx-auto drop-shadow-[0_1px_4px_rgba(0,0,0,0.2)] px-4'>
+              <p className='text-xl md:text-2xl lg:text-3xl text-white/95 leading-relaxed font-light max-w-2xl mx-auto drop-shadow-[0_1px_6px_rgba(0,0,0,0.3)] px-4'>
                 A comprehensive guide connecting you with leading medical
                 professionals, treatment options, and supportive communities.
               </p>

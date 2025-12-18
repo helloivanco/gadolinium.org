@@ -16,7 +16,7 @@ const WhatHelpsSection = () => {
 
       <div className='space-y-16'>
         {/* Diet and Hydration */}
-        <article className='bg-white rounded-3xl shadow-[0_1px_3px_rgba(0,0,0,0.08)] border border-gray-200/60 p-8 md:p-12 hover:shadow-[0_4px_12px_rgba(0,0,0,0.12)] hover:border-gray-300/80 transition-all duration-300 ease-[cubic-bezier(0.4,0,0.2,1)]'>
+        <article className='bg-white rounded-3xl shadow-[0_2px_8px_rgba(0,0,0,0.06)] border border-gray-200/60 p-8 md:p-12 hover:shadow-[0_8px_24px_rgba(0,0,0,0.12)] hover:border-gray-300/80 transition-all duration-500 ease-[cubic-bezier(0.4,0,0.2,1)]'>
           <div className='flex items-center gap-3 mb-6'>
             <span className='text-3xl'>🥗</span>
             <h3 className='text-2xl md:text-3xl font-semibold text-gray-900 tracking-tight'>
@@ -115,7 +115,7 @@ const WhatHelpsSection = () => {
         </article>
 
         {/* Lifestyle and Physical Wellness */}
-        <article className='bg-white rounded-3xl shadow-[0_1px_3px_rgba(0,0,0,0.08)] border border-gray-200/60 p-8 md:p-12 hover:shadow-[0_4px_12px_rgba(0,0,0,0.12)] hover:border-gray-300/80 transition-all duration-300 ease-[cubic-bezier(0.4,0,0.2,1)]'>
+        <article className='bg-white rounded-3xl shadow-[0_2px_8px_rgba(0,0,0,0.06)] border border-gray-200/60 p-8 md:p-12 hover:shadow-[0_8px_24px_rgba(0,0,0,0.12)] hover:border-gray-300/80 transition-all duration-500 ease-[cubic-bezier(0.4,0,0.2,1)]'>
           <div className='flex items-center gap-3 mb-6'>
             <span className='text-3xl'>🏃‍♀️</span>
             <h3 className='text-2xl md:text-3xl font-semibold text-gray-900 tracking-tight'>
@@ -201,7 +201,7 @@ const WhatHelpsSection = () => {
         </article>
 
         {/* Supplements and Medications */}
-        <article className='bg-white rounded-3xl shadow-[0_1px_3px_rgba(0,0,0,0.08)] border border-gray-200/60 p-8 md:p-12 hover:shadow-[0_4px_12px_rgba(0,0,0,0.12)] hover:border-gray-300/80 transition-all duration-300 ease-[cubic-bezier(0.4,0,0.2,1)]'>
+        <article className='bg-white rounded-3xl shadow-[0_2px_8px_rgba(0,0,0,0.06)] border border-gray-200/60 p-8 md:p-12 hover:shadow-[0_8px_24px_rgba(0,0,0,0.12)] hover:border-gray-300/80 transition-all duration-500 ease-[cubic-bezier(0.4,0,0.2,1)]'>
           <div className='flex items-center gap-3 mb-6'>
             <span className='text-3xl'>💊</span>
             <h3 className='text-2xl md:text-3xl font-semibold text-gray-900 tracking-tight'>
@@ -293,7 +293,7 @@ const WhatHelpsSection = () => {
         </article>
 
         {/* Personalization and Root Cause */}
-        <article className='bg-white rounded-3xl shadow-[0_1px_3px_rgba(0,0,0,0.08)] border border-gray-200/60 p-8 md:p-12 hover:shadow-[0_4px_12px_rgba(0,0,0,0.12)] hover:border-gray-300/80 transition-all duration-300 ease-[cubic-bezier(0.4,0,0.2,1)]'>
+        <article className='bg-white rounded-3xl shadow-[0_2px_8px_rgba(0,0,0,0.06)] border border-gray-200/60 p-8 md:p-12 hover:shadow-[0_8px_24px_rgba(0,0,0,0.12)] hover:border-gray-300/80 transition-all duration-500 ease-[cubic-bezier(0.4,0,0.2,1)]'>
           <div className='flex items-center gap-3 mb-6'>
             <span className='text-3xl'>👩‍⚕️</span>
             <h3 className='text-2xl md:text-3xl font-semibold text-gray-900 tracking-tight'>
@@ -339,7 +339,7 @@ const WhatHelpsSection = () => {
         </article>
 
         {/* Genetic Factors and Additional Considerations */}
-        <article className='bg-white rounded-3xl shadow-[0_1px_3px_rgba(0,0,0,0.08)] border border-gray-200/60 p-8 md:p-12 hover:shadow-[0_4px_12px_rgba(0,0,0,0.12)] hover:border-gray-300/80 transition-all duration-300 ease-[cubic-bezier(0.4,0,0.2,1)]'>
+        <article className='bg-white rounded-3xl shadow-[0_2px_8px_rgba(0,0,0,0.06)] border border-gray-200/60 p-8 md:p-12 hover:shadow-[0_8px_24px_rgba(0,0,0,0.12)] hover:border-gray-300/80 transition-all duration-500 ease-[cubic-bezier(0.4,0,0.2,1)]'>
           <div className='flex items-center gap-3 mb-6'>
             <span className='text-3xl'>🧬</span>
             <h3 className='text-2xl md:text-3xl font-semibold text-gray-900 tracking-tight'>
