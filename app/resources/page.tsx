@@ -7,10 +7,11 @@ import Link from 'next/link';
 export const metadata: Metadata = {
   title: 'Resources - Gadolinium Toxicity Support & Information',
   description:
-    'Comprehensive list of resources for gadolinium toxicity including Living With Gadolinium, support groups, Dr. Semelka blog, and GADTRAC.org.',
+    'Comprehensive list of resources for gadolinium toxicity including GadoliniumToxicity.com, Living With Gadolinium, support groups, Dr. Semelka blog, and GADTRAC.org.',
   keywords: [
     'gadolinium resources',
     'gadolinium support',
+    'GadoliniumToxicity.com',
     'Living With Gadolinium',
     'Gadolinium64',
     'gadolinium Facebook groups',
@@ -56,7 +57,7 @@ const ResourcesPage = () => {
       <StructuredData
         pathname='/resources'
         pageTitle='Resources - Gadolinium Toxicity Support & Information'
-        pageDescription='Comprehensive list of resources for gadolinium toxicity including Living With Gadolinium, support groups, Dr. Semelka blog, and GADTRAC.org.'
+        pageDescription='Comprehensive list of resources for gadolinium toxicity including GadoliniumToxicity.com, Living With Gadolinium, support groups, Dr. Semelka blog, and GADTRAC.org.'
       />
       <div className='min-h-screen bg-white'>
         {/* Hero Section */}
@@ -146,6 +147,39 @@ const ResourcesPage = () => {
                   rel='noopener noreferrer'
                   className='inline-flex items-center gap-2 px-6 py-3 bg-blue-600 text-white font-semibold rounded-xl hover:bg-blue-700 active:bg-blue-800 transition-all duration-200 shadow-[0_2px_8px_rgba(0,122,255,0.3)] hover:shadow-[0_4px_12px_rgba(0,122,255,0.4)] active:scale-[0.98]'>
                   <span>Visit LivingwithGadolinium.com</span>
+                  <svg
+                    className='w-5 h-5'
+                    fill='none'
+                    strokeLinecap='round'
+                    strokeLinejoin='round'
+                    strokeWidth='2'
+                    viewBox='0 0 24 24'
+                    stroke='currentColor'>
+                    <path d='M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14' />
+                  </svg>
+                </Link>
+              </div>
+
+              <div className='bg-white border border-gray-200 rounded-lg p-8 shadow-sm hover:shadow-md transition-shadow'>
+                <h3 className='text-2xl font-semibold text-gray-900 mb-4'>
+                  GadoliniumToxicity.com
+                </h3>
+                <p className='text-gray-700 leading-relaxed mb-6'>
+                  A long-standing patient-led resource dedicated to{' '}
+                  <span className='font-semibold'>
+                    shedding light on the effects of retained gadolinium from
+                    contrast MRI
+                  </span>
+                  , including background information, research, help for those
+                  affected, advocacy, news, and viewpoints.
+                </p>
+                <Link
+                  href='https://gadoliniumtoxicity.com/'
+                  target='_blank'
+                  rel='noopener noreferrer'
+                  className='inline-flex items-center gap-2 px-6 py-3 bg-blue-600 text-white font-semibold rounded-xl hover:bg-blue-700 active:bg-blue-800 transition-all duration-200 shadow-[0_2px_8px_rgba(0,122,255,0.3)] hover:shadow-[0_4px_12px_rgba(0,122,255,0.4)] active:scale-[0.98]'
+                  aria-label='Visit GadoliniumToxicity.com website'>
+                  <span>Visit GadoliniumToxicity.com</span>
                   <svg
                     className='w-5 h-5'
                     fill='none'
@@ -417,8 +451,8 @@ const ResourcesPage = () => {
                       one large group of toxins which is treatable. This book
                       provides the most comprehensive look at a broad range of
                       heavy metals, and with a focus on the most up-to-date
-                      treatments. It focuses only on the critical aspects that an
-                      informed general public would need to know about heavy
+                      treatments. It focuses only on the critical aspects that
+                      an informed general public would need to know about heavy
                       metal toxicity and treatment.
                     </p>
                     <a
@@ -544,16 +578,17 @@ const ResourcesPage = () => {
                       What if there&apos;s a scandal lurking in healthcare,
                       waiting to break? MRI contrasts are a billion-dollar
                       industry, with over one hundred million people around the
-                      globe having been injected, believing in good faith that it
-                      was necessary and safe. But what if we got it wrong? What
-                      if that trust was misplaced?
+                      globe having been injected, believing in good faith that
+                      it was necessary and safe. But what if we got it wrong?
+                      What if that trust was misplaced?
                     </p>
                     <p className='text-gray-700 leading-relaxed mb-4'>
                       Do MRI contrasts genuinely cause gadolinium toxicity in
                       vulnerable and unsuspecting people? What do we really know
                       about gadolinium, the toxic heavy metal used in MRI
-                      contrasts? How reassured can we be that gadolinium contrast
-                      retention in the brain has no longterm side effects?
+                      contrasts? How reassured can we be that gadolinium
+                      contrast retention in the brain has no longterm side
+                      effects?
                     </p>
                     <p className='text-gray-700 leading-relaxed mb-4'>
                       You&apos;ll find the answers to these questions and more
@@ -607,8 +642,8 @@ const ResourcesPage = () => {
                   {/* Content */}
                   <div className='flex-1'>
                     <h3 className='text-2xl md:text-3xl font-semibold text-gray-900 mb-4'>
-                      Sauna Detoxification Using Niacin: Following The Recommended
-                      Protocol Of Dr. David E. Root
+                      Sauna Detoxification Using Niacin: Following The
+                      Recommended Protocol Of Dr. David E. Root
                     </h3>
                     <p className='text-lg text-gray-700 leading-relaxed mb-6'>
                       <strong>By Dan Root</strong>
@@ -617,9 +652,9 @@ const ResourcesPage = () => {
                       The infrared sauna and niacin protocol, developed by Dan
                       Root, is a natural detoxification method that combines the
                       use of infrared sauna therapy with niacin (vitamin B3)
-                      supplementation. This protocol is designed to help mobilize
-                      and eliminate toxins, including gadolinium, through enhanced
-                      sweating and improved circulation.
+                      supplementation. This protocol is designed to help
+                      mobilize and eliminate toxins, including gadolinium,
+                      through enhanced sweating and improved circulation.
                     </p>
                     <p className='text-gray-700 leading-relaxed mb-4'>
                       For detailed information about the IR sauna and niacin
