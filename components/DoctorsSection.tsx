@@ -70,6 +70,18 @@ const DoctorsSection = () => {
         contact:
           'If you are interested in participating and think you may qualify, contact the Kidney Institute of New Mexico: Julie A Harris at JuHarris@salud.unm.edu',
       },
+      researchArticle: {
+        title:
+          'UNM Scientists Discover How Nanoparticles of Toxic Metal Used in MRI Scans Infiltrate Human Tissue',
+        url: 'https://hscnews.unm.edu/news/unm-scientists-discover-how-nanoparticles-of-toxic-metal-used-in-mri-scans-infiltrate-human-tissue',
+        source: 'University of New Mexico Health Sciences News (2025)',
+        quote:
+          "This nanoparticle formation might explain why there's such an amplification of the disease. When a cell is trying to deal with this alien metallic nanoparticle within it, it's going to send out signals that tell the body to respond to it.",
+        attribution:
+          'Brent Wagner, MD, Professor, Department of Internal Medicine in the UNM School of Medicine',
+        summary:
+          'University of New Mexico researchers studying the health risks posed by gadolinium—a toxic rare earth metal used in MRI scans—found that oxalic acid, a molecule found in many foods and formed in the body from vitamin C, can cause minute amounts of gadolinium to precipitate out of contrast agents and form nanoparticles that infiltrate human tissues. This mechanistic finding helps explain why some individuals have such severe, amplified symptoms after gadolinium exposure and provides a clear rationale for Dr. Wagner’s recommendation to reduce high-oxalate intake and avoid vitamin C supplements around MRI scans with contrast.',
+      },
     },
     {
       name: 'Dr. Catriona Walsh',

@@ -26,6 +26,14 @@ type DoctorCardProps = {
     criteria?: string[];
     contact?: string;
   };
+  researchArticle?: {
+    title: string;
+    url: string;
+    source: string;
+    quote: string;
+    attribution: string;
+    summary: string;
+  };
 };
 
 const DoctorCard = ({
@@ -40,6 +48,7 @@ const DoctorCard = ({
   image,
   book,
   registry,
+  researchArticle,
 }: DoctorCardProps) => {
   const colorClasses = {
     blue: {
@@ -327,6 +336,84 @@ const DoctorCard = ({
                     <strong>Contact:</strong> {parseLinks(registry.contact)}
                   </p>
                 )}
+              </div>
+            </div>
+          </div>
+        )}
+        {researchArticle && (
+          <div className='bg-white border-2 border-green-200/80 rounded-2xl p-6 hover:border-green-300/80 shadow-[0_1px_3px_rgba(0,0,0,0.08)] hover:shadow-[0_2px_6px_rgba(0,0,0,0.12)] transition-all duration-300'>
+            <h3 className='text-xl font-semibold text-gray-900 mb-3'>
+              Key Research: Nanoparticles &amp; Oxalic Acid
+            </h3>
+            <div className='flex flex-col sm:flex-row gap-4 items-start'>
+              <div className='flex-shrink-0'>
+                <Link
+                  href='/oxalates.jpg'
+                  target='_blank'
+                  rel='noopener noreferrer'
+                  className='block'>
+                  <div className='relative w-32 h-32 rounded-lg overflow-hidden border border-gray-300 shadow-md hover:shadow-lg transition-shadow'>
+                    <Image
+                      src='/oxalates.jpg'
+                      alt='High-oxalate foods illustration'
+                      fill
+                      className='object-cover'
+                      sizes='128px'
+                    />
+                    <div className='absolute inset-0 bg-black/0 hover:bg-black/10 transition-colors flex items-center justify-center'>
+                      <svg
+                        className='w-8 h-8 text-white opacity-0 hover:opacity-100 transition-opacity'
+                        fill='none'
+                        stroke='currentColor'
+                        viewBox='0 0 24 24'>
+                        <path
+                          strokeLinecap='round'
+                          strokeLinejoin='round'
+                          strokeWidth={2}
+                          d='M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7'
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                  <p className='text-xs text-gray-500 mt-2 text-center'>
+                    Click to view full size
+                  </p>
+                </Link>
+              </div>
+              <div className='flex-1'>
+                <div className='mb-4'>
+                  <p className='text-sm font-medium text-gray-500 mb-1'>
+                    {researchArticle.source}
+                  </p>
+                  <Link
+                    href={researchArticle.url}
+                    target='_blank'
+                    rel='noopener noreferrer'
+                    className='inline-flex items-center gap-2 px-4 py-2 bg-green-600 text-white text-sm font-semibold rounded-lg hover:bg-green-700 active:bg-green-800 transition-all duration-200 shadow-[0_2px_6px_rgba(22,163,74,0.35)] hover:shadow-[0_4px_10px_rgba(22,163,74,0.45)]'>
+                    <span>{researchArticle.title}</span>
+                    <svg
+                      className='w-4 h-4'
+                      fill='none'
+                      strokeLinecap='round'
+                      strokeLinejoin='round'
+                      strokeWidth='2'
+                      viewBox='0 0 24 24'
+                      stroke='currentColor'>
+                      <path d='M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14' />
+                    </svg>
+                  </Link>
+                </div>
+                <figure className='border-l-4 border-green-400 pl-4 mb-4'>
+                  <blockquote className='italic text-gray-700 text-[15px]'>
+                    “{researchArticle.quote}”
+                  </blockquote>
+                  <figcaption className='mt-2 text-sm font-semibold text-gray-800'>
+                    {researchArticle.attribution}
+                  </figcaption>
+                </figure>
+                <p className='text-gray-700 leading-relaxed text-[15px]'>
+                  {researchArticle.summary}
+                </p>
               </div>
             </div>
           </div>

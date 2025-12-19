@@ -254,11 +254,309 @@ const SymptomsPage = () => {
           className='max-w-7xl mx-auto px-6 sm:px-8 py-24 md:py-32'
           role='main'
           aria-label='Main content'>
+          {/* Introduction Section */}
+          <section className='mb-20'>
+            <div className='bg-blue-50/80 rounded-2xl p-8 md:p-12 border border-blue-200/60 shadow-[0_1px_3px_rgba(0,0,0,0.06)]'>
+              <h2 className='text-3xl md:text-4xl font-semibold text-gray-900 mb-6'>
+                Symptoms Associated with Gadolinium Toxicity
+              </h2>
+              <div className='prose prose-lg max-w-none text-gray-700 space-y-4'>
+                <p>
+                  As with most medical conditions, the specific symptoms of
+                  Gadolinium Toxicity will vary from person to person. Other
+                  than what you will read here and in our research papers, there
+                  is no published listing of the common symptoms of Gadolinium
+                  Toxicity. By means of a symptom survey of 17 people with high
+                  urine levels of Gadolinium, we have provided a comprehensive
+                  review of this topic in{' '}
+                  <strong>
+                    Survey of the Chronic Effects of Retained Gadolinium from
+                    Contrast MRIs
+                  </strong>
+                  , which we encourage you to read. On this page, we will
+                  provide some high-level information from that paper as well as
+                  other observations we have gathered from MRI Gadolinium
+                  Support Group. Only collective information is presented. Other
+                  than in the Viewpoints section, we will never present
+                  individual specific information.
+                </p>
+              </div>
+            </div>
+          </section>
+
+          {/* Establishing the Connection */}
+          <section className='mb-20'>
+            <div className='bg-amber-50/80 rounded-2xl p-8 md:p-12 border border-amber-200/60 shadow-[0_1px_3px_rgba(0,0,0,0.06)]'>
+              <h2 className='text-3xl md:text-4xl font-semibold text-gray-900 mb-6'>
+                Establishing the Gadolinium Toxicity Connection
+              </h2>
+              <div className='prose prose-lg max-w-none text-gray-700 space-y-4'>
+                <p>
+                  Symptoms are generally experienced at an acute level shortly
+                  after having a contrast MRI and at a chronic level for years
+                  following their last contrast MRI. Some people have the early
+                  acute symptoms that they can tie time-wise to their contrast
+                  MRI. Often they are very frightened, and any appeals to the
+                  medical professionals involved in the contrast ordering or
+                  administration process meet with denial or disbelief regarding
+                  the connection of their symptoms to the contrast agent, and
+                  certainly there is no supportive relief. Others experience
+                  chronic symptoms that their doctors cannot explain and through
+                  research or testing they make the connection back to their
+                  contrast MRI. They, too, are concerned, but more from a
+                  viewpoint of &quot;where is all this leading&quot;. Many
+                  people experience both the early acute problems and the
+                  chronic effects. People at both ends of the spectrum want to
+                  know what they can do to cure their Gadolinium-related
+                  problems. More about that in our{' '}
+                  <Link
+                    href='/what-helps'
+                    className='text-blue-600 hover:text-blue-800 underline'>
+                    Treatment Possibilities
+                  </Link>{' '}
+                  section.
+                </p>
+              </div>
+            </div>
+          </section>
+
+          {/* Symptoms List */}
+          <section className='mb-20'>
+            <h2 className='text-4xl md:text-5xl font-semibold text-gray-900 mb-4 text-center tracking-tight'>
+              Symptoms
+            </h2>
+            <p className='text-xl text-gray-600 text-center mb-12 font-light max-w-3xl mx-auto'>
+              Some of the symptoms experienced fall outside normal descriptive
+              terms for medical symptoms making it hard for patients to
+              communicate to their doctors just what they are experiencing. For
+              those symptoms, we will provide additional descriptive details as
+              appropriate.
+            </p>
+            <div className='bg-gray-50/80 rounded-2xl p-8 md:p-12 border border-gray-200/60 shadow-[0_1px_3px_rgba(0,0,0,0.06)]'>
+              <p className='text-gray-700 mb-6 leading-relaxed'>
+                In rough order of frequency as reported in our{' '}
+                <strong>
+                  Survey of the Chronic Effects of Retained Gadolinium from
+                  Contrast MRIs
+                </strong>
+                :
+              </p>
+              <ul className='space-y-4 text-gray-700'>
+                <li className='flex items-start'>
+                  <span className='text-blue-600 mr-3 mt-1 font-bold'>•</span>
+                  <div>
+                    <strong>Pain</strong> – aching; burning, tingling, and/or
+                    prickling pain (paresthesia); deep bone pain. Typically in
+                    extremities or joints, and sometimes in the location where
+                    the MRI occurred, like the head.
+                  </div>
+                </li>
+                <li className='flex items-start'>
+                  <span className='text-blue-600 mr-3 mt-1 font-bold'>•</span>
+                  <div>
+                    <strong>Dermal changes</strong> – like tight skin, lesions,
+                    hyperpigmentation. Most often in extremities.
+                  </div>
+                </li>
+                <li className='flex items-start'>
+                  <span className='text-blue-600 mr-3 mt-1 font-bold'>•</span>
+                  <div>
+                    <strong>Muscle issues</strong> – twitching – small, local,
+                    rapid contractions and weakness
+                  </div>
+                </li>
+                <li className='flex items-start'>
+                  <span className='text-blue-600 mr-3 mt-1 font-bold'>•</span>
+                  <div>
+                    <strong>Ocular problems</strong> – worsening vision, dry
+                    eyes, bloodshot eyes
+                  </div>
+                </li>
+                <li className='flex items-start'>
+                  <span className='text-blue-600 mr-3 mt-1 font-bold'>•</span>
+                  <div>
+                    <strong>Cognitive symptoms</strong>
+                  </div>
+                </li>
+                <li className='flex items-start'>
+                  <span className='text-blue-600 mr-3 mt-1 font-bold'>•</span>
+                  <div>
+                    <strong>Ear, nose and throat</strong> – tinnitus,
+                    swallowing, and voice problems
+                  </div>
+                </li>
+                <li className='flex items-start'>
+                  <span className='text-blue-600 mr-3 mt-1 font-bold'>•</span>
+                  <div>
+                    <strong>Low body temperature</strong>
+                  </div>
+                </li>
+                <li className='flex items-start'>
+                  <span className='text-blue-600 mr-3 mt-1 font-bold'>•</span>
+                  <div>
+                    <strong>Hair loss</strong>
+                  </div>
+                </li>
+                <li className='flex items-start'>
+                  <span className='text-blue-600 mr-3 mt-1 font-bold'>•</span>
+                  <div>
+                    <strong>Itchy skin</strong>
+                  </div>
+                </li>
+                <li className='flex items-start'>
+                  <span className='text-blue-600 mr-3 mt-1 font-bold'>•</span>
+                  <div>
+                    <strong>Balance problems</strong>
+                  </div>
+                </li>
+                <li className='flex items-start'>
+                  <span className='text-blue-600 mr-3 mt-1 font-bold'>•</span>
+                  <div>
+                    <strong>Swelling of extremities (edema)</strong>
+                  </div>
+                </li>
+              </ul>
+              <div className='mt-8 p-6 bg-white rounded-xl border border-blue-200/60'>
+                <p className='text-gray-700 leading-relaxed'>
+                  <strong>Special Note:</strong> There is one symptom
+                  experienced by many that transcends several of the symptoms
+                  listed above. It is a sense of an electrified, vibrating,
+                  twitching feeling typically just under the skin that is
+                  sometimes localized and at other times a more overall feeling.
+                  Sometimes it feels like something is crawling around under the
+                  skin. This is a particularly alarming feeling when first
+                  experienced as it is unlike anything that the person has ever
+                  experienced and it is very difficult to explain to doctors.
+                </p>
+              </div>
+            </div>
+          </section>
+
+          {/* Progression of Symptoms */}
+          <section className='mb-20'>
+            <h2 className='text-4xl md:text-5xl font-semibold text-gray-900 mb-12 text-center tracking-tight'>
+              Progression of Symptoms
+            </h2>
+            <div className='prose prose-lg max-w-none text-gray-700 mb-8 text-center'>
+              <p>
+                Our research showed that there is very little difference between
+                early symptoms and ongoing, chronic symptoms. But the experience
+                of dealing with these symptoms and the impact it has on
+                patients&apos; lives are often different.
+              </p>
+            </div>
+            <div className='grid md:grid-cols-2 gap-8'>
+              {/* Early Experience */}
+              <div className='bg-green-50/80 rounded-2xl p-8 border border-green-200/60 shadow-[0_1px_3px_rgba(0,0,0,0.06)]'>
+                <h3 className='text-2xl md:text-3xl font-semibold text-gray-900 mb-6'>
+                  Early Experience
+                </h3>
+                <div className='space-y-4 text-gray-700'>
+                  <p>
+                    Most people with Gadolinium Toxicity from contrast MRIs have
+                    symptoms within the first month after their contrast
+                    administration. For many, their symptoms start within a few
+                    days, and for some, within hours of being injected with the
+                    contrast agent. Usually the symptoms are intense, but for
+                    some the symptoms are more subtle. The experience can be
+                    frightening because the feelings are new and different;
+                    often, nothing is visible on the outside of the body.
+                    One&apos;s mental or emotional state can be affected.
+                  </p>
+                  <p>
+                    Generally, the intensity of the symptoms will subside over
+                    time, but the reduction is not necessarily uniform, with ups
+                    and downs. The frightened feeling also dissipates with time,
+                    and the symptoms may feel less intense as the mind and body
+                    get used to dealing with them. Reading some of the
+                    Viewpoints from people who have gone through this might be
+                    helpful and joining the{' '}
+                    <Link
+                      href='/resources'
+                      className='text-blue-600 hover:text-blue-800 underline'>
+                      MRI Gadolinium Support Group
+                    </Link>{' '}
+                    can provide interactive support.
+                  </p>
+                </div>
+              </div>
+
+              {/* Longer Term Chronic Experience */}
+              <div className='bg-purple-50/80 rounded-2xl p-8 border border-purple-200/60 shadow-[0_1px_3px_rgba(0,0,0,0.06)]'>
+                <h3 className='text-2xl md:text-3xl font-semibold text-gray-900 mb-6'>
+                  Longer Term Chronic Experience
+                </h3>
+                <div className='space-y-4 text-gray-700'>
+                  <p>
+                    With time, symptoms may go away or significantly subside,
+                    but patients reported on in our{' '}
+                    <strong>
+                      Survey of the Chronic Effects of Retained Gadolinium from
+                      Contrast MRIs
+                    </strong>
+                    , have been dealing with their chronic symptoms for up to 5
+                    years with no end in sight. With little medical attention,
+                    there are no known treatments to &quot;cure&quot; Gadolinium
+                    Toxicity (read more in{' '}
+                    <Link
+                      href='/what-helps'
+                      className='text-blue-600 hover:text-blue-800 underline'>
+                      Treatments
+                    </Link>
+                    ). Symptom relief and coping methods will most often bring
+                    the patient into a state of being able to tolerate or simply
+                    accept their symptoms.
+                  </p>
+                  <p>
+                    As anyone dealing with chronic conditions, patients
+                    experience ups and downs, and often try a variety of
+                    approaches to lessen the impact of their symptoms. For those
+                    whose symptoms do not go away, the intensity of the symptoms
+                    may increase over time. This would seem to indicate that the
+                    Gadolinium Toxicity is continuing to negatively impact their
+                    body.
+                  </p>
+                  <p>
+                    It is much harder to describe the chronic experience because
+                    each of our bodies is different and our ability to cope is
+                    different. Since nothing has been published about patients
+                    with normal kidney function who developed NSF, we do not
+                    know if anyone with normal kidney function has died from
+                    their exposure to Gadolinium-Based Contrast Agents. We are
+                    also not aware of anyone who has &quot;cured&quot; their
+                    Gadolinium Toxicity, although some on the MRI Gadolinium
+                    Support Group have reported improvement of some symptoms
+                    after trying various treatments. Some have been diagnosed
+                    with Small Fiber Sensory Neuropathy, thyroid abnormalities,
+                    adrenal fatigue, mast cell problems and other conditions.
+                    Often these diagnoses indicate some sort of atypical
+                    presentation of the associated symptoms. Since no related
+                    medical research has been published, we have no way of
+                    knowing whether there is a connection between the Gadolinium
+                    Toxicity and these conditions.
+                  </p>
+                  <p className='font-medium'>
+                    Our best advice is to hang in there and look for those
+                    actions that will help you deal with your symptoms and make
+                    sure your doctors know what you are experiencing. We would
+                    be happy to have you join the{' '}
+                    <Link
+                      href='/resources'
+                      className='text-blue-600 hover:text-blue-800 underline'>
+                      MRI Gadolinium Support Group
+                    </Link>{' '}
+                    to pass on your experience and learn from others.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+
           {/* Abstract Section */}
           <section className='mb-20'>
             <div className='bg-blue-50/80 rounded-2xl p-8 md:p-12 border border-blue-200/60 shadow-[0_1px_3px_rgba(0,0,0,0.06)]'>
               <h2 className='text-3xl md:text-4xl font-semibold text-gray-900 mb-6'>
-                Abstract
+                Research Abstract
               </h2>
               <div className='prose prose-lg max-w-none text-gray-700 space-y-4'>
                 <p>
@@ -477,6 +775,36 @@ const SymptomsPage = () => {
             </div>
           </section>
 
+          {/* BADGaD & Overlapping Conditions */}
+          <section className='mb-20'>
+            <div className='bg-indigo-50/80 rounded-2xl p-8 md:p-12 border border-indigo-200/60 shadow-[0_1px_3px_rgba(0,0,0,0.06)]'>
+              <h2 className='text-3xl md:text-4xl font-semibold text-gray-900 mb-6'>
+                BADGaD &amp; Overlapping Conditions
+              </h2>
+              <div className='prose prose-lg max-w-none text-gray-700 space-y-4'>
+                <p>
+                  Many patients with{' '}
+                  <strong>BADGaD (bad adverse effects of gadolinium)</strong>{' '}
+                  can have <strong>unknown multiple afflictions</strong> going
+                  on, either before or after their gadolinium poisoning. These
+                  overlapping conditions can include infections, toxic
+                  exposures, and metabolic deficiencies that may mimic, mask, or
+                  amplify gadolinium-related symptoms.
+                </p>
+                <p>
+                  These additional contributors need to be{' '}
+                  <strong>recognized and carefully investigated</strong> rather
+                  than dismissed or treated as a single, simple diagnosis. When
+                  symptoms are complex and multi-system, it is reasonable to
+                  screen for other factors such as chronic infections, mold and
+                  biotoxins, EMF sensitivity, medication toxicities, other heavy
+                  metals, and nutritional deficiencies that can interact with
+                  gadolinium-related illness.
+                </p>
+              </div>
+            </div>
+          </section>
+
           {/* Citation */}
           <section className='mb-20'>
             <div className='bg-gray-50/80 rounded-2xl p-8 border border-gray-200/60 shadow-[0_1px_3px_rgba(0,0,0,0.06)]'>
@@ -528,10 +856,10 @@ const SymptomsPage = () => {
                     life-changing event through personal experiences shared by
                     patients from around the world. The heartfelt stories in
                     these pages represent real examples of adverse reactions and
-                    events following one or more injections of GBCA (gadolinium-based
-                    contrast agent), providing insight into the signs,
-                    side-effects, symptoms, and associations that patients
-                    report.
+                    events following one or more injections of GBCA
+                    (gadolinium-based contrast agent), providing insight into
+                    the signs, side-effects, symptoms, and associations that
+                    patients report.
                   </p>
                   <Link
                     href='https://amzn.to/4aL7oKz'

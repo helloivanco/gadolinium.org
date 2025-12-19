@@ -5,9 +5,10 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Detox Methods - IR Sauna, Niacin Protocol & Chelation Therapy',
+  title:
+    'Detox Methods - IR Sauna, Niacin Protocol, Chelation Therapy & Emerging Treatments',
   description:
-    'Learn about the two main detox methods for gadolinium toxicity: IR sauna and niacin protocol by Dan Root, and chelation therapy using Ca-DTPA and Zn-DTPA. Find qualified clinics for chelation treatment.',
+    'Learn about the main detox methods for gadolinium toxicity: IR sauna and niacin protocol by Dan Root, chelation therapy using Ca-DTPA and Zn-DTPA, and emerging clinical-stage approaches like HOPO-101 for toxic heavy metals. Find qualified clinics for chelation treatment.',
   keywords: [
     'gadolinium detox',
     'gadolinium chelation',
@@ -24,11 +25,15 @@ export const metadata: Metadata = {
     'gadolinium chelation protocol',
     'DTPA chelation therapy',
     'gadolinium elimination',
+    'HOPO-101',
+    'HOPO Therapeutics',
+    'heavy metal chelation drug',
   ],
   openGraph: {
-    title: 'Detox Methods - IR Sauna, Niacin Protocol & Chelation Therapy',
+    title:
+      'Detox Methods - IR Sauna, Niacin Protocol, Chelation Therapy & Emerging Treatments',
     description:
-      'Learn about the two main detox methods for gadolinium toxicity: IR sauna and niacin protocol by Dan Root, and chelation therapy using Ca-DTPA and Zn-DTPA.',
+      'Learn about the main detox methods for gadolinium toxicity: IR sauna and niacin protocol by Dan Root, chelation therapy using Ca-DTPA and Zn-DTPA, and emerging clinical-stage approaches like HOPO-101 for toxic heavy metals.',
     url: 'https://gadolinium.org/detox',
     type: 'article',
     images: [
@@ -42,9 +47,10 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Detox Methods - IR Sauna, Niacin Protocol & Chelation Therapy',
+    title:
+      'Detox Methods - IR Sauna, Niacin Protocol, Chelation Therapy & Emerging Treatments',
     description:
-      'Learn about the two main detox methods for gadolinium toxicity: IR sauna and niacin protocol by Dan Root, and chelation therapy using Ca-DTPA and Zn-DTPA.',
+      'Learn about the main detox methods for gadolinium toxicity: IR sauna and niacin protocol by Dan Root, chelation therapy using Ca-DTPA and Zn-DTPA, and emerging clinical-stage approaches like HOPO-101 for toxic heavy metals.',
     images: ['/detox.webp'],
   },
   alternates: {
@@ -110,9 +116,11 @@ const DetoxPage = () => {
                 Overview
               </h2>
               <p className='text-lg text-gray-700 leading-relaxed mb-4'>
-                There are two primary methods for detoxifying gadolinium from
-                the body. Each approach works differently and may be suitable
-                for different individuals depending on their specific
+                There are two established primary methods for detoxifying
+                gadolinium from the body, with an additional emerging
+                clinical-stage pharmaceutical approach being developed for toxic
+                heavy metals. Each approach works differently and may be
+                suitable for different individuals depending on their specific
                 circumstances, health status, and access to medical care.
               </p>
               <p className='text-lg text-gray-700 leading-relaxed'>
@@ -471,79 +479,6 @@ const DetoxPage = () => {
             </div>
           </section>
 
-          {/* Comparison Section */}
-          <section className='mb-20'>
-            <h2 className='text-3xl md:text-4xl font-semibold text-gray-900 mb-8 text-center tracking-tight'>
-              Choosing the Right Approach
-            </h2>
-            <div className='grid md:grid-cols-2 gap-6'>
-              <div className='bg-white border border-gray-200/80 rounded-2xl p-8 shadow-[0_1px_3px_rgba(0,0,0,0.08)]'>
-                <h3 className='text-2xl font-semibold text-gray-900 mb-4'>
-                  IR Sauna / Niacin Protocol
-                </h3>
-                <ul className='space-y-3 text-gray-700'>
-                  <li className='flex items-start'>
-                    <span className='text-green-600 mr-3 mt-1'>✓</span>
-                    <span>Can be done at home with proper equipment</span>
-                  </li>
-                  <li className='flex items-start'>
-                    <span className='text-green-600 mr-3 mt-1'>✓</span>
-                    <span>Natural, non-invasive approach</span>
-                  </li>
-                  <li className='flex items-start'>
-                    <span className='text-green-600 mr-3 mt-1'>✓</span>
-                    <span>Generally well-tolerated</span>
-                  </li>
-                  <li className='flex items-start'>
-                    <span className='text-amber-600 mr-3 mt-1'>⚠</span>
-                    <span>Requires access to infrared sauna</span>
-                  </li>
-                  <li className='flex items-start'>
-                    <span className='text-amber-600 mr-3 mt-1'>⚠</span>
-                    <span>May take longer to see results</span>
-                  </li>
-                  <li className='flex items-start'>
-                    <span className='text-green-600 mr-3 mt-1'>✓</span>
-                    <span>More cost-effective than chelation therapy</span>
-                  </li>
-                </ul>
-              </div>
-              <div className='bg-white border border-gray-200/80 rounded-2xl p-8 shadow-[0_1px_3px_rgba(0,0,0,0.08)]'>
-                <h3 className='text-2xl font-semibold text-gray-900 mb-4'>
-                  Chelation Therapy
-                </h3>
-                <ul className='space-y-3 text-gray-700'>
-                  <li className='flex items-start'>
-                    <span className='text-green-600 mr-3 mt-1'>✓</span>
-                    <span>Medically supervised treatment</span>
-                  </li>
-                  <li className='flex items-start'>
-                    <span className='text-green-600 mr-3 mt-1'>✓</span>
-                    <span>Direct binding and removal of gadolinium</span>
-                  </li>
-                  <li className='flex items-start'>
-                    <span className='text-green-600 mr-3 mt-1'>✓</span>
-                    <span>Can be more targeted and potentially faster</span>
-                  </li>
-                  <li className='flex items-start'>
-                    <span className='text-amber-600 mr-3 mt-1'>⚠</span>
-                    <span>Requires clinic visits and medical supervision</span>
-                  </li>
-                  <li className='flex items-start'>
-                    <span className='text-amber-600 mr-3 mt-1'>⚠</span>
-                    <span>May have side effects and requires monitoring</span>
-                  </li>
-                  <li className='flex items-start'>
-                    <span className='text-amber-600 mr-3 mt-1'>⚠</span>
-                    <span>
-                      Expensive - typically not covered by insurance, requires
-                      multiple sessions (at least 5)
-                    </span>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </section>
 
           {/* Time and Natural Detox Pathways Section */}
           <section className='mb-20'>
@@ -668,6 +603,261 @@ const DetoxPage = () => {
                         viewBox='0 0 24 24'
                         stroke='currentColor'>
                         <path d='M9 5l7 7-7 7' />
+                      </svg>
+                    </Link>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          {/* Comparison Section */}
+          <section className='mb-20'>
+            <h2 className='text-3xl md:text-4xl font-semibold text-gray-900 mb-8 text-center tracking-tight'>
+              Choosing the Right Approach
+            </h2>
+            <p className='text-center text-gray-700 mb-8 max-w-3xl mx-auto'>
+              The comparison below focuses on three main approaches that are
+              currently available to patients: the IR sauna/niacin protocol,
+              medically supervised chelation therapy, and time with natural
+              detox pathways. Emerging clinical-stage options like HOPO-101
+              remain investigational and are not standard treatments at this
+              time.
+            </p>
+            <div className='grid md:grid-cols-3 gap-6'>
+              <div className='bg-white border border-gray-200/80 rounded-2xl p-8 shadow-[0_1px_3px_rgba(0,0,0,0.08)]'>
+                <h3 className='text-2xl font-semibold text-gray-900 mb-4'>
+                  IR Sauna / Niacin Protocol
+                </h3>
+                <ul className='space-y-3 text-gray-700'>
+                  <li className='flex items-start'>
+                    <span className='text-green-600 mr-3 mt-1'>✓</span>
+                    <span>Can be done at home with proper equipment</span>
+                  </li>
+                  <li className='flex items-start'>
+                    <span className='text-green-600 mr-3 mt-1'>✓</span>
+                    <span>Natural, non-invasive approach</span>
+                  </li>
+                  <li className='flex items-start'>
+                    <span className='text-green-600 mr-3 mt-1'>✓</span>
+                    <span>Generally well-tolerated</span>
+                  </li>
+                  <li className='flex items-start'>
+                    <span className='text-amber-600 mr-3 mt-1'>⚠</span>
+                    <span>Requires access to infrared sauna</span>
+                  </li>
+                  <li className='flex items-start'>
+                    <span className='text-amber-600 mr-3 mt-1'>⚠</span>
+                    <span>May take longer to see results</span>
+                  </li>
+                  <li className='flex items-start'>
+                    <span className='text-green-600 mr-3 mt-1'>✓</span>
+                    <span>More cost-effective than chelation therapy</span>
+                  </li>
+                </ul>
+              </div>
+              <div className='bg-white border border-gray-200/80 rounded-2xl p-8 shadow-[0_1px_3px_rgba(0,0,0,0.08)]'>
+                <h3 className='text-2xl font-semibold text-gray-900 mb-4'>
+                  Chelation Therapy
+                </h3>
+                <ul className='space-y-3 text-gray-700'>
+                  <li className='flex items-start'>
+                    <span className='text-green-600 mr-3 mt-1'>✓</span>
+                    <span>Medically supervised treatment</span>
+                  </li>
+                  <li className='flex items-start'>
+                    <span className='text-green-600 mr-3 mt-1'>✓</span>
+                    <span>Direct binding and removal of gadolinium</span>
+                  </li>
+                  <li className='flex items-start'>
+                    <span className='text-green-600 mr-3 mt-1'>✓</span>
+                    <span>Can be more targeted and potentially faster</span>
+                  </li>
+                  <li className='flex items-start'>
+                    <span className='text-amber-600 mr-3 mt-1'>⚠</span>
+                    <span>Requires clinic visits and medical supervision</span>
+                  </li>
+                  <li className='flex items-start'>
+                    <span className='text-amber-600 mr-3 mt-1'>⚠</span>
+                    <span>May have side effects and requires monitoring</span>
+                  </li>
+                  <li className='flex items-start'>
+                    <span className='text-amber-600 mr-3 mt-1'>⚠</span>
+                    <span>
+                      Expensive - typically not covered by insurance, requires
+                      multiple sessions (at least 5)
+                    </span>
+                  </li>
+                </ul>
+              </div>
+              <div className='bg-white border border-gray-200/80 rounded-2xl p-8 shadow-[0_1px_3px_rgba(0,0,0,0.08)]'>
+                <h3 className='text-2xl font-semibold text-gray-900 mb-4'>
+                  Time &amp; Natural Detox Pathways
+                </h3>
+                <ul className='space-y-3 text-gray-700'>
+                  <li className='flex items-start'>
+                    <span className='text-green-600 mr-3 mt-1'>✓</span>
+                    <span>
+                      Supports the body&apos;s own detoxification systems over
+                      time
+                    </span>
+                  </li>
+                  <li className='flex items-start'>
+                    <span className='text-green-600 mr-3 mt-1'>✓</span>
+                    <span>
+                      Can include supplements like glutathione, ALA, NAC, and
+                      binders (e.g., charcoal, zeolite, bentonite clay, MCP)
+                      under medical guidance
+                    </span>
+                  </li>
+                  <li className='flex items-start'>
+                    <span className='text-green-600 mr-3 mt-1'>✓</span>
+                    <span>
+                      Often more accessible and can be combined with lifestyle
+                      changes (sleep, hydration, nutrition)
+                    </span>
+                  </li>
+                  <li className='flex items-start'>
+                    <span className='text-amber-600 mr-3 mt-1'>⚠</span>
+                    <span>Works gradually and may take longer to see changes</span>
+                  </li>
+                  <li className='flex items-start'>
+                    <span className='text-amber-600 mr-3 mt-1'>⚠</span>
+                    <span>
+                      Supplement combinations can be complex and should be
+                      reviewed with a knowledgeable clinician
+                    </span>
+                  </li>
+                  <li className='flex items-start'>
+                    <span className='text-amber-600 mr-3 mt-1'>⚠</span>
+                    <span>
+                      Evidence is more limited and individualized compared with
+                      formal medical protocols
+                    </span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </section>
+
+          {/* Emerging Clinical-Stage Treatment Section */}
+          <section className='mb-20'>
+            <div className='bg-white border border-gray-200/80 rounded-2xl p-8 md:p-12 shadow-[0_1px_3px_rgba(0,0,0,0.08)]'>
+              <div className='flex flex-col md:flex-row gap-8 md:gap-12 items-start'>
+                {/* HOPO-101 Image */}
+                <div className='w-full md:w-1/3 flex-shrink-0'>
+                  <div className='relative w-full aspect-[3/4] rounded-lg overflow-hidden border border-gray-300 shadow-md'>
+                    <Image
+                      src='/hopo.png'
+                      alt='HOPO Therapeutics HOPO-101 clinical-stage chelation drug candidate'
+                      fill
+                      className='object-cover'
+                      sizes='(max-width: 768px) 100vw, 33vw'
+                    />
+                  </div>
+                </div>
+
+                {/* Content */}
+                <div className='flex-1'>
+                  <h2 className='text-3xl md:text-4xl font-semibold text-gray-900 mb-6'>
+                    Emerging Clinical-Stage Treatment (HOPO-101)
+                  </h2>
+                  <p className='text-lg text-gray-700 leading-relaxed mb-6'>
+                    HOPO Therapeutics is a clinical-stage pharmaceutical company
+                    developing novel therapeutics designed to prevent and treat
+                    the toxic effects of heavy metal exposure on human health.
+                    Their investigational, orally administered chelating agents
+                    are being developed with the goal of simplifying treatment
+                    for patients exposed to radioactive materials like uranium
+                    and plutonium, as well as environmental toxins such as lead,
+                    mercury, and other toxic heavy metals.
+                  </p>
+
+                  <div className='bg-gray-50/80 rounded-2xl p-6 mb-6 border border-gray-200/60 shadow-[0_1px_3px_rgba(0,0,0,0.06)]'>
+                    <h3 className='text-xl font-semibold text-gray-900 mb-4'>
+                      About HOPO-101
+                    </h3>
+                    <p className='text-gray-700 leading-relaxed mb-4'>
+                      HOPO-101 is a clinical-stage drug candidate being studied
+                      for its ability to selectively bind and promote the rapid
+                      clearance of a range of heavy metals from the body. It is
+                      uniquely designed to effectively remove harmful metals
+                      while largely sparing the essential metal ions that are
+                      crucial for maintaining normal, healthy function of the
+                      body.
+                    </p>
+                    <p className='text-sm text-gray-700 leading-relaxed italic'>
+                      HOPO-101 and related products described by HOPO
+                      Therapeutics are strictly investigational and have not
+                      been definitively shown to be safe or effective in
+                      clinical trials. None of these statements have been
+                      evaluated by the FDA, and HOPO-101 is not FDA-approved for
+                      any use or indication. Existing statements are based on
+                      animal studies, and additional research is necessary
+                      before any definitive conclusions can be made. (See
+                      details at HOPO Therapeutics:
+                      https://www.hopotx.com/programs#toxic-heavy-metals)
+                    </p>
+                  </div>
+
+                  <div className='bg-amber-50/80 rounded-2xl p-6 mb-6 border border-amber-200/60 shadow-[0_1px_3px_rgba(0,0,0,0.06)]'>
+                    <h3 className='text-xl font-semibold text-gray-900 mb-3'>
+                      What This Means for Patients Today
+                    </h3>
+                    <ul className='space-y-2 text-gray-700'>
+                      <li className='flex items-start'>
+                        <span className='text-amber-600 mr-3 mt-1'>•</span>
+                        <span>
+                          HOPO-101 is not an approved or standard-of-care
+                          treatment for gadolinium toxicity at this time.
+                        </span>
+                      </li>
+                      <li className='flex items-start'>
+                        <span className='text-amber-600 mr-3 mt-1'>•</span>
+                        <span>
+                          It represents an emerging, investigational approach in
+                          the broader field of heavy metal chelation that may
+                          shape future treatment options if proven safe and
+                          effective.
+                        </span>
+                      </li>
+                      <li className='flex items-start'>
+                        <span className='text-amber-600 mr-3 mt-1'>•</span>
+                        <span>
+                          Patients should not seek HOPO-101 outside of properly
+                          conducted clinical trials and should always consult
+                          qualified healthcare professionals when considering
+                          participation in any research study.
+                        </span>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div className='bg-white border-2 border-blue-200 rounded-lg p-6 hover:border-blue-300 transition-colors'>
+                    <h3 className='text-xl font-semibold text-gray-900 mb-3'>
+                      Learn More About HOPO-101
+                    </h3>
+                    <p className='text-gray-700 mb-4 leading-relaxed'>
+                      For detailed and up-to-date information about HOPO-101,
+                      including its development status and scientific
+                      publications, visit the official HOPO Therapeutics
+                      programs page.
+                    </p>
+                    <Link
+                      href='https://www.hopotx.com/programs#toxic-heavy-metals'
+                      target='_blank'
+                      rel='noopener noreferrer'
+                      className='inline-flex items-center gap-2 px-6 py-3 bg-blue-600 text-white font-semibold rounded-xl hover:bg-blue-700 active:bg-blue-800 transition-all duration-200 shadow-[0_2px_8px_rgba(0,122,255,0.3)] hover:shadow-[0_4px_12px_rgba(0,122,255,0.4)] active:scale-[0.98]'>
+                      <span>Visit HOPO Therapeutics</span>
+                      <svg
+                        className='w-5 h-5'
+                        fill='none'
+                        strokeLinecap='round'
+                        strokeLinejoin='round'
+                        strokeWidth='2'
+                        viewBox='0 0 24 24'
+                        stroke='currentColor'>
+                        <path d='M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14' />
                       </svg>
                     </Link>
                   </div>

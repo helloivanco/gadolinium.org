@@ -414,6 +414,129 @@ const ResourcesPage = () => {
             </div>
           </section>
 
+          {/* Related Conditions & Environmental Exposures */}
+          <section className='mb-20'>
+            <h2 className='text-3xl md:text-4xl font-semibold text-gray-900 mb-8 tracking-tight'>
+              Related Conditions &amp; Environmental Exposures
+            </h2>
+            <div className='bg-white border border-gray-200/80 rounded-2xl p-8 md:p-10 shadow-[0_1px_3px_rgba(0,0,0,0.08)] space-y-8'>
+              <div className='prose prose-lg max-w-none text-gray-700'>
+                <p>
+                  People with <strong>BADGaD (bad adverse effects of gadolinium)</strong> can have{' '}
+                  <strong>unknown multiple afflictions</strong> going on, either before or after their
+                  gadolinium poisoning. These need to be <strong>recognized and investigated</strong> because
+                  overlapping infections, toxic exposures, and metabolic issues can change how symptoms look
+                  and how well someone responds to treatment.
+                </p>
+                <p>
+                  In clinical practice, it is often helpful to consider and screen for additional contributors
+                  such as:
+                </p>
+              </div>
+
+              <div className='grid gap-4 md:grid-cols-2'>
+                <div className='bg-gray-50/80 rounded-2xl p-5 border border-gray-200/70'>
+                  <h3 className='text-lg font-semibold text-gray-900 mb-2'>
+                    Infections &amp; Post-viral Syndromes
+                  </h3>
+                  <ul className='list-disc list-inside text-gray-700 space-y-1'>
+                    <li>Chronic Lyme disease and other tick-borne infections</li>
+                    <li>Long COVID and other post-viral syndromes</li>
+                  </ul>
+                </div>
+
+                <div className='bg-gray-50/80 rounded-2xl p-5 border border-gray-200/70'>
+                  <h3 className='text-lg font-semibold text-gray-900 mb-2'>
+                    Environmental &amp; Medication Exposures
+                  </h3>
+                  <ul className='list-disc list-inside text-gray-700 space-y-1'>
+                    <li>Mold exposure and biotoxin-related illness</li>
+                    <li>Fluoroquinolone-associated disability/toxicity</li>
+                    <li>Mercury and other heavy metal toxicities</li>
+                  </ul>
+                </div>
+
+                <div className='bg-gray-50/80 rounded-2xl p-5 border border-gray-200/70'>
+                  <h3 className='text-lg font-semibold text-gray-900 mb-2'>
+                    EMF Sensitivity
+                  </h3>
+                  <ul className='list-disc list-inside text-gray-700 space-y-1'>
+                    <li>EMF sensitivity / electromagnetic hypersensitivity</li>
+                    <li>
+                      Symptom flares around wireless devices, dirty electricity, or other EMF sources that may
+                      interact with toxic and metabolic stressors
+                    </li>
+                  </ul>
+                </div>
+
+                <div className='bg-gray-50/80 rounded-2xl p-5 border border-gray-200/70'>
+                  <h3 className='text-lg font-semibold text-gray-900 mb-2'>
+                    Nutrition &amp; Metabolic Factors
+                  </h3>
+                  <ul className='list-disc list-inside text-gray-700 space-y-1'>
+                    <li>
+                      Modern-day “beriberi” from high-calorie malnutrition and micronutrient depletion
+                    </li>
+                    <li>
+                      Other environmental, toxic, and metabolic stressors that can mimic or amplify
+                      gadolinium-related symptoms
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              {/* EMF Sensitivity Video Resource */}
+              <div className='bg-blue-50/80 rounded-2xl p-6 md:p-7 border border-blue-200/70 flex flex-col sm:flex-row gap-5 items-start'>
+                <div className='relative w-full sm:w-40 h-28 rounded-xl overflow-hidden border border-blue-200 shadow-[0_1px_3px_rgba(0,0,0,0.08)]'>
+                  <Image
+                    src='/emf.jpg'
+                    alt='EMF sensitivity treatment video thumbnail featuring Stephanie McCarter MD'
+                    fill
+                    className='object-cover'
+                    sizes='(max-width: 768px) 100vw, 160px'
+                  />
+                </div>
+                <div className='flex-1'>
+                  <h3 className='text-xl font-semibold text-gray-900 mb-2'>
+                    EMF Sensitivity Treatment Modalities
+                  </h3>
+                  <p className='text-gray-700 mb-4 leading-relaxed'>
+                    For patients who notice clear symptom flares around Wi‑Fi, cell towers, or other
+                    electromagnetic exposures, EMF sensitivity deserves to be taken seriously and approached in
+                    a structured way. In{' '}
+                    <a
+                      href='https://www.youtube.com/watch?v=4e10wCiI6Ak'
+                      target='_blank'
+                      rel='noopener noreferrer'
+                      className='text-blue-700 underline hover:text-blue-900'>
+                      29 EMF Sensitivity Treatment Modalities, Stephanie McCarter MD
+                    </a>
+                    , Dr. McCarter walks through practical strategies to reduce exposures, support detox, and
+                    improve quality of life for EMF-sensitive patients.
+                  </p>
+                  <Link
+                    href='https://www.youtube.com/watch?v=4e10wCiI6Ak'
+                    target='_blank'
+                    rel='noopener noreferrer'
+                    aria-label='Watch 29 EMF Sensitivity Treatment Modalities by Stephanie McCarter MD on YouTube'
+                    className='inline-flex items-center gap-2 px-6 py-3 bg-blue-600 text-white font-semibold rounded-xl hover:bg-blue-700 active:bg-blue-800 transition-all duration-200 shadow-[0_2px_8px_rgba(0,122,255,0.3)] hover:shadow-[0_4px_12px_rgba(0,122,255,0.4)] active:scale-[0.98]'>
+                    <span>Watch EMF Treatment Video</span>
+                    <svg
+                      className='w-5 h-5'
+                      fill='none'
+                      strokeLinecap='round'
+                      strokeLinejoin='round'
+                      strokeWidth='2'
+                      viewBox='0 0 24 24'
+                      stroke='currentColor'>
+                      <path d='M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14' />
+                    </svg>
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </section>
+
           {/* Books Section */}
           <section id='books' className='mb-20'>
             <h2 className='text-3xl md:text-4xl font-semibold text-gray-900 mb-8 tracking-tight'>
