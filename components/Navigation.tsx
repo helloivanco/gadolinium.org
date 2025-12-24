@@ -28,7 +28,7 @@ const Navigation = () => {
             aria-label='Gadolinium.org Home'>
             <div className='w-9 h-9 md:w-10 md:h-10 relative flex-shrink-0 transition-transform duration-300 group-hover:scale-105'>
               <Image
-                src='/logo.svg'
+                src='/logo.png'
                 alt='Gadolinium.org Logo'
                 fill
                 className='object-contain'

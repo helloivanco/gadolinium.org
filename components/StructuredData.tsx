@@ -26,7 +26,7 @@ const StructuredData = ({
         url: baseUrl,
         logo: {
           '@type': 'ImageObject',
-          url: `${baseUrl}/logo.svg`,
+          url: `${baseUrl}/logo.png`,
         },
         sameAs: [],
       },
