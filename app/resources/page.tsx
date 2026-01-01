@@ -7,7 +7,7 @@ import Link from 'next/link';
 export const metadata: Metadata = {
   title: 'Resources - Gadolinium Toxicity Support & Information',
   description:
-    'Comprehensive list of resources for gadolinium toxicity including GadoliniumToxicity.com, Living With Gadolinium, support groups, Dr. Semelka blog, and GADTRAC.org.',
+    'Comprehensive list of resources for gadolinium toxicity including GadoliniumToxicity.com, Living With Gadolinium, support groups, Reddit community, Dr. Semelka blog, and GADTRAC.org.',
   keywords: [
     'gadolinium resources',
     'gadolinium support',
@@ -15,6 +15,8 @@ export const metadata: Metadata = {
     'Living With Gadolinium',
     'Gadolinium64',
     'gadolinium Facebook groups',
+    'gadolinium Reddit',
+    'r/GadoliniumToxicity',
     'Dr. Semelka blog',
     'GADTRAC',
     'gadolinium information',
@@ -374,6 +376,39 @@ const ResourcesPage = () => {
                   medical or legal advice and represents the opinions of the
                   original authors.
                 </p>
+              </div>
+            </div>
+
+            {/* Reddit Community Section */}
+            <div className='bg-white border border-gray-200/80 rounded-2xl p-8 md:p-10 shadow-[0_1px_3px_rgba(0,0,0,0.08)] mt-8'>
+              <h3 className='text-2xl md:text-3xl font-semibold text-gray-900 mb-6 tracking-tight'>
+                Gadolinium Toxicity Reddit Group
+              </h3>
+              <p className='text-gray-700 leading-relaxed mb-6'>
+                Join the Reddit community for gadolinium toxicity support,
+                discussions, and information sharing. Connect with others who are
+                navigating similar experiences and find resources, treatment
+                discussions, and peer support.
+              </p>
+              <div className='space-y-4'>
+                <Link
+                  href='https://www.reddit.com/r/GadoliniumToxicity/'
+                  target='_blank'
+                  rel='noopener noreferrer'
+                  className='inline-flex items-center gap-2 px-6 py-3 bg-blue-600 text-white font-medium rounded-lg hover:bg-blue-700 transition-colors duration-200'
+                  aria-label='Join r/GadoliniumToxicity community on Reddit'>
+                  <span>Join r/GadoliniumToxicity</span>
+                  <svg
+                    className='w-5 h-5'
+                    fill='none'
+                    strokeLinecap='round'
+                    strokeLinejoin='round'
+                    strokeWidth='2'
+                    viewBox='0 0 24 24'
+                    stroke='currentColor'>
+                    <path d='M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14' />
+                  </svg>
+                </Link>
               </div>
             </div>
           </section>
