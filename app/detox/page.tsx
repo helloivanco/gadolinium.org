@@ -1,14 +1,15 @@
 import Footer from '@/components/Footer';
 import StructuredData from '@/components/StructuredData';
+import { ChevronRight, ExternalLink } from 'lucide-react';
 import type { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
   title:
-    'Detox Methods - IR Sauna, Niacin Protocol, Chelation Therapy & Emerging Treatments',
+    'Detox / Removal - IR Sauna, Niacin Protocol, Chelation Therapy & Emerging Treatments',
   description:
-    'Learn about the main detox methods for gadolinium toxicity: IR sauna and niacin protocol by Dan Root, chelation therapy using Ca-DTPA and Zn-DTPA, and emerging clinical-stage approaches like HOPO-101 for toxic heavy metals. Find qualified clinics for chelation treatment.',
+    'Learn about detox and removal methods for gadolinium toxicity: IR sauna and niacin protocol by Dan Root, chelation therapy (a removal method) using Ca-DTPA and Zn-DTPA, and emerging clinical-stage approaches like HOPO-101 for toxic heavy metals. Find qualified clinics for chelation treatment.',
   keywords: [
     'gadolinium detox',
     'gadolinium chelation',
@@ -31,9 +32,9 @@ export const metadata: Metadata = {
   ],
   openGraph: {
     title:
-      'Detox Methods - IR Sauna, Niacin Protocol, Chelation Therapy & Emerging Treatments',
+      'Detox / Removal - IR Sauna, Niacin Protocol, Chelation Therapy & Emerging Treatments',
     description:
-      'Learn about the main detox methods for gadolinium toxicity: IR sauna and niacin protocol by Dan Root, chelation therapy using Ca-DTPA and Zn-DTPA, and emerging clinical-stage approaches like HOPO-101 for toxic heavy metals.',
+      'Learn about detox and removal methods for gadolinium toxicity: IR sauna and niacin protocol by Dan Root, chelation therapy (a removal method) using Ca-DTPA and Zn-DTPA, and emerging clinical-stage approaches like HOPO-101 for toxic heavy metals.',
     url: 'https://gadolinium.org/detox',
     type: 'article',
     images: [
@@ -41,16 +42,16 @@ export const metadata: Metadata = {
         url: '/detox.webp',
         width: 1200,
         height: 630,
-        alt: 'Detox Methods for Gadolinium Toxicity',
+        alt: 'Detox / Removal for Gadolinium Toxicity',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
     title:
-      'Detox Methods - IR Sauna, Niacin Protocol, Chelation Therapy & Emerging Treatments',
+      'Detox / Removal - IR Sauna, Niacin Protocol, Chelation Therapy & Emerging Treatments',
     description:
-      'Learn about the main detox methods for gadolinium toxicity: IR sauna and niacin protocol by Dan Root, chelation therapy using Ca-DTPA and Zn-DTPA, and emerging clinical-stage approaches like HOPO-101 for toxic heavy metals.',
+      'Learn about detox and removal methods for gadolinium toxicity: IR sauna and niacin protocol by Dan Root, chelation therapy (a removal method) using Ca-DTPA and Zn-DTPA, and emerging clinical-stage approaches like HOPO-101 for toxic heavy metals.',
     images: ['/detox.webp'],
   },
   alternates: {
@@ -63,8 +64,8 @@ const DetoxPage = () => {
     <>
       <StructuredData
         pathname='/detox'
-        pageTitle='Detox Methods - IR Sauna, Niacin Protocol & Chelation Therapy'
-        pageDescription='Learn about the two main detox methods for gadolinium toxicity: IR sauna and niacin protocol by Dan Root, and chelation therapy using Ca-DTPA and Zn-DTPA. Find qualified clinics for chelation treatment.'
+        pageTitle='Detox / Removal - IR Sauna, Niacin Protocol & Chelation Therapy'
+        pageDescription='Learn about detox and removal methods for gadolinium toxicity: IR sauna and niacin protocol by Dan Root, and chelation therapy (a removal method) using Ca-DTPA and Zn-DTPA. Find qualified clinics for chelation treatment.'
       />
       <div className='min-h-screen bg-white'>
         {/* Hero Section */}
@@ -73,7 +74,7 @@ const DetoxPage = () => {
             {/* Background Image */}
             <Image
               src='/detox.webp'
-              alt='Detox methods for gadolinium toxicity'
+              alt='Detox and removal methods for gadolinium toxicity'
               fill
               className='object-cover'
               priority
@@ -89,7 +90,7 @@ const DetoxPage = () => {
               <div className='max-w-7xl mx-auto px-6 sm:px-8 w-full'>
                 <div className='text-center max-w-4xl mx-auto space-y-8'>
                   <h1 className='text-5xl md:text-6xl lg:text-7xl font-semibold text-white tracking-tight leading-[1.1] drop-shadow-[0_2px_8px_rgba(0,0,0,0.3)]'>
-                    <span className='block'>Detox Methods</span>
+                    <span className='block'>Detox & Removal</span>
                     <span className='block text-white/95 mt-3 font-light text-4xl md:text-5xl lg:text-6xl'>
                       For Gadolinium Toxicity
                     </span>
@@ -116,12 +117,16 @@ const DetoxPage = () => {
                 Overview
               </h2>
               <p className='text-lg text-gray-700 leading-relaxed mb-4'>
-                There are two established primary methods for detoxifying
-                gadolinium from the body, with an additional emerging
-                clinical-stage pharmaceutical approach being developed for toxic
-                heavy metals. Each approach works differently and may be
-                suitable for different individuals depending on their specific
-                circumstances, health status, and access to medical care.
+                There are established methods for addressing gadolinium in the
+                body, including both detoxification approaches and removal
+                methods. Chelation therapy is a medical removal method that uses
+                chelating agents to bind and remove gadolinium, while the IR
+                sauna/niacin protocol is a detoxification approach. An
+                additional emerging clinical-stage pharmaceutical approach is
+                being developed for toxic heavy metals. Each approach works
+                differently and may be suitable for different individuals
+                depending on their specific circumstances, health status, and
+                access to medical care.
               </p>
               <p className='text-lg text-gray-700 leading-relaxed'>
                 It&apos;s important to consult with qualified healthcare
@@ -225,16 +230,10 @@ const DetoxPage = () => {
                           rel='noopener noreferrer'
                           className='inline-flex items-center gap-2 px-6 py-3 bg-blue-600 text-white font-semibold rounded-xl hover:bg-blue-700 active:bg-blue-800 transition-all duration-200 shadow-[0_2px_8px_rgba(0,122,255,0.3)] hover:shadow-[0_4px_12px_rgba(0,122,255,0.4)] active:scale-[0.98]'>
                           <span>View Dan Root&apos;s Book</span>
-                          <svg
+                          <ExternalLink
                             className='w-5 h-5'
-                            fill='none'
-                            strokeLinecap='round'
-                            strokeLinejoin='round'
-                            strokeWidth='2'
-                            viewBox='0 0 24 24'
-                            stroke='currentColor'>
-                            <path d='M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14' />
-                          </svg>
+                            aria-hidden='true'
+                          />
                         </Link>
                       </div>
                     </div>
@@ -256,16 +255,7 @@ const DetoxPage = () => {
                       rel='noopener noreferrer'
                       className='inline-flex items-center gap-2 px-6 py-3 bg-blue-600 text-white font-semibold rounded-xl hover:bg-blue-700 active:bg-blue-800 transition-all duration-200 shadow-[0_2px_8px_rgba(0,122,255,0.3)] hover:shadow-[0_4px_12px_rgba(0,122,255,0.4)] active:scale-[0.98]'>
                       <span>Join Detox.iNation Group</span>
-                      <svg
-                        className='w-5 h-5'
-                        fill='none'
-                        strokeLinecap='round'
-                        strokeLinejoin='round'
-                        strokeWidth='2'
-                        viewBox='0 0 24 24'
-                        stroke='currentColor'>
-                        <path d='M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14' />
-                      </svg>
+                      <ExternalLink className='w-5 h-5' aria-hidden='true' />
                     </Link>
                   </div>
                 </div>
@@ -293,14 +283,14 @@ const DetoxPage = () => {
                 {/* Content */}
                 <div className='flex-1'>
                   <h2 className='text-3xl md:text-4xl font-semibold text-gray-900 mb-6'>
-                    Chelation Therapy
+                    Chelation Therapy (Removal Method)
                   </h2>
                   <p className='text-lg text-gray-700 leading-relaxed mb-6'>
-                    Chelation therapy is a medical treatment that uses specific
-                    chelating agents to bind and remove heavy metals, including
-                    gadolinium, from the body. The protocol involves a two-day
-                    cycle using different DTPA (diethylenetriamine pentaacetate)
-                    compounds.
+                    Chelation therapy is a medical removal method that uses
+                    specific chelating agents to bind and remove heavy metals,
+                    including gadolinium, from the body. The protocol involves a
+                    two-day cycle using different DTPA (diethylenetriamine
+                    pentaacetate) compounds.
                   </p>
 
                   <div className='bg-gray-50/80 rounded-2xl p-6 mb-6 border border-gray-200/60 shadow-[0_1px_3px_rgba(0,0,0,0.06)]'>
@@ -434,16 +424,7 @@ const DetoxPage = () => {
                       rel='noopener noreferrer'
                       className='inline-flex items-center gap-2 px-6 py-3 bg-blue-600 text-white font-semibold rounded-xl hover:bg-blue-700 active:bg-blue-800 transition-all duration-200 shadow-[0_2px_8px_rgba(0,122,255,0.3)] hover:shadow-[0_4px_12px_rgba(0,122,255,0.4)] active:scale-[0.98]'>
                       <span>Read Dr. Semelka&apos;s DTPA Chelation Blog</span>
-                      <svg
-                        className='w-5 h-5'
-                        fill='none'
-                        strokeLinecap='round'
-                        strokeLinejoin='round'
-                        strokeWidth='2'
-                        viewBox='0 0 24 24'
-                        stroke='currentColor'>
-                        <path d='M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14' />
-                      </svg>
+                      <ExternalLink className='w-5 h-5' aria-hidden='true' />
                     </Link>
                   </div>
 
@@ -462,23 +443,13 @@ const DetoxPage = () => {
                       href='/clinics'
                       className='inline-flex items-center gap-2 px-6 py-3 bg-blue-600 text-white font-semibold rounded-xl hover:bg-blue-700 active:bg-blue-800 transition-all duration-200 shadow-[0_2px_8px_rgba(0,122,255,0.3)] hover:shadow-[0_4px_12px_rgba(0,122,255,0.4)] active:scale-[0.98]'>
                       <span>View Clinics</span>
-                      <svg
-                        className='w-5 h-5'
-                        fill='none'
-                        strokeLinecap='round'
-                        strokeLinejoin='round'
-                        strokeWidth='2'
-                        viewBox='0 0 24 24'
-                        stroke='currentColor'>
-                        <path d='M9 5l7 7-7 7' />
-                      </svg>
+                      <ChevronRight className='w-5 h-5' aria-hidden='true' />
                     </Link>
                   </div>
                 </div>
               </div>
             </div>
           </section>
-
 
           {/* Time and Natural Detox Pathways Section */}
           <section className='mb-20'>
@@ -594,16 +565,7 @@ const DetoxPage = () => {
                       href='/what-helps'
                       className='inline-flex items-center gap-2 px-6 py-3 bg-blue-600 text-white font-semibold rounded-xl hover:bg-blue-700 active:bg-blue-800 transition-all duration-200 shadow-[0_2px_8px_rgba(0,122,255,0.3)] hover:shadow-[0_4px_12px_rgba(0,122,255,0.4)] active:scale-[0.98]'>
                       <span>View What Helps Page</span>
-                      <svg
-                        className='w-5 h-5'
-                        fill='none'
-                        strokeLinecap='round'
-                        strokeLinejoin='round'
-                        strokeWidth='2'
-                        viewBox='0 0 24 24'
-                        stroke='currentColor'>
-                        <path d='M9 5l7 7-7 7' />
-                      </svg>
+                      <ChevronRight className='w-5 h-5' aria-hidden='true' />
                     </Link>
                   </div>
                 </div>
@@ -618,11 +580,11 @@ const DetoxPage = () => {
             </h2>
             <p className='text-center text-gray-700 mb-8 max-w-3xl mx-auto'>
               The comparison below focuses on three main approaches that are
-              currently available to patients: the IR sauna/niacin protocol,
-              medically supervised chelation therapy, and time with natural
-              detox pathways. Emerging clinical-stage options like HOPO-101
-              remain investigational and are not standard treatments at this
-              time.
+              currently available to patients: the IR sauna/niacin protocol (a
+              detoxification approach), medically supervised chelation therapy
+              (a removal method), and time with natural detox pathways. Emerging
+              clinical-stage options like HOPO-101 remain investigational and
+              are not standard treatments at this time.
             </p>
             <div className='grid md:grid-cols-3 gap-6'>
               <div className='bg-white border border-gray-200/80 rounded-2xl p-8 shadow-[0_1px_3px_rgba(0,0,0,0.08)]'>
@@ -658,7 +620,7 @@ const DetoxPage = () => {
               </div>
               <div className='bg-white border border-gray-200/80 rounded-2xl p-8 shadow-[0_1px_3px_rgba(0,0,0,0.08)]'>
                 <h3 className='text-2xl font-semibold text-gray-900 mb-4'>
-                  Chelation Therapy
+                  Chelation Therapy (Removal Method)
                 </h3>
                 <ul className='space-y-3 text-gray-700'>
                   <li className='flex items-start'>
@@ -719,7 +681,9 @@ const DetoxPage = () => {
                   </li>
                   <li className='flex items-start'>
                     <span className='text-amber-600 mr-3 mt-1'>⚠</span>
-                    <span>Works gradually and may take longer to see changes</span>
+                    <span>
+                      Works gradually and may take longer to see changes
+                    </span>
                   </li>
                   <li className='flex items-start'>
                     <span className='text-amber-600 mr-3 mt-1'>⚠</span>
@@ -849,16 +813,7 @@ const DetoxPage = () => {
                       rel='noopener noreferrer'
                       className='inline-flex items-center gap-2 px-6 py-3 bg-blue-600 text-white font-semibold rounded-xl hover:bg-blue-700 active:bg-blue-800 transition-all duration-200 shadow-[0_2px_8px_rgba(0,122,255,0.3)] hover:shadow-[0_4px_12px_rgba(0,122,255,0.4)] active:scale-[0.98]'>
                       <span>Visit HOPO Therapeutics</span>
-                      <svg
-                        className='w-5 h-5'
-                        fill='none'
-                        strokeLinecap='round'
-                        strokeLinejoin='round'
-                        strokeWidth='2'
-                        viewBox='0 0 24 24'
-                        stroke='currentColor'>
-                        <path d='M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14' />
-                      </svg>
+                      <ExternalLink className='w-5 h-5' aria-hidden='true' />
                     </Link>
                   </div>
                 </div>
@@ -874,10 +829,11 @@ const DetoxPage = () => {
               </h2>
               <p className='text-gray-700 leading-relaxed mb-4'>
                 The information provided on this page is for educational
-                purposes only and should not be considered medical advice. Both
-                detox methods should only be undertaken under the guidance of
-                qualified healthcare professionals who are familiar with
-                gadolinium toxicity and detoxification protocols.
+                purposes only and should not be considered medical advice.
+                Detoxification and removal methods should only be undertaken
+                under the guidance of qualified healthcare professionals who are
+                familiar with gadolinium toxicity and detoxification/removal
+                protocols.
               </p>
               <p className='text-gray-700 leading-relaxed'>
                 Individual responses to detoxification methods can vary

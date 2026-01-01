@@ -2,6 +2,7 @@ import { clinics } from '@/data/clinics';
 import Image from 'next/image';
 import Link from 'next/link';
 import ClinicCard from './ClinicCard';
+import { ExternalLink, ChevronRight } from 'lucide-react';
 
 const ChelationSection = () => {
   const featuredClinic = clinics.find((c) => c.category === 'featured');
@@ -31,19 +32,10 @@ const ChelationSection = () => {
             className='text-blue-600 hover:text-blue-700 hover:underline font-medium transition-all duration-200 flex items-center gap-2 group'
             aria-label='Visit GadTTRAC website'>
             gadttrac.org
-            <svg
+            <ExternalLink
               className='w-4 h-4 group-hover:translate-x-0.5 transition-transform'
-              fill='none'
-              stroke='currentColor'
-              viewBox='0 0 24 24'
-              aria-hidden='true'>
-              <path
-                strokeLinecap='round'
-                strokeLinejoin='round'
-                strokeWidth={2}
-                d='M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14'
-              />
-            </svg>
+              aria-hidden='true'
+            />
           </a>
           <span className='text-gray-300 hidden sm:inline'>•</span>
           <a
@@ -53,19 +45,10 @@ const ChelationSection = () => {
             className='text-blue-600 hover:text-blue-700 hover:underline font-medium transition-all duration-200 flex items-center gap-2 group'
             aria-label='View full list of GDD treating practices'>
             Full list of practices
-            <svg
+            <ExternalLink
               className='w-4 h-4 group-hover:translate-x-0.5 transition-transform'
-              fill='none'
-              stroke='currentColor'
-              viewBox='0 0 24 24'
-              aria-hidden='true'>
-              <path
-                strokeLinecap='round'
-                strokeLinejoin='round'
-                strokeWidth={2}
-                d='M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14'
-              />
-            </svg>
+              aria-hidden='true'
+            />
           </a>
         </div>
       </div>
@@ -107,18 +90,10 @@ const ChelationSection = () => {
             href='/clinics'
             className='text-blue-600 hover:text-blue-700 font-medium flex items-center group transition-colors duration-200'>
             View All Clinics
-            <svg
+            <ChevronRight
               className='w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform duration-200'
-              fill='none'
-              stroke='currentColor'
-              viewBox='0 0 24 24'>
-              <path
-                strokeLinecap='round'
-                strokeLinejoin='round'
-                strokeWidth={2}
-                d='M9 5l7 7-7 7'
-              />
-            </svg>
+              aria-hidden='true'
+            />
           </Link>
         </div>
         <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6'>
@@ -131,18 +106,7 @@ const ChelationSection = () => {
             href='/clinics'
             className='inline-flex items-center px-8 py-4 bg-blue-600 text-white font-semibold rounded-xl hover:bg-blue-700 active:bg-blue-800 transition-all duration-200 shadow-[0_2px_8px_rgba(0,122,255,0.3)] hover:shadow-[0_4px_12px_rgba(0,122,255,0.4)] active:scale-[0.98]'>
             View All {clinics.length} Clinics
-            <svg
-              className='w-5 h-5 ml-2'
-              fill='none'
-              stroke='currentColor'
-              viewBox='0 0 24 24'>
-              <path
-                strokeLinecap='round'
-                strokeLinejoin='round'
-                strokeWidth={2}
-                d='M9 5l7 7-7 7'
-              />
-            </svg>
+            <ChevronRight className='w-5 h-5 ml-2' aria-hidden='true' />
           </Link>
         </div>
       </div>

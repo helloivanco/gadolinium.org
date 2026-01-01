@@ -1,5 +1,6 @@
 import Footer from '@/components/Footer';
 import StructuredData from '@/components/StructuredData';
+import { ExternalLink, Play, Youtube } from 'lucide-react';
 import type { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -7,7 +8,7 @@ import Link from 'next/link';
 export const metadata: Metadata = {
   title: 'Resources - Gadolinium Toxicity Support & Information',
   description:
-    'Comprehensive list of resources for gadolinium toxicity including GadoliniumToxicity.com, Living With Gadolinium, support groups, Reddit community, Dr. Semelka blog, and GADTRAC.org.',
+    'Comprehensive list of resources for gadolinium toxicity including GadoliniumToxicity.com, Living With Gadolinium, support groups, Reddit community, Dr. Semelka blog and videos, YouTube channels, and GADTRAC.org.',
   keywords: [
     'gadolinium resources',
     'gadolinium support',
@@ -18,6 +19,9 @@ export const metadata: Metadata = {
     'gadolinium Reddit',
     'r/GadoliniumToxicity',
     'Dr. Semelka blog',
+    'Dr. Semelka YouTube',
+    'gadolinium YouTube videos',
+    'Bonds without Bounds',
     'GADTRAC',
     'gadolinium information',
     'gadolinium support groups',
@@ -122,16 +126,7 @@ const ResourcesPage = () => {
                   rel='noopener noreferrer'
                   className='inline-flex items-center gap-2 px-6 py-3 bg-blue-600 text-white font-semibold rounded-xl hover:bg-blue-700 active:bg-blue-800 transition-all duration-200 shadow-[0_2px_8px_rgba(0,122,255,0.3)] hover:shadow-[0_4px_12px_rgba(0,122,255,0.4)] active:scale-[0.98]'>
                   <span>Visit Living With Gadolinium</span>
-                  <svg
-                    className='w-5 h-5'
-                    fill='none'
-                    strokeLinecap='round'
-                    strokeLinejoin='round'
-                    strokeWidth='2'
-                    viewBox='0 0 24 24'
-                    stroke='currentColor'>
-                    <path d='M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14' />
-                  </svg>
+                  <ExternalLink className='w-5 h-5' aria-hidden='true' />
                 </Link>
               </div>
 
@@ -149,16 +144,7 @@ const ResourcesPage = () => {
                   rel='noopener noreferrer'
                   className='inline-flex items-center gap-2 px-6 py-3 bg-blue-600 text-white font-semibold rounded-xl hover:bg-blue-700 active:bg-blue-800 transition-all duration-200 shadow-[0_2px_8px_rgba(0,122,255,0.3)] hover:shadow-[0_4px_12px_rgba(0,122,255,0.4)] active:scale-[0.98]'>
                   <span>Visit LivingwithGadolinium.com</span>
-                  <svg
-                    className='w-5 h-5'
-                    fill='none'
-                    strokeLinecap='round'
-                    strokeLinejoin='round'
-                    strokeWidth='2'
-                    viewBox='0 0 24 24'
-                    stroke='currentColor'>
-                    <path d='M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14' />
-                  </svg>
+                  <ExternalLink className='w-5 h-5' aria-hidden='true' />
                 </Link>
               </div>
 
@@ -182,16 +168,7 @@ const ResourcesPage = () => {
                   className='inline-flex items-center gap-2 px-6 py-3 bg-blue-600 text-white font-semibold rounded-xl hover:bg-blue-700 active:bg-blue-800 transition-all duration-200 shadow-[0_2px_8px_rgba(0,122,255,0.3)] hover:shadow-[0_4px_12px_rgba(0,122,255,0.4)] active:scale-[0.98]'
                   aria-label='Visit GadoliniumToxicity.com website'>
                   <span>Visit GadoliniumToxicity.com</span>
-                  <svg
-                    className='w-5 h-5'
-                    fill='none'
-                    strokeLinecap='round'
-                    strokeLinejoin='round'
-                    strokeWidth='2'
-                    viewBox='0 0 24 24'
-                    stroke='currentColor'>
-                    <path d='M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14' />
-                  </svg>
+                  <ExternalLink className='w-5 h-5' aria-hidden='true' />
                 </Link>
               </div>
 
@@ -209,16 +186,7 @@ const ResourcesPage = () => {
                   rel='noopener noreferrer'
                   className='inline-flex items-center gap-2 px-6 py-3 bg-blue-600 text-white font-semibold rounded-xl hover:bg-blue-700 active:bg-blue-800 transition-all duration-200 shadow-[0_2px_8px_rgba(0,122,255,0.3)] hover:shadow-[0_4px_12px_rgba(0,122,255,0.4)] active:scale-[0.98]'>
                   <span>Visit Gadolinium64.com</span>
-                  <svg
-                    className='w-5 h-5'
-                    fill='none'
-                    strokeLinecap='round'
-                    strokeLinejoin='round'
-                    strokeWidth='2'
-                    viewBox='0 0 24 24'
-                    stroke='currentColor'>
-                    <path d='M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14' />
-                  </svg>
+                  <ExternalLink className='w-5 h-5' aria-hidden='true' />
                 </Link>
               </div>
 
@@ -237,16 +205,7 @@ const ResourcesPage = () => {
                   rel='noopener noreferrer'
                   className='inline-flex items-center gap-2 px-6 py-3 bg-blue-600 text-white font-semibold rounded-xl hover:bg-blue-700 active:bg-blue-800 transition-all duration-200 shadow-[0_2px_8px_rgba(0,122,255,0.3)] hover:shadow-[0_4px_12px_rgba(0,122,255,0.4)] active:scale-[0.98]'>
                   <span>Visit GADTRAC.org</span>
-                  <svg
-                    className='w-5 h-5'
-                    fill='none'
-                    strokeLinecap='round'
-                    strokeLinejoin='round'
-                    strokeWidth='2'
-                    viewBox='0 0 24 24'
-                    stroke='currentColor'>
-                    <path d='M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14' />
-                  </svg>
+                  <ExternalLink className='w-5 h-5' aria-hidden='true' />
                 </Link>
               </div>
             </div>
@@ -285,16 +244,7 @@ const ResourcesPage = () => {
                     className='inline-flex items-center gap-2 px-6 py-3 bg-blue-600 text-white font-medium rounded-lg hover:bg-blue-700 transition-colors duration-200'
                     aria-label='Join MRI Gadolinium Contrast Safety Side Effects & Toxicity Research Facebook group'>
                     <span>Join Group</span>
-                    <svg
-                      className='w-5 h-5'
-                      fill='none'
-                      strokeLinecap='round'
-                      strokeLinejoin='round'
-                      strokeWidth='2'
-                      viewBox='0 0 24 24'
-                      stroke='currentColor'>
-                      <path d='M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14' />
-                    </svg>
+                    <ExternalLink className='w-5 h-5' aria-hidden='true' />
                   </Link>
                 </div>
 
@@ -313,16 +263,7 @@ const ResourcesPage = () => {
                     className='inline-flex items-center gap-2 px-6 py-3 bg-blue-600 text-white font-medium rounded-lg hover:bg-blue-700 transition-colors duration-200'
                     aria-label='Join MRI Gadolinium Contrast Support Group on Facebook'>
                     <span>Join Group</span>
-                    <svg
-                      className='w-5 h-5'
-                      fill='none'
-                      strokeLinecap='round'
-                      strokeLinejoin='round'
-                      strokeWidth='2'
-                      viewBox='0 0 24 24'
-                      stroke='currentColor'>
-                      <path d='M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14' />
-                    </svg>
+                    <ExternalLink className='w-5 h-5' aria-hidden='true' />
                   </Link>
                 </div>
               </div>
@@ -347,16 +288,7 @@ const ResourcesPage = () => {
                   className='inline-flex items-center gap-2 px-6 py-3 bg-blue-600 text-white font-medium rounded-lg hover:bg-blue-700 transition-colors duration-200'
                   aria-label='Join MRI-Gadolinium-Toxicity support group on Groups.io'>
                   <span>Join the Support Group</span>
-                  <svg
-                    className='w-5 h-5'
-                    fill='none'
-                    strokeLinecap='round'
-                    strokeLinejoin='round'
-                    strokeWidth='2'
-                    viewBox='0 0 24 24'
-                    stroke='currentColor'>
-                    <path d='M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14' />
-                  </svg>
+                  <ExternalLink className='w-5 h-5' aria-hidden='true' />
                 </Link>
                 <p className='text-sm text-gray-600 mt-4'>
                   Email:{' '}
@@ -386,8 +318,8 @@ const ResourcesPage = () => {
               </h3>
               <p className='text-gray-700 leading-relaxed mb-6'>
                 Join the Reddit community for gadolinium toxicity support,
-                discussions, and information sharing. Connect with others who are
-                navigating similar experiences and find resources, treatment
+                discussions, and information sharing. Connect with others who
+                are navigating similar experiences and find resources, treatment
                 discussions, and peer support.
               </p>
               <div className='space-y-4'>
@@ -398,16 +330,7 @@ const ResourcesPage = () => {
                   className='inline-flex items-center gap-2 px-6 py-3 bg-blue-600 text-white font-medium rounded-lg hover:bg-blue-700 transition-colors duration-200'
                   aria-label='Join r/GadoliniumToxicity community on Reddit'>
                   <span>Join r/GadoliniumToxicity</span>
-                  <svg
-                    className='w-5 h-5'
-                    fill='none'
-                    strokeLinecap='round'
-                    strokeLinejoin='round'
-                    strokeWidth='2'
-                    viewBox='0 0 24 24'
-                    stroke='currentColor'>
-                    <path d='M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14' />
-                  </svg>
+                  <ExternalLink className='w-5 h-5' aria-hidden='true' />
                 </Link>
               </div>
             </div>
@@ -435,17 +358,95 @@ const ResourcesPage = () => {
                 rel='noopener noreferrer'
                 className='inline-flex items-center gap-2 px-6 py-3 bg-blue-600 text-white font-medium rounded-lg hover:bg-blue-700 transition-colors duration-200'>
                 <span>Read Dr. Semelka&apos;s Blog</span>
-                <svg
-                  className='w-5 h-5'
-                  fill='none'
-                  strokeLinecap='round'
-                  strokeLinejoin='round'
-                  strokeWidth='2'
-                  viewBox='0 0 24 24'
-                  stroke='currentColor'>
-                  <path d='M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14' />
-                </svg>
+                <ExternalLink className='w-5 h-5' aria-hidden='true' />
               </Link>
+            </div>
+
+            {/* YouTube Videos Section */}
+            <div className='space-y-6 mt-8'>
+              {/* Dr. Semelka YouTube Channel */}
+              <div className='bg-white border border-gray-200/80 rounded-2xl p-8 md:p-10 shadow-[0_1px_3px_rgba(0,0,0,0.08)]'>
+                <div className='flex flex-col sm:flex-row gap-6 items-start'>
+                  <div className='relative w-full sm:w-48 h-32 rounded-xl overflow-hidden border border-gray-200 shadow-[0_1px_3px_rgba(0,0,0,0.08)] flex-shrink-0'>
+                    <Image
+                      src='/semelka_yt.webp'
+                      alt='Richard Semelka Videos on Gadolinium Deposition Disease thumbnail'
+                      fill
+                      className='object-cover'
+                      sizes='(max-width: 768px) 100vw, 192px'
+                    />
+                    <div className='absolute inset-0 flex items-center justify-center bg-black/20'>
+                      <Play
+                        className='w-12 h-12 text-white drop-shadow-lg'
+                        fill='currentColor'
+                        aria-hidden='true'
+                      />
+                    </div>
+                  </div>
+                  <div className='flex-1'>
+                    <h3 className='text-2xl md:text-3xl font-semibold text-gray-900 mb-4 tracking-tight'>
+                      Richard Semelka Videos on Gadolinium Deposition Disease,
+                      GDD
+                    </h3>
+                    <p className='text-gray-700 leading-relaxed mb-4'>
+                      A comprehensive 6-part video series discussing diagnosis,
+                      symptoms, risk factors, onset of GDD, treatment, and
+                      prognosis. Dr. Richard Semelka provides in-depth
+                      information about Gadolinium Deposition Disease.
+                    </p>
+                    <Link
+                      href='https://www.youtube.com/@richardsemelka'
+                      target='_blank'
+                      rel='noopener noreferrer'
+                      aria-label='Watch Richard Semelka videos on Gadolinium Deposition Disease on YouTube'
+                      className='inline-flex items-center gap-2 px-6 py-3 bg-blue-600 text-white font-semibold rounded-xl hover:bg-blue-700 active:bg-blue-800 transition-all duration-200 shadow-[0_2px_8px_rgba(0,122,255,0.3)] hover:shadow-[0_4px_12px_rgba(0,122,255,0.4)] active:scale-[0.98]'>
+                      <Youtube className='w-5 h-5' aria-hidden='true' />
+                      <span>Watch on YouTube</span>
+                    </Link>
+                  </div>
+                </div>
+              </div>
+
+              {/* Bonds without Bounds YouTube Channel */}
+              <div className='bg-white border border-gray-200/80 rounded-2xl p-8 md:p-10 shadow-[0_1px_3px_rgba(0,0,0,0.08)]'>
+                <div className='flex flex-col sm:flex-row gap-6 items-start'>
+                  <div className='relative w-full sm:w-48 h-32 rounded-xl overflow-hidden border border-gray-200 shadow-[0_1px_3px_rgba(0,0,0,0.08)] flex-shrink-0'>
+                    <Image
+                      src='/bwob_yt.avif'
+                      alt='Bonds without Bounds YouTube channel thumbnail'
+                      fill
+                      className='object-cover'
+                      sizes='(max-width: 768px) 100vw, 192px'
+                    />
+                    <div className='absolute inset-0 flex items-center justify-center bg-black/20'>
+                      <Play
+                        className='w-12 h-12 text-white drop-shadow-lg'
+                        fill='currentColor'
+                        aria-hidden='true'
+                      />
+                    </div>
+                  </div>
+                  <div className='flex-1'>
+                    <h3 className='text-2xl md:text-3xl font-semibold text-gray-900 mb-4 tracking-tight'>
+                      Bonds without Bounds
+                    </h3>
+                    <p className='text-gray-700 leading-relaxed mb-4'>
+                      Formerly called Cured to Death, this channel focuses on
+                      the dangerous effects of toxins within the body and
+                      raising money to find safer, better ways to remove them.
+                    </p>
+                    <Link
+                      href='https://www.youtube.com/@bondswithoutbounds'
+                      target='_blank'
+                      rel='noopener noreferrer'
+                      aria-label='Watch Bonds without Bounds videos on YouTube'
+                      className='inline-flex items-center gap-2 px-6 py-3 bg-blue-600 text-white font-semibold rounded-xl hover:bg-blue-700 active:bg-blue-800 transition-all duration-200 shadow-[0_2px_8px_rgba(0,122,255,0.3)] hover:shadow-[0_4px_12px_rgba(0,122,255,0.4)] active:scale-[0.98]'>
+                      <Youtube className='w-5 h-5' aria-hidden='true' />
+                      <span>Watch on YouTube</span>
+                    </Link>
+                  </div>
+                </div>
+              </div>
             </div>
           </section>
 
@@ -457,15 +458,18 @@ const ResourcesPage = () => {
             <div className='bg-white border border-gray-200/80 rounded-2xl p-8 md:p-10 shadow-[0_1px_3px_rgba(0,0,0,0.08)] space-y-8'>
               <div className='prose prose-lg max-w-none text-gray-700'>
                 <p>
-                  People with <strong>BADGaD (bad adverse effects of gadolinium)</strong> can have{' '}
-                  <strong>unknown multiple afflictions</strong> going on, either before or after their
-                  gadolinium poisoning. These need to be <strong>recognized and investigated</strong> because
-                  overlapping infections, toxic exposures, and metabolic issues can change how symptoms look
-                  and how well someone responds to treatment.
+                  People with{' '}
+                  <strong>BADGaD (bad adverse effects of gadolinium)</strong>{' '}
+                  can have <strong>unknown multiple afflictions</strong> going
+                  on, either before or after their gadolinium poisoning. These
+                  need to be <strong>recognized and investigated</strong>{' '}
+                  because overlapping infections, toxic exposures, and metabolic
+                  issues can change how symptoms look and how well someone
+                  responds to treatment.
                 </p>
                 <p>
-                  In clinical practice, it is often helpful to consider and screen for additional contributors
-                  such as:
+                  In clinical practice, it is often helpful to consider and
+                  screen for additional contributors such as:
                 </p>
               </div>
 
@@ -475,7 +479,9 @@ const ResourcesPage = () => {
                     Infections &amp; Post-viral Syndromes
                   </h3>
                   <ul className='list-disc list-inside text-gray-700 space-y-1'>
-                    <li>Chronic Lyme disease and other tick-borne infections</li>
+                    <li>
+                      Chronic Lyme disease and other tick-borne infections
+                    </li>
                     <li>Long COVID and other post-viral syndromes</li>
                   </ul>
                 </div>
@@ -498,8 +504,9 @@ const ResourcesPage = () => {
                   <ul className='list-disc list-inside text-gray-700 space-y-1'>
                     <li>EMF sensitivity / electromagnetic hypersensitivity</li>
                     <li>
-                      Symptom flares around wireless devices, dirty electricity, or other EMF sources that may
-                      interact with toxic and metabolic stressors
+                      Symptom flares around wireless devices, dirty electricity,
+                      or other EMF sources that may interact with toxic and
+                      metabolic stressors
                     </li>
                   </ul>
                 </div>
@@ -510,11 +517,12 @@ const ResourcesPage = () => {
                   </h3>
                   <ul className='list-disc list-inside text-gray-700 space-y-1'>
                     <li>
-                      Modern-day “beriberi” from high-calorie malnutrition and micronutrient depletion
+                      Modern-day “beriberi” from high-calorie malnutrition and
+                      micronutrient depletion
                     </li>
                     <li>
-                      Other environmental, toxic, and metabolic stressors that can mimic or amplify
-                      gadolinium-related symptoms
+                      Other environmental, toxic, and metabolic stressors that
+                      can mimic or amplify gadolinium-related symptoms
                     </li>
                   </ul>
                 </div>
@@ -536,18 +544,21 @@ const ResourcesPage = () => {
                     EMF Sensitivity Treatment Modalities
                   </h3>
                   <p className='text-gray-700 mb-4 leading-relaxed'>
-                    For patients who notice clear symptom flares around Wi‑Fi, cell towers, or other
-                    electromagnetic exposures, EMF sensitivity deserves to be taken seriously and approached in
+                    For patients who notice clear symptom flares around Wi‑Fi,
+                    cell towers, or other electromagnetic exposures, EMF
+                    sensitivity deserves to be taken seriously and approached in
                     a structured way. In{' '}
                     <a
                       href='https://www.youtube.com/watch?v=4e10wCiI6Ak'
                       target='_blank'
                       rel='noopener noreferrer'
                       className='text-blue-700 underline hover:text-blue-900'>
-                      29 EMF Sensitivity Treatment Modalities, Stephanie McCarter MD
+                      29 EMF Sensitivity Treatment Modalities, Stephanie
+                      McCarter MD
                     </a>
-                    , Dr. McCarter walks through practical strategies to reduce exposures, support detox, and
-                    improve quality of life for EMF-sensitive patients.
+                    , Dr. McCarter walks through practical strategies to reduce
+                    exposures, support detox, and improve quality of life for
+                    EMF-sensitive patients.
                   </p>
                   <Link
                     href='https://www.youtube.com/watch?v=4e10wCiI6Ak'
@@ -556,16 +567,7 @@ const ResourcesPage = () => {
                     aria-label='Watch 29 EMF Sensitivity Treatment Modalities by Stephanie McCarter MD on YouTube'
                     className='inline-flex items-center gap-2 px-6 py-3 bg-blue-600 text-white font-semibold rounded-xl hover:bg-blue-700 active:bg-blue-800 transition-all duration-200 shadow-[0_2px_8px_rgba(0,122,255,0.3)] hover:shadow-[0_4px_12px_rgba(0,122,255,0.4)] active:scale-[0.98]'>
                     <span>Watch EMF Treatment Video</span>
-                    <svg
-                      className='w-5 h-5'
-                      fill='none'
-                      strokeLinecap='round'
-                      strokeLinejoin='round'
-                      strokeWidth='2'
-                      viewBox='0 0 24 24'
-                      stroke='currentColor'>
-                      <path d='M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14' />
-                    </svg>
+                    <ExternalLink className='w-5 h-5' aria-hidden='true' />
                   </Link>
                 </div>
               </div>
@@ -619,16 +621,7 @@ const ResourcesPage = () => {
                       rel='noopener noreferrer'
                       className='inline-flex items-center gap-2 px-6 py-3 bg-blue-600 text-white font-semibold rounded-xl hover:bg-blue-700 active:bg-blue-800 transition-all duration-200 shadow-[0_2px_8px_rgba(0,122,255,0.3)] hover:shadow-[0_4px_12px_rgba(0,122,255,0.4)] active:scale-[0.98]'>
                       <span>View Book on Amazon</span>
-                      <svg
-                        className='w-5 h-5'
-                        fill='none'
-                        strokeLinecap='round'
-                        strokeLinejoin='round'
-                        strokeWidth='2'
-                        viewBox='0 0 24 24'
-                        stroke='currentColor'>
-                        <path d='M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14' />
-                      </svg>
+                      <ExternalLink className='w-5 h-5' aria-hidden='true' />
                     </a>
                   </div>
                 </div>
@@ -693,16 +686,7 @@ const ResourcesPage = () => {
                       rel='noopener noreferrer'
                       className='inline-flex items-center gap-2 px-6 py-3 bg-blue-600 text-white font-semibold rounded-xl hover:bg-blue-700 active:bg-blue-800 transition-all duration-200 shadow-[0_2px_8px_rgba(0,122,255,0.3)] hover:shadow-[0_4px_12px_rgba(0,122,255,0.4)] active:scale-[0.98]'>
                       <span>View Book on Amazon</span>
-                      <svg
-                        className='w-5 h-5'
-                        fill='none'
-                        strokeLinecap='round'
-                        strokeLinejoin='round'
-                        strokeWidth='2'
-                        viewBox='0 0 24 24'
-                        stroke='currentColor'>
-                        <path d='M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14' />
-                      </svg>
+                      <ExternalLink className='w-5 h-5' aria-hidden='true' />
                     </a>
                   </div>
                 </div>
@@ -766,16 +750,7 @@ const ResourcesPage = () => {
                       rel='noopener noreferrer'
                       className='inline-flex items-center gap-2 px-6 py-3 bg-blue-600 text-white font-semibold rounded-xl hover:bg-blue-700 active:bg-blue-800 transition-all duration-200 shadow-[0_2px_8px_rgba(0,122,255,0.3)] hover:shadow-[0_4px_12px_rgba(0,122,255,0.4)] active:scale-[0.98]'>
                       <span>View Book on Amazon</span>
-                      <svg
-                        className='w-5 h-5'
-                        fill='none'
-                        strokeLinecap='round'
-                        strokeLinejoin='round'
-                        strokeWidth='2'
-                        viewBox='0 0 24 24'
-                        stroke='currentColor'>
-                        <path d='M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14' />
-                      </svg>
+                      <ExternalLink className='w-5 h-5' aria-hidden='true' />
                     </a>
                   </div>
                 </div>
@@ -826,16 +801,7 @@ const ResourcesPage = () => {
                       rel='noopener noreferrer'
                       className='inline-flex items-center gap-2 px-6 py-3 bg-blue-600 text-white font-semibold rounded-xl hover:bg-blue-700 active:bg-blue-800 transition-all duration-200 shadow-[0_2px_8px_rgba(0,122,255,0.3)] hover:shadow-[0_4px_12px_rgba(0,122,255,0.4)] active:scale-[0.98]'>
                       <span>View Book on Amazon</span>
-                      <svg
-                        className='w-5 h-5'
-                        fill='none'
-                        strokeLinecap='round'
-                        strokeLinejoin='round'
-                        strokeWidth='2'
-                        viewBox='0 0 24 24'
-                        stroke='currentColor'>
-                        <path d='M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14' />
-                      </svg>
+                      <ExternalLink className='w-5 h-5' aria-hidden='true' />
                     </a>
                   </div>
                 </div>

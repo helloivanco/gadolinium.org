@@ -363,8 +363,8 @@ const WhatHelpsSection = () => {
               </p>
             </div>
             <div>
-              <p>
-                <strong>Quercetin </strong>,a flavonoid with antioxidant and
+              <p className='mb-2'>
+                <strong>Quercetin:</strong> A flavonoid with antioxidant and
                 metal-chelating properties, has shown potential in forming
                 complexes with metal ions like gadolinium and may help reduce
                 oxidative stress associated with metal toxicity. However,
@@ -373,6 +373,12 @@ const WhatHelpsSection = () => {
                 potential supportive supplement rather than a primary treatment.
                 Consult with your healthcare provider before adding quercetin to
                 your protocol.
+              </p>
+              <p className='mb-2'>
+                <strong>Heavy Metals and Mast Cell Destabilization:</strong> Heavy metals, including Gadolinium (often retained after MRI contrast), are known mast cell destabilizers. Gadolinium has been shown to directly trigger mast cell degranulation (the release of histamine) in laboratory studies. It can do this through direct toxicity or by irritating the cell membrane.
+              </p>
+              <p>
+                If you have retained Gadolinium, your mast cells may be in a state of chronic &quot;hyper-excitability.&quot; They are ready to dump histamine at the slightest provocation (like stress, food, or alcohol). Quercetin may be particularly relevant in this context as it has mast cell stabilizing properties, though research specifically on quercetin for gadolinium-induced mast cell activation is limited.
               </p>
             </div>
           </div>

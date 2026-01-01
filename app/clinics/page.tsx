@@ -6,6 +6,7 @@ import StructuredData from '@/components/StructuredData';
 import { clinics } from '@/data/clinics';
 import Image from 'next/image';
 import { useMemo, useState } from 'react';
+import { ExternalLink, Search, Frown } from 'lucide-react';
 
 const categoryLabels: Record<string, string> = {
   all: 'All Clinics',
@@ -97,19 +98,10 @@ const ClinicsPage = () => {
                       className='text-white hover:text-blue-300 hover:underline font-medium transition-all duration-200 flex items-center gap-2 group cursor-pointer relative z-30'
                       aria-label='Visit GadTTRAC website'>
                       gadttrac.org
-                      <svg
+                      <ExternalLink
                         className='w-4 h-4 group-hover:translate-x-0.5 transition-transform'
-                        fill='none'
-                        stroke='currentColor'
-                        viewBox='0 0 24 24'
-                        aria-hidden='true'>
-                        <path
-                          strokeLinecap='round'
-                          strokeLinejoin='round'
-                          strokeWidth={2}
-                          d='M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14'
-                        />
-                      </svg>
+                        aria-hidden='true'
+                      />
                     </a>
                     <span className='text-white/60 hidden sm:inline relative z-20'>
                       •
@@ -121,19 +113,10 @@ const ClinicsPage = () => {
                       className='text-white hover:text-blue-300 hover:underline font-medium transition-all duration-200 flex items-center gap-2 group cursor-pointer relative z-30'
                       aria-label='View full list of GDD treating practices'>
                       Full list of practices
-                      <svg
+                      <ExternalLink
                         className='w-4 h-4 group-hover:translate-x-0.5 transition-transform'
-                        fill='none'
-                        stroke='currentColor'
-                        viewBox='0 0 24 24'
-                        aria-hidden='true'>
-                        <path
-                          strokeLinecap='round'
-                          strokeLinejoin='round'
-                          strokeWidth={2}
-                          d='M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14'
-                        />
-                      </svg>
+                        aria-hidden='true'
+                      />
                     </a>
                   </div>
                 </div>
@@ -152,19 +135,10 @@ const ClinicsPage = () => {
             {/* Search Bar */}
             <div className='relative max-w-2xl'>
               <div className='absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none'>
-                <svg
+                <Search
                   className='h-5 w-5 text-gray-400'
-                  fill='none'
-                  stroke='currentColor'
-                  viewBox='0 0 24 24'
-                  aria-hidden='true'>
-                  <path
-                    strokeLinecap='round'
-                    strokeLinejoin='round'
-                    strokeWidth={2}
-                    d='M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z'
-                  />
-                </svg>
+                  aria-hidden='true'
+                />
               </div>
               <input
                 type='text'
@@ -252,19 +226,10 @@ const ClinicsPage = () => {
             </div>
           ) : (
             <div className='text-center py-20'>
-              <svg
+              <Frown
                 className='mx-auto h-16 w-16 text-gray-400'
-                fill='none'
-                stroke='currentColor'
-                viewBox='0 0 24 24'
-                aria-hidden='true'>
-                <path
-                  strokeLinecap='round'
-                  strokeLinejoin='round'
-                  strokeWidth={1.5}
-                  d='M9.172 16.172a4 4 0 015.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z'
-                />
-              </svg>
+                aria-hidden='true'
+              />
               <h3 className='mt-6 text-xl font-semibold text-gray-900'>
                 No clinics found
               </h3>

@@ -3,6 +3,7 @@ import StructuredData from '@/components/StructuredData';
 import type { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
+import { ExternalLink } from 'lucide-react';
 
 export const metadata: Metadata = {
   title: 'Signs & Symptoms after Gadolinium Administration',
@@ -428,6 +429,105 @@ const SymptomsPage = () => {
                   experienced as it is unlike anything that the person has ever
                   experienced and it is very difficult to explain to doctors.
                 </p>
+              </div>
+            </div>
+          </section>
+
+          {/* Dr. Semelka Video Section */}
+          <section className='mb-20'>
+            <div className='bg-white border border-gray-200/80 rounded-2xl p-8 md:p-12 shadow-[0_1px_3px_rgba(0,0,0,0.08)]'>
+              <h2 className='text-3xl md:text-4xl font-semibold text-gray-900 mb-6'>
+                Symptoms of Gadolinium Deposition Disease (GDD) Explained
+              </h2>
+              <div className='prose prose-lg max-w-none text-gray-700 space-y-6'>
+                <p>
+                  Do you know the symptoms of Gadolinium Deposition Disease after
+                  an MRI with gadolinium contrast? In this informative video
+                  series, we dive deep into how to identify this condition related
+                  to magnetic resonance imaging. Our radiology expert,{' '}
+                  <strong>Dr. Richard Semelka</strong>, explains the warning signs
+                  you should look out for and the steps you can take if you
+                  suspect you may be affected. Understanding the effects of
+                  gadolinium deposition is crucial for your health post-MRI. Watch
+                  now to learn more about this important topic and stay informed
+                  about your radiology procedures. Don&apos;t miss out on this
+                  essential knowledge!
+                </p>
+                <div className='bg-blue-50/80 rounded-xl p-6 border border-blue-200/60 mt-6'>
+                  <h3 className='text-xl font-semibold text-gray-900 mb-4'>
+                    Key Symptoms Discussed in This Video
+                  </h3>
+                  <p className='text-gray-700 mb-4'>
+                    Dr. Semelka covers the following key symptoms of Gadolinium
+                    Deposition Disease:
+                  </p>
+                  <ul className='space-y-2 text-gray-700 list-none'>
+                    <li className='flex items-start'>
+                      <span className='text-blue-600 mr-3 mt-1 font-bold'>•</span>
+                      <span>Burning skin pain</span>
+                    </li>
+                    <li className='flex items-start'>
+                      <span className='text-blue-600 mr-3 mt-1 font-bold'>•</span>
+                      <span>Bone pain (stabbing rib pain)</span>
+                    </li>
+                    <li className='flex items-start'>
+                      <span className='text-blue-600 mr-3 mt-1 font-bold'>•</span>
+                      <span>Brain fog</span>
+                    </li>
+                    <li className='flex items-start'>
+                      <span className='text-blue-600 mr-3 mt-1 font-bold'>•</span>
+                      <span>Pins and needle sensation in fingers and feet</span>
+                    </li>
+                    <li className='flex items-start'>
+                      <span className='text-blue-600 mr-3 mt-1 font-bold'>•</span>
+                      <span>Twitching/contraction of muscles</span>
+                    </li>
+                    <li className='flex items-start'>
+                      <span className='text-blue-600 mr-3 mt-1 font-bold'>•</span>
+                      <span>Ringing in ear (tinnitus)</span>
+                    </li>
+                    <li className='flex items-start'>
+                      <span className='text-blue-600 mr-3 mt-1 font-bold'>•</span>
+                      <span>Vision problems</span>
+                    </li>
+                    <li className='flex items-start'>
+                      <span className='text-blue-600 mr-3 mt-1 font-bold'>•</span>
+                      <span>Cardiac arrhythmias</span>
+                    </li>
+                    <li className='flex items-start'>
+                      <span className='text-blue-600 mr-3 mt-1 font-bold'>•</span>
+                      <span>GI symptoms</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              {/* YouTube Video Embed */}
+              <div className='mt-8 mb-6'>
+                <div className='relative w-full' style={{ paddingBottom: '56.25%' }}>
+                  <iframe
+                    className='absolute top-0 left-0 w-full h-full rounded-xl'
+                    src='https://www.youtube.com/embed/6PLj-YLbkWI?si=MfxKiwdUyjG6_GON'
+                    title='YouTube video player'
+                    frameBorder='0'
+                    allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
+                    referrerPolicy='strict-origin-when-cross-origin'
+                    allowFullScreen
+                  />
+                </div>
+              </div>
+
+              {/* YouTube Channel Link */}
+              <div className='mt-6'>
+                <Link
+                  href='https://www.youtube.com/@richardsemelka'
+                  target='_blank'
+                  rel='noopener noreferrer'
+                  aria-label='Visit Dr. Richard Semelka YouTube channel'
+                  className='inline-flex items-center gap-2 px-6 py-3 bg-blue-600 text-white font-semibold rounded-xl hover:bg-blue-700 active:bg-blue-800 transition-all duration-200 shadow-[0_2px_8px_rgba(0,122,255,0.3)] hover:shadow-[0_4px_12px_rgba(0,122,255,0.4)] active:scale-[0.98]'>
+                  <ExternalLink className='w-5 h-5' aria-hidden='true' />
+                  <span>Visit Dr. Richard Semelka&apos;s YouTube Channel</span>
+                </Link>
               </div>
             </div>
           </section>
@@ -867,16 +967,7 @@ const SymptomsPage = () => {
                     rel='noopener noreferrer'
                     className='inline-flex items-center gap-2 px-6 py-3 bg-blue-600 text-white font-semibold rounded-xl hover:bg-blue-700 active:bg-blue-800 transition-all duration-200 shadow-[0_2px_8px_rgba(0,122,255,0.3)] hover:shadow-[0_4px_12px_rgba(0,122,255,0.4)] active:scale-[0.98]'>
                     <span>View Book on Amazon</span>
-                    <svg
-                      className='w-5 h-5'
-                      fill='none'
-                      strokeLinecap='round'
-                      strokeLinejoin='round'
-                      strokeWidth='2'
-                      viewBox='0 0 24 24'
-                      stroke='currentColor'>
-                      <path d='M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14' />
-                    </svg>
+                    <ExternalLink className='w-5 h-5' aria-hidden='true' />
                   </Link>
                 </div>
               </div>

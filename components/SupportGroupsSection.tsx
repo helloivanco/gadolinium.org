@@ -1,3 +1,5 @@
+import { Facebook, Users, ExternalLink } from 'lucide-react';
+
 const SupportGroupsSection = () => {
   return (
     <section className='mb-32' aria-labelledby='support-heading'>
@@ -17,13 +19,10 @@ const SupportGroupsSection = () => {
           <div className='mb-8 rounded-2xl overflow-hidden ring-1 ring-black/5'>
             <div className='relative w-full h-40 bg-gradient-to-br from-blue-50 to-indigo-50 flex items-center justify-center border border-blue-100/50'>
               <div className='text-center'>
-                <svg
+                <Facebook
                   className='w-16 h-16 text-blue-600 mx-auto mb-2'
-                  fill='currentColor'
-                  viewBox='0 0 24 24'
-                  aria-hidden='true'>
-                  <path d='M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z' />
-                </svg>
+                  aria-hidden='true'
+                />
                 <p className='text-xs text-gray-500 font-medium'>
                   Facebook Groups
                 </p>
@@ -57,19 +56,10 @@ const SupportGroupsSection = () => {
                     aria-label='Join MRI Gadolinium Contrast Safety Side Effects & Toxicity Research Facebook group'>
                     MRI Gadolinium Contrast Safety Side Effects & Toxicity
                     Research
-                    <svg
+                    <ExternalLink
                       className='w-4 h-4 text-gray-400 inline-block group-hover:translate-x-0.5 transition-transform'
-                      fill='none'
-                      stroke='currentColor'
-                      viewBox='0 0 24 24'
-                      aria-hidden='true'>
-                      <path
-                        strokeLinecap='round'
-                        strokeLinejoin='round'
-                        strokeWidth={2}
-                        d='M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14'
-                      />
-                    </svg>
+                      aria-hidden='true'
+                    />
                   </a>
                 </li>
                 <li className='flex items-center group'>
@@ -83,19 +73,10 @@ const SupportGroupsSection = () => {
                     className='text-blue-600 hover:text-blue-700 font-medium inline-flex items-center gap-2 transition-colors duration-200 text-[15px]'
                     aria-label='Join MRI Gadolinium Contrast Support Group on Facebook'>
                     MRI Gadolinium Contrast Support Group
-                    <svg
+                    <ExternalLink
                       className='w-4 h-4 text-gray-400 inline-block group-hover:translate-x-0.5 transition-transform'
-                      fill='none'
-                      stroke='currentColor'
-                      viewBox='0 0 24 24'
-                      aria-hidden='true'>
-                      <path
-                        strokeLinecap='round'
-                        strokeLinejoin='round'
-                        strokeWidth={2}
-                        d='M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14'
-                      />
-                    </svg>
+                      aria-hidden='true'
+                    />
                   </a>
                 </li>
               </ul>
@@ -108,19 +89,10 @@ const SupportGroupsSection = () => {
           <div className='mb-8 rounded-2xl overflow-hidden ring-1 ring-black/5'>
             <div className='relative w-full h-40 bg-gradient-to-br from-indigo-50 to-purple-50 flex items-center justify-center border border-indigo-100/50'>
               <div className='text-center'>
-                <svg
+                <Users
                   className='w-16 h-16 text-indigo-600 mx-auto mb-2'
-                  fill='none'
-                  stroke='currentColor'
-                  viewBox='0 0 24 24'
-                  aria-hidden='true'>
-                  <path
-                    strokeLinecap='round'
-                    strokeLinejoin='round'
-                    strokeWidth={1.5}
-                    d='M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z'
-                  />
-                </svg>
+                  aria-hidden='true'
+                />
                 <p className='text-xs text-gray-500 font-medium'>Groups.io</p>
               </div>
             </div>
@@ -143,19 +115,10 @@ const SupportGroupsSection = () => {
                 className='inline-flex items-center text-blue-600 hover:text-blue-700 font-medium transition-colors duration-200 mb-3 group'
                 aria-label='Join MRI-Gadolinium-Toxicity support group on Groups.io'>
                 Join the Support Group
-                <svg
+                <ExternalLink
                   className='w-4 h-4 ml-2 group-hover:translate-x-0.5 transition-transform'
-                  fill='none'
-                  stroke='currentColor'
-                  viewBox='0 0 24 24'
-                  aria-hidden='true'>
-                  <path
-                    strokeLinecap='round'
-                    strokeLinejoin='round'
-                    strokeWidth={2}
-                    d='M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14'
-                  />
-                </svg>
+                  aria-hidden='true'
+                />
               </a>
               <p className='text-sm text-gray-500 mt-2'>
                 Email:{' '}

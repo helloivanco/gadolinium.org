@@ -4,6 +4,7 @@ import StructuredData from '@/components/StructuredData';
 import type { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
+import { ChevronRight } from 'lucide-react';
 
 export const metadata: Metadata = {
   title:
@@ -77,9 +78,9 @@ export default function Home() {
           aria-label='Main content'>
           {/* Overview Intro */}
           <section className='mb-24 text-center'>
-            <h1 className='text-4xl md:text-5xl lg:text-6xl font-semibold text-gray-900 mb-6 tracking-tight leading-[1.1]'>
+            <h2 className='text-4xl md:text-5xl lg:text-6xl font-semibold text-gray-900 mb-6 tracking-tight leading-[1.1]'>
               Navigate Gadolinium Toxicity with Clarity
-            </h1>
+            </h2>
             <p className='text-xl md:text-2xl text-gray-600 max-w-3xl mx-auto font-light leading-relaxed'>
               Explore doctors, detox options, symptoms, practical remedies, clinics,
               and trusted resources — all curated for patients affected by
@@ -92,7 +93,9 @@ export default function Home() {
             aria-label='Site sections overview'
             className='grid gap-8 md:gap-10 md:grid-cols-2 lg:grid-cols-3'>
             {/* Doctors */}
-            <article className='bg-white rounded-3xl shadow-[0_2px_8px_rgba(0,0,0,0.06)] border border-gray-200/60 overflow-hidden flex flex-col group hover:shadow-[0_8px_24px_rgba(0,0,0,0.12)] hover:border-gray-300/80 transition-all duration-500 ease-[cubic-bezier(0.4,0,0.2,1)]'>
+            <Link
+              href='/doctors'
+              className='bg-white rounded-3xl shadow-[0_2px_8px_rgba(0,0,0,0.06)] border border-gray-200/60 overflow-hidden flex flex-col group hover:shadow-[0_8px_24px_rgba(0,0,0,0.12)] hover:border-gray-300/80 transition-all duration-500 ease-[cubic-bezier(0.4,0,0.2,1)] focus-visible:outline-2 focus-visible:outline-blue-600 focus-visible:outline-offset-4'>
               <div className='relative w-full h-40 overflow-hidden'>
                 <Image
                   src='/medical.jpg'
@@ -110,37 +113,28 @@ export default function Home() {
                 </div>
               </div>
               <div className='p-7 md:p-8 flex flex-col flex-1'>
-                <h2 className='text-2xl md:text-3xl font-semibold text-gray-900 mb-4 tracking-tight group-hover:text-blue-600 transition-colors duration-300'>
+                <h3 className='text-2xl md:text-3xl font-semibold text-gray-900 mb-4 tracking-tight group-hover:text-blue-600 transition-colors duration-300'>
                   Doctors
-                </h2>
+                </h3>
                 <p className='text-gray-600 text-sm md:text-base leading-relaxed mb-6 flex-1'>
                   Learn about leading specialists including Dr. Richard Semelka,
                   Dr. Brent Wagner, and Dr. Catriona Walsh — their backgrounds,
                   approaches, and how to reach them.
                 </p>
-                <Link
-                  href='/doctors'
-                  className='inline-flex items-center justify-center px-6 py-3.5 rounded-xl bg-blue-600 text-white font-semibold text-sm md:text-base hover:bg-blue-700 active:bg-blue-800 shadow-[0_4px_12px_rgba(0,122,255,0.25)] hover:shadow-[0_6px_20px_rgba(0,122,255,0.35)] active:scale-[0.97] transition-all duration-300'>
+                <span className='inline-flex items-center justify-center px-6 py-3.5 rounded-xl bg-blue-600 text-white font-semibold text-sm md:text-base group-hover:bg-blue-700 shadow-[0_4px_12px_rgba(0,122,255,0.25)] group-hover:shadow-[0_6px_20px_rgba(0,122,255,0.35)] transition-all duration-300'>
                   View Doctors
-                  <svg
+                  <ChevronRight
                     className='w-4 h-4 ml-2 transition-transform duration-300 group-hover:translate-x-1'
-                    fill='none'
-                    stroke='currentColor'
-                    strokeWidth='2'
-                    viewBox='0 0 24 24'
-                    aria-hidden='true'>
-                    <path
-                      strokeLinecap='round'
-                      strokeLinejoin='round'
-                      d='M9 5l7 7-7 7'
-                    />
-                  </svg>
-                </Link>
+                    aria-hidden='true'
+                  />
+                </span>
               </div>
-            </article>
+            </Link>
 
             {/* What Helps */}
-            <article className='bg-white rounded-3xl shadow-[0_2px_8px_rgba(0,0,0,0.06)] border border-gray-200/60 overflow-hidden flex flex-col group hover:shadow-[0_8px_24px_rgba(0,0,0,0.12)] hover:border-gray-300/80 transition-all duration-500 ease-[cubic-bezier(0.4,0,0.2,1)]'>
+            <Link
+              href='/what-helps'
+              className='bg-white rounded-3xl shadow-[0_2px_8px_rgba(0,0,0,0.06)] border border-gray-200/60 overflow-hidden flex flex-col group hover:shadow-[0_8px_24px_rgba(0,0,0,0.12)] hover:border-gray-300/80 transition-all duration-500 ease-[cubic-bezier(0.4,0,0.2,1)] focus-visible:outline-2 focus-visible:outline-blue-600 focus-visible:outline-offset-4'>
               <div className='relative w-full h-40 overflow-hidden'>
                 <Image
                   src='/foods.webp'
@@ -148,6 +142,7 @@ export default function Home() {
                   fill
                   className='object-cover transition-transform duration-700 group-hover:scale-105'
                   sizes='(max-width: 768px) 100vw, 33vw'
+                  loading='lazy'
                 />
                 <div className='absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent' />
                 <div className='absolute bottom-4 left-4 right-4'>
@@ -157,37 +152,28 @@ export default function Home() {
                 </div>
               </div>
               <div className='p-7 md:p-8 flex flex-col flex-1'>
-                <h2 className='text-2xl md:text-3xl font-semibold text-gray-900 mb-4 tracking-tight group-hover:text-blue-600 transition-colors duration-300'>
+                <h3 className='text-2xl md:text-3xl font-semibold text-gray-900 mb-4 tracking-tight group-hover:text-blue-600 transition-colors duration-300'>
                   What Helps
-                </h2>
+                </h3>
                 <p className='text-gray-600 text-sm md:text-base leading-relaxed mb-6 flex-1'>
                   Holistic guidance on diet, hydration, lifestyle, supplements, and
                   personalized protocols from leading experts for managing
                   gadolinium toxicity.
                 </p>
-                <Link
-                  href='/what-helps'
-                  className='inline-flex items-center justify-center px-6 py-3.5 rounded-xl bg-blue-600 text-white font-semibold text-sm md:text-base hover:bg-blue-700 active:bg-blue-800 shadow-[0_4px_12px_rgba(0,122,255,0.25)] hover:shadow-[0_6px_20px_rgba(0,122,255,0.35)] active:scale-[0.97] transition-all duration-300'>
+                <span className='inline-flex items-center justify-center px-6 py-3.5 rounded-xl bg-blue-600 text-white font-semibold text-sm md:text-base group-hover:bg-blue-700 shadow-[0_4px_12px_rgba(0,122,255,0.25)] group-hover:shadow-[0_6px_20px_rgba(0,122,255,0.35)] transition-all duration-300'>
                   Explore What Helps
-                  <svg
+                  <ChevronRight
                     className='w-4 h-4 ml-2 transition-transform duration-300 group-hover:translate-x-1'
-                    fill='none'
-                    stroke='currentColor'
-                    strokeWidth='2'
-                    viewBox='0 0 24 24'
-                    aria-hidden='true'>
-                    <path
-                      strokeLinecap='round'
-                      strokeLinejoin='round'
-                      d='M9 5l7 7-7 7'
-                    />
-                  </svg>
-                </Link>
+                    aria-hidden='true'
+                  />
+                </span>
               </div>
-            </article>
+            </Link>
 
             {/* Detox */}
-            <article className='bg-white rounded-3xl shadow-[0_2px_8px_rgba(0,0,0,0.06)] border border-gray-200/60 overflow-hidden flex flex-col group hover:shadow-[0_8px_24px_rgba(0,0,0,0.12)] hover:border-gray-300/80 transition-all duration-500 ease-[cubic-bezier(0.4,0,0.2,1)]'>
+            <Link
+              href='/detox'
+              className='bg-white rounded-3xl shadow-[0_2px_8px_rgba(0,0,0,0.06)] border border-gray-200/60 overflow-hidden flex flex-col group hover:shadow-[0_8px_24px_rgba(0,0,0,0.12)] hover:border-gray-300/80 transition-all duration-500 ease-[cubic-bezier(0.4,0,0.2,1)] focus-visible:outline-2 focus-visible:outline-blue-600 focus-visible:outline-offset-4'>
               <div className='relative w-full h-40 overflow-hidden'>
                 <Image
                   src='/detox.webp'
@@ -195,6 +181,7 @@ export default function Home() {
                   fill
                   className='object-cover transition-transform duration-700 group-hover:scale-105'
                   sizes='(max-width: 768px) 100vw, 33vw'
+                  loading='lazy'
                 />
                 <div className='absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent' />
                 <div className='absolute bottom-4 left-4 right-4'>
@@ -204,36 +191,27 @@ export default function Home() {
                 </div>
               </div>
               <div className='p-7 md:p-8 flex flex-col flex-1'>
-                <h2 className='text-2xl md:text-3xl font-semibold text-gray-900 mb-4 tracking-tight group-hover:text-blue-600 transition-colors duration-300'>
+                <h3 className='text-2xl md:text-3xl font-semibold text-gray-900 mb-4 tracking-tight group-hover:text-blue-600 transition-colors duration-300'>
                   Detox Methods
-                </h2>
+                </h3>
                 <p className='text-gray-600 text-sm md:text-base leading-relaxed mb-6 flex-1'>
                   Deep dive into IR sauna and niacin protocols, DTPA chelation,
                   and how to choose the right approach with medical guidance.
                 </p>
-                <Link
-                  href='/detox'
-                  className='inline-flex items-center justify-center px-6 py-3.5 rounded-xl bg-blue-600 text-white font-semibold text-sm md:text-base hover:bg-blue-700 active:bg-blue-800 shadow-[0_4px_12px_rgba(0,122,255,0.25)] hover:shadow-[0_6px_20px_rgba(0,122,255,0.35)] active:scale-[0.97] transition-all duration-300'>
+                <span className='inline-flex items-center justify-center px-6 py-3.5 rounded-xl bg-blue-600 text-white font-semibold text-sm md:text-base group-hover:bg-blue-700 shadow-[0_4px_12px_rgba(0,122,255,0.25)] group-hover:shadow-[0_6px_20px_rgba(0,122,255,0.35)] transition-all duration-300'>
                   View Detox Options
-                  <svg
+                  <ChevronRight
                     className='w-4 h-4 ml-2 transition-transform duration-300 group-hover:translate-x-1'
-                    fill='none'
-                    stroke='currentColor'
-                    strokeWidth='2'
-                    viewBox='0 0 24 24'
-                    aria-hidden='true'>
-                    <path
-                      strokeLinecap='round'
-                      strokeLinejoin='round'
-                      d='M9 5l7 7-7 7'
-                    />
-                  </svg>
-                </Link>
+                    aria-hidden='true'
+                  />
+                </span>
               </div>
-            </article>
+            </Link>
 
             {/* Symptoms */}
-            <article className='bg-white rounded-3xl shadow-[0_2px_8px_rgba(0,0,0,0.06)] border border-gray-200/60 overflow-hidden flex flex-col group hover:shadow-[0_8px_24px_rgba(0,0,0,0.12)] hover:border-gray-300/80 transition-all duration-500 ease-[cubic-bezier(0.4,0,0.2,1)]'>
+            <Link
+              href='/symptoms'
+              className='bg-white rounded-3xl shadow-[0_2px_8px_rgba(0,0,0,0.06)] border border-gray-200/60 overflow-hidden flex flex-col group hover:shadow-[0_8px_24px_rgba(0,0,0,0.12)] hover:border-gray-300/80 transition-all duration-500 ease-[cubic-bezier(0.4,0,0.2,1)] focus-visible:outline-2 focus-visible:outline-blue-600 focus-visible:outline-offset-4'>
               <div className='relative w-full h-40 overflow-hidden'>
                 <Image
                   src='/pain.jpg'
@@ -241,6 +219,7 @@ export default function Home() {
                   fill
                   className='object-cover transition-transform duration-700 group-hover:scale-105'
                   sizes='(max-width: 768px) 100vw, 33vw'
+                  loading='lazy'
                 />
                 <div className='absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent' />
                 <div className='absolute bottom-4 left-4 right-4'>
@@ -250,37 +229,28 @@ export default function Home() {
                 </div>
               </div>
               <div className='p-7 md:p-8 flex flex-col flex-1'>
-                <h2 className='text-2xl md:text-3xl font-semibold text-gray-900 mb-4 tracking-tight group-hover:text-blue-600 transition-colors duration-300'>
+                <h3 className='text-2xl md:text-3xl font-semibold text-gray-900 mb-4 tracking-tight group-hover:text-blue-600 transition-colors duration-300'>
                   Symptoms
-                </h2>
+                </h3>
                 <p className='text-gray-600 text-sm md:text-base leading-relaxed mb-6 flex-1'>
                   Review patient survey data on early-phase NSF-like symptoms,
                   nervous system involvement, and key findings from published
                   research.
                 </p>
-                <Link
-                  href='/symptoms'
-                  className='inline-flex items-center justify-center px-6 py-3.5 rounded-xl bg-blue-600 text-white font-semibold text-sm md:text-base hover:bg-blue-700 active:bg-blue-800 shadow-[0_4px_12px_rgba(0,122,255,0.25)] hover:shadow-[0_6px_20px_rgba(0,122,255,0.35)] active:scale-[0.97] transition-all duration-300'>
+                <span className='inline-flex items-center justify-center px-6 py-3.5 rounded-xl bg-blue-600 text-white font-semibold text-sm md:text-base group-hover:bg-blue-700 shadow-[0_4px_12px_rgba(0,122,255,0.25)] group-hover:shadow-[0_6px_20px_rgba(0,122,255,0.35)] transition-all duration-300'>
                   Explore Symptoms
-                  <svg
+                  <ChevronRight
                     className='w-4 h-4 ml-2 transition-transform duration-300 group-hover:translate-x-1'
-                    fill='none'
-                    stroke='currentColor'
-                    strokeWidth='2'
-                    viewBox='0 0 24 24'
-                    aria-hidden='true'>
-                    <path
-                      strokeLinecap='round'
-                      strokeLinejoin='round'
-                      d='M9 5l7 7-7 7'
-                    />
-                  </svg>
-                </Link>
+                    aria-hidden='true'
+                  />
+                </span>
               </div>
-            </article>
+            </Link>
 
             {/* Clinics */}
-            <article className='bg-white rounded-3xl shadow-[0_2px_8px_rgba(0,0,0,0.06)] border border-gray-200/60 overflow-hidden flex flex-col group hover:shadow-[0_8px_24px_rgba(0,0,0,0.12)] hover:border-gray-300/80 transition-all duration-500 ease-[cubic-bezier(0.4,0,0.2,1)]'>
+            <Link
+              href='/clinics'
+              className='bg-white rounded-3xl shadow-[0_2px_8px_rgba(0,0,0,0.06)] border border-gray-200/60 overflow-hidden flex flex-col group hover:shadow-[0_8px_24px_rgba(0,0,0,0.12)] hover:border-gray-300/80 transition-all duration-500 ease-[cubic-bezier(0.4,0,0.2,1)] focus-visible:outline-2 focus-visible:outline-blue-600 focus-visible:outline-offset-4'>
               <div className='relative w-full h-40 overflow-hidden'>
                 <Image
                   src='/chelation.webp'
@@ -288,6 +258,7 @@ export default function Home() {
                   fill
                   className='object-cover transition-transform duration-700 group-hover:scale-105'
                   sizes='(max-width: 768px) 100vw, 33vw'
+                  loading='lazy'
                 />
                 <div className='absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent' />
                 <div className='absolute bottom-4 left-4 right-4'>
@@ -297,36 +268,27 @@ export default function Home() {
                 </div>
               </div>
               <div className='p-7 md:p-8 flex flex-col flex-1'>
-                <h2 className='text-2xl md:text-3xl font-semibold text-gray-900 mb-4 tracking-tight group-hover:text-blue-600 transition-colors duration-300'>
+                <h3 className='text-2xl md:text-3xl font-semibold text-gray-900 mb-4 tracking-tight group-hover:text-blue-600 transition-colors duration-300'>
                   Chelation Clinics
-                </h2>
+                </h3>
                 <p className='text-gray-600 text-sm md:text-base leading-relaxed mb-6 flex-1'>
                   Browse GadTTRAC-linked clinics and treatment centers worldwide,
                   filter by region, and view a featured specialist clinic.
                 </p>
-                <Link
-                  href='/clinics'
-                  className='inline-flex items-center justify-center px-6 py-3.5 rounded-xl bg-blue-600 text-white font-semibold text-sm md:text-base hover:bg-blue-700 active:bg-blue-800 shadow-[0_4px_12px_rgba(0,122,255,0.25)] hover:shadow-[0_6px_20px_rgba(0,122,255,0.35)] active:scale-[0.97] transition-all duration-300'>
+                <span className='inline-flex items-center justify-center px-6 py-3.5 rounded-xl bg-blue-600 text-white font-semibold text-sm md:text-base group-hover:bg-blue-700 shadow-[0_4px_12px_rgba(0,122,255,0.25)] group-hover:shadow-[0_6px_20px_rgba(0,122,255,0.35)] transition-all duration-300'>
                   Find Clinics
-                  <svg
+                  <ChevronRight
                     className='w-4 h-4 ml-2 transition-transform duration-300 group-hover:translate-x-1'
-                    fill='none'
-                    stroke='currentColor'
-                    strokeWidth='2'
-                    viewBox='0 0 24 24'
-                    aria-hidden='true'>
-                    <path
-                      strokeLinecap='round'
-                      strokeLinejoin='round'
-                      d='M9 5l7 7-7 7'
-                    />
-                  </svg>
-                </Link>
+                    aria-hidden='true'
+                  />
+                </span>
               </div>
-            </article>
+            </Link>
 
             {/* Resources */}
-            <article className='bg-white rounded-3xl shadow-[0_2px_8px_rgba(0,0,0,0.06)] border border-gray-200/60 overflow-hidden flex flex-col group hover:shadow-[0_8px_24px_rgba(0,0,0,0.12)] hover:border-gray-300/80 transition-all duration-500 ease-[cubic-bezier(0.4,0,0.2,1)]'>
+            <Link
+              href='/resources'
+              className='bg-white rounded-3xl shadow-[0_2px_8px_rgba(0,0,0,0.06)] border border-gray-200/60 overflow-hidden flex flex-col group hover:shadow-[0_8px_24px_rgba(0,0,0,0.12)] hover:border-gray-300/80 transition-all duration-500 ease-[cubic-bezier(0.4,0,0.2,1)] focus-visible:outline-2 focus-visible:outline-blue-600 focus-visible:outline-offset-4'>
               <div className='relative w-full h-40 overflow-hidden'>
                 <Image
                   src='/resources.jpg'
@@ -334,6 +296,7 @@ export default function Home() {
                   fill
                   className='object-cover transition-transform duration-700 group-hover:scale-105'
                   sizes='(max-width: 768px) 100vw, 33vw'
+                  loading='lazy'
                 />
                 <div className='absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent' />
                 <div className='absolute bottom-4 left-4 right-4'>
@@ -343,34 +306,23 @@ export default function Home() {
                 </div>
               </div>
               <div className='p-7 md:p-8 flex flex-col flex-1'>
-                <h2 className='text-2xl md:text-3xl font-semibold text-gray-900 mb-4 tracking-tight group-hover:text-blue-600 transition-colors duration-300'>
+                <h3 className='text-2xl md:text-3xl font-semibold text-gray-900 mb-4 tracking-tight group-hover:text-blue-600 transition-colors duration-300'>
                   Resources &amp; Support
-                </h2>
+                </h3>
                 <p className='text-gray-600 text-sm md:text-base leading-relaxed mb-6 flex-1'>
                   Access support groups, email communities, key websites,
                   Semelka&apos;s blog, and book recommendations to stay informed
                   and connected.
                 </p>
-                <Link
-                  href='/resources'
-                  className='inline-flex items-center justify-center px-6 py-3.5 rounded-xl bg-blue-600 text-white font-semibold text-sm md:text-base hover:bg-blue-700 active:bg-blue-800 shadow-[0_4px_12px_rgba(0,122,255,0.25)] hover:shadow-[0_6px_20px_rgba(0,122,255,0.35)] active:scale-[0.97] transition-all duration-300'>
+                <span className='inline-flex items-center justify-center px-6 py-3.5 rounded-xl bg-blue-600 text-white font-semibold text-sm md:text-base group-hover:bg-blue-700 shadow-[0_4px_12px_rgba(0,122,255,0.25)] group-hover:shadow-[0_6px_20px_rgba(0,122,255,0.35)] transition-all duration-300'>
                   View Resources
-                  <svg
+                  <ChevronRight
                     className='w-4 h-4 ml-2 transition-transform duration-300 group-hover:translate-x-1'
-                    fill='none'
-                    stroke='currentColor'
-                    strokeWidth='2'
-                    viewBox='0 0 24 24'
-                    aria-hidden='true'>
-                    <path
-                      strokeLinecap='round'
-                      strokeLinejoin='round'
-                      d='M9 5l7 7-7 7'
-                    />
-                  </svg>
-                </Link>
+                    aria-hidden='true'
+                  />
+                </span>
               </div>
-            </article>
+            </Link>
           </section>
         </main>
         <Footer />

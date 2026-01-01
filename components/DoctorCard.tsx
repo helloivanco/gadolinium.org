@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import { ExternalLink, User, ZoomIn } from 'lucide-react';
 
 type DoctorCardProps = {
   name: string;
@@ -89,22 +90,13 @@ const DoctorCard = ({
               href={part}
               target='_blank'
               rel='noopener noreferrer'
-              className='text-blue-600 hover:text-blue-800 underline font-medium'>
+              className='text-blue-600 hover:text-blue-800 underline font-medium inline-flex items-center gap-1'>
               {part}
-            </a>
-            <svg
-              className='w-4 h-4 text-gray-500 inline-block'
-              fill='none'
-              stroke='currentColor'
-              viewBox='0 0 24 24'
-              aria-hidden='true'>
-              <path
-                strokeLinecap='round'
-                strokeLinejoin='round'
-                strokeWidth={2}
-                d='M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14'
+              <ExternalLink
+                className='w-4 h-4 text-gray-500 inline-block'
+                aria-hidden='true'
               />
-            </svg>
+            </a>
           </span>
         );
       }
@@ -154,19 +146,10 @@ const DoctorCard = ({
               />
             ) : (
               <div className='text-center'>
-                <svg
+                <User
                   className={`w-16 h-16 md:w-20 md:h-20 ${colors.icon} mx-auto`}
-                  fill='none'
-                  stroke='currentColor'
-                  viewBox='0 0 24 24'
-                  aria-hidden='true'>
-                  <path
-                    strokeLinecap='round'
-                    strokeLinejoin='round'
-                    strokeWidth={1.5}
-                    d='M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z'
-                  />
-                </svg>
+                  aria-hidden='true'
+                />
                 <p className='text-xs text-gray-400 mt-2 font-medium'>Photo</p>
               </div>
             )}
@@ -252,16 +235,10 @@ const DoctorCard = ({
                   rel='noopener noreferrer'
                   className='inline-flex items-center gap-2 px-6 py-3.5 bg-blue-600 text-white font-semibold rounded-xl hover:bg-blue-700 active:bg-blue-800 transition-all duration-300 shadow-[0_4px_12px_rgba(0,122,255,0.25)] hover:shadow-[0_6px_20px_rgba(0,122,255,0.35)] active:scale-[0.97]'>
                   <span>{book.linkText || 'View Book on Amazon'}</span>
-                  <svg
+                  <ExternalLink
                     className='w-5 h-5 transition-transform duration-300 group-hover:translate-x-0.5'
-                    fill='none'
-                    strokeLinecap='round'
-                    strokeLinejoin='round'
-                    strokeWidth='2'
-                    viewBox='0 0 24 24'
-                    stroke='currentColor'>
-                    <path d='M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14' />
-                  </svg>
+                    aria-hidden='true'
+                  />
                 </Link>
               </div>
             </div>
@@ -287,18 +264,10 @@ const DoctorCard = ({
                     sizes='128px'
                   />
                   <div className='absolute inset-0 bg-black/0 hover:bg-black/10 transition-colors flex items-center justify-center'>
-                    <svg
+                    <ZoomIn
                       className='w-8 h-8 text-white opacity-0 hover:opacity-100 transition-opacity'
-                      fill='none'
-                      stroke='currentColor'
-                      viewBox='0 0 24 24'>
-                      <path
-                        strokeLinecap='round'
-                        strokeLinejoin='round'
-                        strokeWidth={2}
-                        d='M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7'
-                      />
-                    </svg>
+                      aria-hidden='true'
+                    />
                   </div>
                 </Link>
                 <p className='text-xs text-gray-500 mt-2 text-center'>
@@ -361,18 +330,10 @@ const DoctorCard = ({
                       sizes='128px'
                     />
                     <div className='absolute inset-0 bg-black/0 hover:bg-black/10 transition-colors flex items-center justify-center'>
-                      <svg
+                      <ZoomIn
                         className='w-8 h-8 text-white opacity-0 hover:opacity-100 transition-opacity'
-                        fill='none'
-                        stroke='currentColor'
-                        viewBox='0 0 24 24'>
-                        <path
-                          strokeLinecap='round'
-                          strokeLinejoin='round'
-                          strokeWidth={2}
-                          d='M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7'
-                        />
-                      </svg>
+                        aria-hidden='true'
+                      />
                     </div>
                   </div>
                   <p className='text-xs text-gray-500 mt-2 text-center'>
@@ -391,16 +352,7 @@ const DoctorCard = ({
                     rel='noopener noreferrer'
                     className='inline-flex items-center gap-2 px-4 py-2 bg-green-600 text-white text-sm font-semibold rounded-lg hover:bg-green-700 active:bg-green-800 transition-all duration-200 shadow-[0_2px_6px_rgba(22,163,74,0.35)] hover:shadow-[0_4px_10px_rgba(22,163,74,0.45)]'>
                     <span>{researchArticle.title}</span>
-                    <svg
-                      className='w-4 h-4'
-                      fill='none'
-                      strokeLinecap='round'
-                      strokeLinejoin='round'
-                      strokeWidth='2'
-                      viewBox='0 0 24 24'
-                      stroke='currentColor'>
-                      <path d='M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14' />
-                    </svg>
+                    <ExternalLink className='w-4 h-4' aria-hidden='true' />
                   </Link>
                 </div>
                 <figure className='border-l-4 border-green-400 pl-4 mb-4'>
