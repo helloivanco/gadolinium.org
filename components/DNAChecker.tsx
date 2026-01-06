@@ -623,7 +623,7 @@ const DNAChecker = () => {
         {error && (
           <div className='bg-red-50/80 rounded-2xl p-6 border border-red-200/60'>
             <div className='flex items-start gap-3'>
-              <XCircle className='w-5 h-5 text-red-600 mt-0.5 flex-shrink-0' />
+              <XCircle className='w-5 h-5 text-red-400 mt-0.5 flex-shrink-0' />
               <div>
                 <p className='font-semibold text-red-900 mb-1'>Error</p>
                 <p className='text-sm text-red-700'>{error}</p>
@@ -689,8 +689,8 @@ const DNAChecker = () => {
                               isBad
                                 ? 'bg-red-50/80 border-red-200/80'
                                 : isGood
-                                  ? 'bg-green-50/80 border-green-300/80'
-                                  : 'bg-white border-gray-200/80'
+                                ? 'bg-green-50/80 border-green-300/80'
+                                : 'bg-white border-gray-200/80'
                             }`}>
                             <div className='flex items-start gap-3'>
                               {isBad ? (
@@ -718,7 +718,7 @@ const DNAChecker = () => {
                                   <div
                                     className={`rounded-lg p-3 mb-3 ${
                                       isBad
-                                        ? 'bg-red-100/60 border border-red-200/60'
+                                        ? 'bg-red-50/60 border border-red-200/60'
                                         : isGood
                                         ? 'bg-green-100/60 border border-green-200/60'
                                         : 'bg-gray-100/60 border border-gray-200/60'
@@ -726,7 +726,7 @@ const DNAChecker = () => {
                                     <p
                                       className={`text-sm font-medium ${
                                         isBad
-                                          ? 'text-red-900'
+                                          ? 'text-red-700'
                                           : isGood
                                           ? 'text-green-900'
                                           : 'text-gray-700'
