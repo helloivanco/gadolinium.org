@@ -38,25 +38,25 @@ const SNP_DEFINITIONS: Record<
   rs10156191: {
     category: 'Gut Histamine (AOC1/DAO)',
     emoji: '🟢',
-    description: 'Reduced enzyme activity',
+    description: 'May slow breakdown of histamine from food',
     riskAllele: 'T',
   },
   rs1049793: {
     category: 'Gut Histamine (AOC1/DAO)',
     emoji: '🟢',
-    description: 'Reduced enzyme activity',
+    description: 'May reduce DAO enzyme activity',
     riskAllele: 'G',
   },
   rs2052129: {
     category: 'Gut Histamine (AOC1/DAO)',
     emoji: '🟢',
-    description: 'Low DAO levels in blood',
+    description: 'May lower DAO levels in blood',
     riskAllele: 'T',
   },
   rs1049742: {
     category: 'Gut Histamine (AOC1/DAO)',
     emoji: '🟢',
-    description: 'Reduced enzyme activity',
+    description: 'May reduce DAO enzyme activity',
     riskAllele: 'T',
   },
   rs2071514: {
@@ -70,25 +70,25 @@ const SNP_DEFINITIONS: Record<
   rs11558538: {
     category: 'Systemic Histamine (HNMT)',
     emoji: '🔵',
-    description: 'Reduced clearance',
+    description: 'May slow histamine clearance in tissues/brain',
     riskAllele: 'T',
   },
   rs1050891: {
     category: 'Systemic Histamine (HNMT)',
     emoji: '🔵',
-    description: 'Reduced clearance',
+    description: 'May reduce histamine clearance',
     riskAllele: 'A',
   },
   rs2071048: {
     category: 'Systemic Histamine (HNMT)',
     emoji: '🔵',
-    description: 'Reduced clearance (Common)',
+    description: 'May reduce histamine clearance (Common variant)',
     riskAllele: 'T',
   },
   i3000469: {
     category: 'Systemic Histamine (HNMT)',
     emoji: '🔵',
-    description: 'Reduced clearance',
+    description: 'May reduce histamine clearance',
     riskAllele: 'T',
   },
 
@@ -96,25 +96,25 @@ const SNP_DEFINITIONS: Record<
   rs2073440: {
     category: 'Production & Receptors (HDC/HRH)',
     emoji: '🟠',
-    description: 'Decreased production (alters balance)',
+    description: 'May decrease histamine production (alters balance)',
     riskAllele: 'G',
   },
   rs901865: {
     category: 'Production & Receptors (HDC/HRH)',
     emoji: '🟠',
-    description: 'Increased H1 receptors / Asthma risk',
+    description: 'May increase H1 receptors / Associated with asthma risk',
     riskAllele: 'T',
   },
   rs2067474: {
     category: 'Production & Receptors (HDC/HRH)',
     emoji: '🟠',
-    description: 'Decreased H2 receptor function',
+    description: 'May decrease H2 receptor function',
     riskAllele: 'A',
   },
   rs11662595: {
     category: 'Production & Receptors (HDC/HRH)',
     emoji: '🟠',
-    description: 'Immune regulation issues',
+    description: 'May affect immune regulation',
     riskAllele: 'G',
   },
 
@@ -122,31 +122,32 @@ const SNP_DEFINITIONS: Record<
   rs1801133: {
     category: 'Methylation (MTHFR & BHMT)',
     emoji: '🟣',
-    description: 'Reduced folate conversion',
+    description: 'May reduce folate conversion (affects detox pathways)',
     riskAllele: 'A/T',
   },
   rs1801131: {
     category: 'Methylation (MTHFR & BHMT)',
     emoji: '🟣',
-    description: 'May affect BH4-related pathways',
+    description: 'May affect BH4-related pathways (mood/detox)',
     riskAllele: 'G/C',
   },
   rs651852: {
     category: 'Methylation (MTHFR & BHMT)',
     emoji: '🟣',
-    description: 'Slow homocysteine recycling / Stress sensitive',
+    description:
+      'May slow homocysteine recycling / Increased stress sensitivity',
     riskAllele: 'T',
   },
   rs567754: {
     category: 'Methylation (MTHFR & BHMT)',
     emoji: '🟣',
-    description: 'Reduced enzyme activity',
+    description: 'May reduce BHMT enzyme activity',
     riskAllele: 'T',
   },
   rs3733890: {
     category: 'Methylation (MTHFR & BHMT)',
     emoji: '🟣',
-    description: 'Linked to choline depletion',
+    description: 'May be linked to choline depletion',
     riskAllele: 'A',
   },
 
@@ -154,13 +155,13 @@ const SNP_DEFINITIONS: Record<
   rs4680: {
     category: 'Stress & Inflammation',
     emoji: '🟡',
-    description: 'Slow breakdown of stress hormones',
+    description: 'May slow breakdown of stress hormones/catecholamines',
     riskAllele: 'A',
   },
   rs1800795: {
     category: 'Stress & Inflammation',
     emoji: '🟡',
-    description: 'Prone to high inflammation',
+    description: 'May increase inflammatory tendency',
     riskAllele: 'G',
   },
 };
@@ -525,9 +526,10 @@ const DNAChecker = () => {
         <div className='bg-gray-50/80 rounded-2xl p-6 border border-gray-200/60'>
           <p className='text-gray-700 mb-4'>
             Upload your DNA raw data file below to automatically scan for
-            histamine and MCAS-related genetic variants. The tool will check for
-            18 key SNPs across 5 categories and show you which variants you
-            carry, along with your specific genotypes.
+            histamine and MCAS-related genetic variants. The tool checks for 20
+            key SNPs across 5 categories and shows you which variants you carry,
+            along with your specific genotypes and what they mean for your
+            health.
           </p>
           <div className='bg-blue-50/80 rounded-xl p-4 border border-blue-200/60 mb-4'>
             <div className='flex items-start gap-3'>
