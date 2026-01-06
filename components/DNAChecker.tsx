@@ -642,7 +642,7 @@ const DNAChecker = () => {
                 <p className='text-sm text-gray-600'>
                   Found {totalFound} of {totalSNPs} relevant SNPs
                   {totalAtRisk > 0 && (
-                    <span className='text-red-600 font-medium ml-1'>
+                    <span className='text-red-400 font-medium ml-1'>
                       • {totalAtRisk} at Risk
                     </span>
                   )}
@@ -687,14 +687,14 @@ const DNAChecker = () => {
                             key={snp.rsId}
                             className={`rounded-xl p-5 border-2 ${
                               isBad
-                                ? 'bg-red-50/80 border-red-300/80'
+                                ? 'bg-red-50/80 border-red-200/80'
                                 : isGood
-                                ? 'bg-green-50/80 border-green-300/80'
-                                : 'bg-white border-gray-200/80'
+                                  ? 'bg-green-50/80 border-green-300/80'
+                                  : 'bg-white border-gray-200/80'
                             }`}>
                             <div className='flex items-start gap-3'>
                               {isBad ? (
-                                <XCircle className='w-6 h-6 text-red-600 shrink-0 mt-0.5' />
+                                <XCircle className='w-6 h-6 text-red-400 shrink-0 mt-0.5' />
                               ) : isGood ? (
                                 <CheckCircle2 className='w-6 h-6 text-green-600 shrink-0 mt-0.5' />
                               ) : (
