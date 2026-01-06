@@ -1,6 +1,6 @@
 import Footer from '@/components/Footer';
 import StructuredData from '@/components/StructuredData';
-import { ChevronLeft } from 'lucide-react';
+import { ChevronLeft, ChevronRight } from 'lucide-react';
 import type { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -14,8 +14,12 @@ export const metadata: Metadata = {
     'histamine intolerance',
     'MCAS genetics',
     'DAO gene',
+    'AOC1',
     'HNMT gene',
+    'HDC gene',
+    'HRH receptors',
     'MTHFR',
+    'BHMT',
     'COMT',
     'IL6',
     'histamine metabolism',
@@ -32,7 +36,7 @@ export const metadata: Metadata = {
     type: 'article',
     images: [
       {
-        url: '/medical.jpg',
+        url: '/dna.jpg',
         width: 1200,
         height: 630,
         alt: 'Checking DNA Raw Data for Histamine/MCAS',
@@ -44,7 +48,7 @@ export const metadata: Metadata = {
     title: 'Checking DNA Raw Data (Histamine/MCAS) | Genetic Factors',
     description:
       'Guide to checking DNA raw data for histamine intolerance and MCAS-related genetic variants.',
-    images: ['/medical.jpg'],
+    images: ['/dna.jpg'],
   },
   alternates: {
     canonical: 'https://gadolinium.org/dna-histamine-mcas',
@@ -65,7 +69,7 @@ const DNAHistamineMCASPage = () => {
           <div className='relative w-full h-[50vh] min-h-[400px] max-h-[600px] overflow-hidden'>
             {/* Background Image */}
             <Image
-              src='/medical.jpg'
+              src='/dna.jpg'
               alt='DNA and genetic testing for histamine metabolism'
               fill
               className='object-cover'
@@ -125,14 +129,46 @@ const DNAHistamineMCASPage = () => {
             </div>
           </section>
 
+          {/* Check Your DNA File CTA */}
+          <section className='mb-16 bg-gradient-to-br from-blue-50/80 to-indigo-50/80 rounded-3xl border border-blue-200/60 p-8 md:p-12 shadow-[0_2px_8px_rgba(0,0,0,0.06)]'>
+            <div className='text-center max-w-3xl mx-auto'>
+              <div className='flex items-center justify-center gap-3 mb-6'>
+                <span className='text-4xl'>📊</span>
+                <h2 className='text-2xl md:text-3xl font-semibold text-gray-900 tracking-tight'>
+                  Check Your DNA Raw Data File
+                </h2>
+              </div>
+              <p className='text-lg text-gray-700 mb-8'>
+                Upload your DNA raw data file to automatically scan for
+                histamine and MCAS-related genetic variants. Our free tool
+                checks for 18 key SNPs across 5 categories and shows you which
+                variants you carry. All processing happens locally in your
+                browser—your DNA data never leaves your device.
+              </p>
+              <Link
+                href='/dna-checker'
+                className='inline-flex items-center px-8 py-4 rounded-xl bg-blue-600 text-white font-semibold text-lg hover:bg-blue-700 shadow-[0_4px_12px_rgba(0,122,255,0.25)] hover:shadow-[0_6px_20px_rgba(0,122,255,0.35)] transition-all duration-300 group focus-visible:outline-2 focus-visible:outline-blue-600 focus-visible:outline-offset-4'>
+                <span>Check Your DNA File Now</span>
+                <ChevronRight
+                  className='w-5 h-5 ml-2 transition-transform duration-300 group-hover:translate-x-1'
+                  aria-hidden='true'
+                />
+              </Link>
+              <p className='text-sm text-gray-600 mt-4'>
+                Includes step-by-step instructions for downloading files from
+                23andMe and AncestryDNA
+              </p>
+            </div>
+          </section>
+
           {/* Main Content Sections */}
           <div className='space-y-12'>
-            {/* 1. Gut Histamine (DAO) */}
+            {/* 1. Gut Histamine (AOC1/DAO) */}
             <section className='bg-white rounded-3xl shadow-[0_2px_8px_rgba(0,0,0,0.06)] border border-gray-200/60 p-8 md:p-12 hover:shadow-[0_8px_24px_rgba(0,0,0,0.12)] hover:border-gray-300/80 transition-all duration-500 ease-[cubic-bezier(0.4,0,0.2,1)]'>
               <div className='flex items-center gap-3 mb-6'>
                 <span className='text-3xl'>🟢</span>
                 <h2 className='text-2xl md:text-3xl font-semibold text-gray-900 tracking-tight'>
-                  1) Gut Histamine (DAO) — Food Histamine Tolerance
+                  1) Gut Histamine (AOC1/DAO) — Breaks Down Histamine from Food
                 </h2>
               </div>
               <div className='space-y-4 text-gray-700'>
@@ -145,112 +181,242 @@ const DNAHistamineMCASPage = () => {
                 <div className='bg-green-50/80 rounded-2xl p-6 border border-green-200/60 space-y-4'>
                   <div>
                     <p className='font-semibold text-gray-900 mb-2'>
-                      rs10156191 (AOC1/DAO)
+                      rs10156191
                     </p>
                     <p className='mb-1'>
                       <strong>Risk allele:</strong> T
                     </p>
-                    <p>May mean slower breakdown of histamine from food</p>
+                    <p>Reduced enzyme activity</p>
                   </div>
                   <div>
                     <p className='font-semibold text-gray-900 mb-2'>
-                      rs1049793 (AOC1/DAO)
+                      rs1049793
                     </p>
                     <p className='mb-1'>
                       <strong>Risk allele:</strong> G
                     </p>
-                    <p>May mean lower DAO activity</p>
+                    <p>Reduced enzyme activity</p>
                   </div>
                   <div>
                     <p className='font-semibold text-gray-900 mb-2'>
-                      rs2052129 (AOC1/DAO promoter)
+                      rs2052129
                     </p>
                     <p className='mb-1'>
                       <strong>Risk allele:</strong> T
                     </p>
-                    <p>May mean lower DAO production</p>
+                    <p>Low DAO levels in blood</p>
+                  </div>
+                  <div>
+                    <p className='font-semibold text-gray-900 mb-2'>
+                      rs1049742
+                    </p>
+                    <p className='mb-1'>
+                      <strong>Risk allele:</strong> T
+                    </p>
+                    <p>Reduced enzyme activity</p>
+                  </div>
+                  <div className='bg-green-100/60 rounded-xl p-4 border border-green-300/60'>
+                    <p className='font-semibold text-gray-900 mb-2'>
+                      rs2071514
+                    </p>
+                    <p className='mb-1'>
+                      <strong>Protective allele:</strong> A
+                    </p>
+                    <p>Associated with slightly higher DAO</p>
                   </div>
                 </div>
               </div>
             </section>
 
-            {/* 2. Brain/Organ Histamine (HNMT) */}
+            {/* 2. Systemic Histamine (HNMT) */}
             <section className='bg-white rounded-3xl shadow-[0_2px_8px_rgba(0,0,0,0.06)] border border-gray-200/60 p-8 md:p-12 hover:shadow-[0_8px_24px_rgba(0,0,0,0.12)] hover:border-gray-300/80 transition-all duration-500 ease-[cubic-bezier(0.4,0,0.2,1)]'>
               <div className='flex items-center gap-3 mb-6'>
                 <span className='text-3xl'>🔵</span>
                 <h2 className='text-2xl md:text-3xl font-semibold text-gray-900 tracking-tight'>
-                  2) Brain/Organ Histamine (HNMT) — &quot;Internal&quot;
-                  Histamine Clearance
+                  2) Systemic Histamine (HNMT) — Clears Histamine from Brain
+                  &amp; Organs
                 </h2>
               </div>
               <div className='space-y-4 text-gray-700'>
                 <p className='text-lg mb-4'>
                   <strong>HNMT (Histamine N-Methyltransferase)</strong> clears
-                  histamine in tissues and the brain. This variant is often
+                  histamine in tissues and the brain. These variants are often
                   discussed in relation to sleep and anxiety symptoms.
                 </p>
-                <div className='bg-blue-50/80 rounded-2xl p-6 border border-blue-200/60'>
+                <div className='bg-blue-50/80 rounded-2xl p-6 border border-blue-200/60 space-y-4'>
                   <div>
                     <p className='font-semibold text-gray-900 mb-2'>
-                      rs11558538 (HNMT)
+                      rs11558538
                     </p>
                     <p className='mb-1'>
                       <strong>Risk allele:</strong> T
                     </p>
-                    <p>
-                      May mean slower histamine clearance in tissues/brain
-                      (often discussed with sleep/anxiety symptoms)
+                    <p>Reduced clearance</p>
+                  </div>
+                  <div>
+                    <p className='font-semibold text-gray-900 mb-2'>
+                      rs1050891
                     </p>
+                    <p className='mb-1'>
+                      <strong>Risk allele:</strong> A
+                    </p>
+                    <p>Reduced clearance</p>
+                  </div>
+                  <div>
+                    <p className='font-semibold text-gray-900 mb-2'>
+                      rs2071048
+                    </p>
+                    <p className='mb-1'>
+                      <strong>Risk allele:</strong> T
+                    </p>
+                    <p>Reduced clearance (Common)</p>
+                  </div>
+                  <div>
+                    <p className='font-semibold text-gray-900 mb-2'>i3000469</p>
+                    <p className='mb-1'>
+                      <strong>Risk allele:</strong> T
+                    </p>
+                    <p>Reduced clearance</p>
                   </div>
                 </div>
               </div>
             </section>
 
-            {/* 3. Methylation (MTHFR) */}
+            {/* 3. Production & Receptors (HDC/HRH) */}
+            <section className='bg-white rounded-3xl shadow-[0_2px_8px_rgba(0,0,0,0.06)] border border-gray-200/60 p-8 md:p-12 hover:shadow-[0_8px_24px_rgba(0,0,0,0.12)] hover:border-gray-300/80 transition-all duration-500 ease-[cubic-bezier(0.4,0,0.2,1)]'>
+              <div className='flex items-center gap-3 mb-6'>
+                <span className='text-3xl'>🟠</span>
+                <h2 className='text-2xl md:text-3xl font-semibold text-gray-900 tracking-tight'>
+                  3) Production &amp; Receptors (HDC/HRH) — How Much You Make
+                  &amp; How Sensitive You Are
+                </h2>
+              </div>
+              <div className='space-y-4 text-gray-700'>
+                <p className='text-lg mb-4'>
+                  These variants affect histamine production and receptor
+                  sensitivity, which can influence how your body responds to
+                  histamine and how much you produce.
+                </p>
+                <div className='bg-orange-50/80 rounded-2xl p-6 border border-orange-200/60 space-y-4'>
+                  <div>
+                    <p className='font-semibold text-gray-900 mb-2'>
+                      HDC rs2073440
+                    </p>
+                    <p className='mb-1'>
+                      <strong>Risk allele:</strong> G
+                    </p>
+                    <p>Decreased production (alters balance)</p>
+                  </div>
+                  <div>
+                    <p className='font-semibold text-gray-900 mb-2'>
+                      HRH1 rs901865
+                    </p>
+                    <p className='mb-1'>
+                      <strong>Risk allele:</strong> T
+                    </p>
+                    <p>Increased H1 receptors / Asthma risk</p>
+                  </div>
+                  <div>
+                    <p className='font-semibold text-gray-900 mb-2'>
+                      HRH2 rs2067474
+                    </p>
+                    <p className='mb-1'>
+                      <strong>Risk allele:</strong> A
+                    </p>
+                    <p>Decreased H2 receptor function</p>
+                  </div>
+                  <div>
+                    <p className='font-semibold text-gray-900 mb-2'>
+                      HRH4 rs11662595
+                    </p>
+                    <p className='mb-1'>
+                      <strong>Risk allele:</strong> G
+                    </p>
+                    <p>Immune regulation issues</p>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            {/* 4. Methylation (MTHFR & BHMT) */}
             <section className='bg-white rounded-3xl shadow-[0_2px_8px_rgba(0,0,0,0.06)] border border-gray-200/60 p-8 md:p-12 hover:shadow-[0_8px_24px_rgba(0,0,0,0.12)] hover:border-gray-300/80 transition-all duration-500 ease-[cubic-bezier(0.4,0,0.2,1)]'>
               <div className='flex items-center gap-3 mb-6'>
                 <span className='text-3xl'>🟣</span>
                 <h2 className='text-2xl md:text-3xl font-semibold text-gray-900 tracking-tight'>
-                  3) Methylation (MTHFR) — Supports Detox + Neurotransmitters
+                  4) Methylation (MTHFR &amp; BHMT) — Fuel Needed to Run the
+                  Detox Enzymes
                 </h2>
               </div>
               <div className='space-y-4 text-gray-700'>
                 <p className='text-lg mb-4'>
                   <strong>MTHFR (Methylenetetrahydrofolate Reductase)</strong>{' '}
-                  plays a crucial role in folate metabolism, which supports
+                  and{' '}
+                  <strong>
+                    BHMT (Betaine-Homocysteine S-Methyltransferase)
+                  </strong>{' '}
+                  play crucial roles in methylation, which supports
                   detoxification pathways and neurotransmitter production.
                 </p>
                 <div className='bg-purple-50/80 rounded-2xl p-6 border border-purple-200/60 space-y-4'>
                   <div>
                     <p className='font-semibold text-gray-900 mb-2'>
-                      rs1801133 (MTHFR C677T)
+                      MTHFR C677T (rs1801133)
                     </p>
                     <p className='mb-1'>
-                      <strong>Risk allele:</strong> A
+                      <strong>Risk allele:</strong> A (on 23andMe) / T
+                      (Standard)
                     </p>
-                    <p>May mean reduced folate conversion</p>
+                    <p>Reduced folate conversion</p>
                   </div>
                   <div>
                     <p className='font-semibold text-gray-900 mb-2'>
-                      rs1801131 (MTHFR A1298C)
+                      MTHFR A1298C (rs1801131)
                     </p>
                     <p className='mb-1'>
-                      <strong>Risk allele:</strong> G
+                      <strong>Risk allele:</strong> G (on 23andMe) / C
+                      (Standard)
                     </p>
                     <p>
                       May affect BH4-related pathways (mood/detox discussions)
                     </p>
                   </div>
+                  <div>
+                    <p className='font-semibold text-gray-900 mb-2'>
+                      BHMT-08 (rs651852)
+                    </p>
+                    <p className='mb-1'>
+                      <strong>Risk allele:</strong> T
+                    </p>
+                    <p>Slow homocysteine recycling / Stress sensitive</p>
+                  </div>
+                  <div>
+                    <p className='font-semibold text-gray-900 mb-2'>
+                      BHMT-02 (rs567754)
+                    </p>
+                    <p className='mb-1'>
+                      <strong>Risk allele:</strong> T
+                    </p>
+                    <p>Reduced enzyme activity</p>
+                  </div>
+                  <div>
+                    <p className='font-semibold text-gray-900 mb-2'>
+                      BHMT-01 (rs3733890)
+                    </p>
+                    <p className='mb-1'>
+                      <strong>Risk allele:</strong> A
+                    </p>
+                    <p>Linked to choline depletion</p>
+                  </div>
                 </div>
               </div>
             </section>
 
-            {/* 4. Stress + Inflammation */}
+            {/* 5. Stress + Inflammation */}
             <section className='bg-white rounded-3xl shadow-[0_2px_8px_rgba(0,0,0,0.06)] border border-gray-200/60 p-8 md:p-12 hover:shadow-[0_8px_24px_rgba(0,0,0,0.12)] hover:border-gray-300/80 transition-all duration-500 ease-[cubic-bezier(0.4,0,0.2,1)]'>
               <div className='flex items-center gap-3 mb-6'>
                 <span className='text-3xl'>🟡</span>
                 <h2 className='text-2xl md:text-3xl font-semibold text-gray-900 tracking-tight'>
-                  4) Stress + Inflammation (Can Worsen Flares)
+                  5) Stress &amp; Inflammation — Triggers That Worsen Reactions
                 </h2>
               </div>
               <div className='space-y-4 text-gray-700'>
@@ -261,32 +427,32 @@ const DNAHistamineMCASPage = () => {
                 <div className='bg-yellow-50/80 rounded-2xl p-6 border border-yellow-200/60 space-y-4'>
                   <div>
                     <p className='font-semibold text-gray-900 mb-2'>
-                      rs4680 (COMT)
+                      COMT (rs4680)
                     </p>
                     <p className='mb-1'>
-                      <strong>Risk allele:</strong> A/A
+                      <strong>Risk allele:</strong> A
                     </p>
-                    <p>May mean slower stress hormone/catechol metabolism</p>
+                    <p>Slow breakdown of stress hormones</p>
                   </div>
                   <div>
                     <p className='font-semibold text-gray-900 mb-2'>
-                      rs1800795 (IL6)
+                      IL-6 (rs1800795)
                     </p>
                     <p className='mb-1'>
                       <strong>Risk allele:</strong> G
                     </p>
-                    <p>May mean higher inflammatory tendency</p>
+                    <p>Prone to high inflammation</p>
                   </div>
                 </div>
               </div>
             </section>
 
-            {/* Special Testing Required */}
+            {/* 6. Special Testing Required */}
             <section className='bg-white rounded-3xl shadow-[0_2px_8px_rgba(0,0,0,0.06)] border border-red-200/60 p-8 md:p-12 hover:shadow-[0_8px_24px_rgba(0,0,0,0.12)] hover:border-red-300/80 transition-all duration-500 ease-[cubic-bezier(0.4,0,0.2,1)]'>
               <div className='flex items-center gap-3 mb-6'>
                 <span className='text-3xl'>⚠️</span>
                 <h2 className='text-2xl md:text-3xl font-semibold text-gray-900 tracking-tight'>
-                  Not in Typical Raw SNP Lists (Needs Special Testing)
+                  6) Not in Typical Raw SNP Lists (Needs Special Testing)
                 </h2>
               </div>
               <div className='space-y-4 text-gray-700'>
