@@ -1,3 +1,6 @@
+import Link from 'next/link';
+import { ChevronRight } from 'lucide-react';
+
 const WhatHelpsSection = () => {
   return (
     <section className='mb-32' aria-labelledby='what-helps-heading'>
@@ -380,6 +383,17 @@ const WhatHelpsSection = () => {
               <p>
                 If you have retained Gadolinium, your mast cells may be in a state of chronic &quot;hyper-excitability.&quot; They are ready to dump histamine at the slightest provocation (like stress, food, or alcohol). Quercetin may be particularly relevant in this context as it has mast cell stabilizing properties, though research specifically on quercetin for gadolinium-induced mast cell activation is limited.
               </p>
+            </div>
+            <div className='mt-6 pt-6 border-t border-gray-200'>
+              <Link
+                href='/dna-histamine-mcas'
+                className='inline-flex items-center px-6 py-3.5 rounded-xl bg-blue-600 text-white font-semibold text-base hover:bg-blue-700 shadow-[0_4px_12px_rgba(0,122,255,0.25)] hover:shadow-[0_6px_20px_rgba(0,122,255,0.35)] transition-all duration-300 group focus-visible:outline-2 focus-visible:outline-blue-600 focus-visible:outline-offset-4'>
+                <span>Checking DNA Raw Data (Histamine/MCAS)</span>
+                <ChevronRight
+                  className='w-5 h-5 ml-2 transition-transform duration-300 group-hover:translate-x-1'
+                  aria-hidden='true'
+                />
+              </Link>
             </div>
           </div>
         </article>
