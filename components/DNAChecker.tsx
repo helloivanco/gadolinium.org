@@ -5,6 +5,7 @@ import {
   CheckCircle2,
   FileText,
   LoaderCircle,
+  Lock,
   Upload,
   XCircle,
 } from 'lucide-react';
@@ -502,6 +503,14 @@ const DNAChecker = () => {
       0
     ) || 0;
   const totalSNPs = ALL_SNP_IDS.length;
+  const totalAtRisk =
+    results?.reduce(
+      (sum, cat) =>
+        sum +
+        cat.snps.filter((s) => s.found && s.hasRisk === true && !s.isProtective)
+          .length,
+      0
+    ) || 0;
 
   return (
     <section className='bg-white rounded-3xl shadow-[0_2px_8px_rgba(0,0,0,0.06)] border border-gray-200/60 p-8 md:p-12 hover:shadow-[0_8px_24px_rgba(0,0,0,0.12)] hover:border-gray-300/80 transition-all duration-500 ease-[cubic-bezier(0.4,0,0.2,1)]'>
@@ -520,11 +529,25 @@ const DNAChecker = () => {
             18 key SNPs across 5 categories and show you which variants you
             carry, along with your specific genotypes.
           </p>
+          <div className='bg-blue-50/80 rounded-xl p-4 border border-blue-200/60 mb-4'>
+            <div className='flex items-start gap-3'>
+              <Lock className='w-5 h-5 text-blue-600 mt-0.5 shrink-0' />
+              <div className='text-sm text-gray-700'>
+                <p className='font-semibold text-blue-900 mb-1'>
+                  Local Processing
+                </p>
+                <p className='text-gray-700'>
+                  All processing happens on your device. Your DNA data never
+                  leaves your computer.
+                </p>
+              </div>
+            </div>
+          </div>
           <div className='flex items-start gap-3'>
-            <AlertCircle className='w-5 h-5 text-blue-600 mt-0.5 flex-shrink-0' />
+            <AlertCircle className='w-5 h-5 text-blue-600 mt-0.5 shrink-0' />
             <div className='text-sm text-gray-700'>
               <p className='font-semibold text-gray-900 mb-2'>
-                Privacy & Processing:
+                Additional Information:
               </p>
               <ul className='space-y-1 list-disc list-inside'>
                 <li>All processing happens locally in your browser</li>
@@ -590,7 +613,8 @@ const DNAChecker = () => {
               </div>
               <p className='text-xs text-gray-500 mt-4 max-w-md'>
                 Large files may take a moment to process. Please keep this page
-                open.
+                open. All processing happens locally on your device—your data
+                never leaves your computer.
               </p>
             </div>
           </div>
@@ -617,6 +641,11 @@ const DNAChecker = () => {
                 </p>
                 <p className='text-sm text-gray-600'>
                   Found {totalFound} of {totalSNPs} relevant SNPs
+                  {totalAtRisk > 0 && (
+                    <span className='text-red-600 font-medium ml-1'>
+                      • {totalAtRisk} at Risk
+                    </span>
+                  )}
                 </p>
               </div>
               <button
