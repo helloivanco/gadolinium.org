@@ -378,13 +378,28 @@ const WhatHelpsSection = () => {
                 your protocol.
               </p>
               <p className='mb-2'>
-                <strong>Heavy Metals and Mast Cell Destabilization:</strong> Heavy metals, including Gadolinium (often retained after MRI contrast), are known mast cell destabilizers. Gadolinium has been shown to directly trigger mast cell degranulation (the release of histamine) in laboratory studies. It can do this through direct toxicity or by irritating the cell membrane.
+                <strong>Heavy Metals and Mast Cell Destabilization:</strong> Heavy
+                metals, including Gadolinium (often retained after MRI contrast),
+                are known mast cell destabilizers. Gadolinium has been shown to
+                directly trigger mast cell degranulation (the release of
+                histamine) in laboratory studies. It can do this through direct
+                toxicity or by irritating the cell membrane.
               </p>
               <p>
-                If you have retained Gadolinium, your mast cells may be in a state of chronic &quot;hyper-excitability.&quot; They are ready to dump histamine at the slightest provocation (like stress, food, or alcohol). Quercetin may be particularly relevant in this context as it has mast cell stabilizing properties, though research specifically on quercetin for gadolinium-induced mast cell activation is limited.
+                If you have retained Gadolinium, your mast cells may be in a
+                state of chronic &quot;hyper-excitability,&quot; which can make
+                them more likely to dump histamine in response to everyday
+                triggers (such as stress, certain foods, or alcohol). Because of
+                this, some people find it helpful to be checked for histamine
+                intolerance and mast cell activation syndrome (MCAS), ideally
+                with a clinician who understands both heavy metals and mast
+                cell/histamine biology. Quercetin may be particularly relevant
+                in this context as it has mast cell stabilizing properties,
+                though research specifically on quercetin for gadolinium-induced
+                mast cell activation is limited.
               </p>
             </div>
-            <div className='mt-6 pt-6 border-t border-gray-200'>
+            <div className='mt-6 pt-6'>
               <Link
                 href='/dna-histamine-mcas'
                 className='inline-flex items-center px-6 py-3.5 rounded-xl bg-blue-600 text-white font-semibold text-base hover:bg-blue-700 shadow-[0_4px_12px_rgba(0,122,255,0.25)] hover:shadow-[0_6px_20px_rgba(0,122,255,0.35)] transition-all duration-300 group focus-visible:outline-2 focus-visible:outline-blue-600 focus-visible:outline-offset-4'>

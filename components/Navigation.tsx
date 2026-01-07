@@ -9,7 +9,7 @@ const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const handleToggle = () => {
-    setIsOpen(!isOpen);
+    setIsOpen((prevIsOpen) => !prevIsOpen);
   };
 
   const handleLinkClick = () => {
@@ -42,12 +42,7 @@ const Navigation = () => {
           </Link>
 
           {/* Desktop Navigation */}
-          <div className='hidden md:flex items-center space-x-0.5'>
-            <Link
-              href='/'
-              className='px-5 py-2.5 text-sm font-medium text-gray-700 hover:text-gray-900 rounded-xl hover:bg-gray-100/60 transition-all duration-300 active:scale-[0.96]'>
-              Home
-            </Link>
+          <div className='hidden md:flex items-center gap-1.5'>
             <Link
               href='/doctors'
               className='px-5 py-2.5 text-sm font-medium text-gray-700 hover:text-gray-900 rounded-xl hover:bg-gray-100/60 transition-all duration-300 active:scale-[0.96]'>
@@ -78,6 +73,11 @@ const Navigation = () => {
               className='px-5 py-2.5 text-sm font-medium text-gray-700 hover:text-gray-900 rounded-xl hover:bg-gray-100/60 transition-all duration-300 active:scale-[0.96]'>
               Resources
             </Link>
+            <Link
+              href='/dna-histamine-mcas'
+              className='ml-2 inline-flex items-center rounded-full bg-blue-600 px-4 py-2 text-sm font-semibold text-white shadow-[0_8px_20px_rgba(37,99,235,0.35)] hover:bg-blue-700 hover:shadow-[0_10px_28px_rgba(37,99,235,0.45)] transition-all duration-300 active:scale-[0.97] focus-visible:outline-2 focus-visible:outline-blue-600 focus-visible:outline-offset-2'>
+              DNA Checker
+            </Link>
           </div>
 
           {/* Mobile Menu Button */}
@@ -85,7 +85,8 @@ const Navigation = () => {
             onClick={handleToggle}
             className='md:hidden p-2.5 -mr-2 rounded-xl text-gray-600 hover:text-gray-900 hover:bg-gray-100/60 transition-all duration-300 active:scale-[0.94]'
             aria-label='Toggle menu'
-            aria-expanded={isOpen}>
+            aria-expanded={isOpen}
+            aria-controls='mobile-main-menu'>
             {isOpen ? (
               <X className='w-6 h-6' aria-hidden='true' />
             ) : (
@@ -96,14 +97,10 @@ const Navigation = () => {
 
         {/* Mobile Navigation */}
         {isOpen && (
-          <div className='md:hidden py-5 border-t border-gray-200/50 animate-in slide-in-from-top-2 duration-300'>
+          <div
+            id='mobile-main-menu'
+            className='md:hidden py-5 border-t border-gray-200/50 animate-in slide-in-from-top-2 duration-300'>
             <div className='flex flex-col space-y-0.5'>
-              <Link
-                href='/'
-                onClick={handleLinkClick}
-                className='px-5 py-3.5 text-base font-medium text-gray-700 hover:text-gray-900 rounded-xl hover:bg-gray-100/60 transition-all duration-300 active:scale-[0.97]'>
-                Home
-              </Link>
               <Link
                 href='/doctors'
                 onClick={handleLinkClick}
@@ -139,6 +136,12 @@ const Navigation = () => {
                 onClick={handleLinkClick}
                 className='px-5 py-3.5 text-base font-medium text-gray-700 hover:text-gray-900 rounded-xl hover:bg-gray-100/60 transition-all duration-300 active:scale-[0.97]'>
                 Resources
+              </Link>
+              <Link
+                href='/dna-histamine-mcas'
+                onClick={handleLinkClick}
+                className='mt-2 px-5 py-3.5 text-base font-semibold text-white rounded-xl bg-blue-600 hover:bg-blue-700 shadow-[0_10px_24px_rgba(37,99,235,0.45)] transition-all duration-300 active:scale-[0.97] text-center'>
+                DNA Checker
               </Link>
             </div>
           </div>

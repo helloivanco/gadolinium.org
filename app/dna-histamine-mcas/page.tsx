@@ -1,4 +1,5 @@
 import Footer from '@/components/Footer';
+import HistamineFoodsImage from '@/components/HistamineFoodsImage';
 import StructuredData from '@/components/StructuredData';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 import type { Metadata } from 'next';
@@ -115,23 +116,104 @@ const DNAHistamineMCASPage = () => {
             </Link>
           </div>
 
-          {/* Introduction */}
-          <section className='mb-16'>
-            <div className='prose prose-lg max-w-none text-gray-700'>
-              <p className='text-xl text-gray-600 leading-relaxed mb-6'>
+          {/* Overview / Introduction */}
+          <section className='mb-20'>
+            <div className='w-full text-gray-800'>
+              <h2 className='text-2xl md:text-3xl font-semibold text-gray-900 mb-4'>
+                Understanding histamine, MCAS &amp; your DNA
+              </h2>
+              <p className='text-lg md:text-xl text-gray-600 leading-relaxed mb-6'>
                 Understanding your genetic variants can help explain why you may
                 experience histamine intolerance or mast cell activation
-                symptoms. This guide covers key SNPs (single nucleotide
-                polymorphisms) that you can check in your DNA raw data from
-                services like 23andMe, AncestryDNA, or other genetic testing
-                providers.
+                symptoms. This guide walks through the main histamine-related
+                pathways you can check in your DNA raw data from services like
+                23andMe, AncestryDNA, or other genetic testing providers.
+              </p>
+              <div className='rounded-2xl bg-gray-50 border border-gray-200 p-4 md:p-5'>
+                <p className='text-sm font-semibold text-gray-900 mb-2'>
+                  On this page you&apos;ll find:
+                </p>
+                <ul className='list-disc list-inside text-sm md:text-base text-gray-700 space-y-1'>
+                  <li>Why histamine and mast cells matter after gadolinium</li>
+                  <li>
+                    Key genetic areas to look at (DAO, HNMT, MTHFR, COMT, IL-6,
+                    and more)
+                  </li>
+                  <li>
+                    How to use your existing DNA raw data file to quickly scan
+                    for histamine/MCAS-related variants
+                  </li>
+                </ul>
+                <div className='mt-4'>
+                  <Link
+                    href='/dna-checker'
+                    className='inline-flex items-center rounded-lg bg-blue-600 px-4 py-2 text-xs font-semibold uppercase tracking-wide text-white hover:bg-blue-700 transition-colors duration-200 focus-visible:outline-2 focus-visible:outline-blue-600 focus-visible:outline-offset-2'>
+                    DNA Checker
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          {/* Why histamine & MCAS matter with gadolinium */}
+          <section className='mb-20'>
+            <div className='w-full text-gray-800 space-y-4'>
+              <h2 className='text-2xl md:text-3xl font-semibold text-gray-900'>
+                Why histamine &amp; MCAS matter with gadolinium
+              </h2>
+              <p className='text-base md:text-lg text-gray-700'>
+                Heavy metals like gadolinium can keep mast cells in a state of
+                chronic &quot;hyper-excitability,&quot; so they are primed to
+                dump histamine and other mediators in response to everyday
+                triggers (stress, certain foods, alcohol, infections, heat,
+                etc.). If your system is already struggling to clear histamine,
+                this extra mast cell activation can push you over your symptom
+                threshold much more easily.
+              </p>
+              <p className='text-base md:text-lg text-gray-700'>
+                Looking at histamine-related genetics does not diagnose MCAS,
+                but it can help explain why some people seem &quot;wired&quot;
+                for higher histamine load or slower clearance. If your history,
+                symptoms, and genetics all point in this direction, it may be
+                worth discussing histamine intolerance and mast cell activation
+                syndrome (MCAS) testing with a clinician who understands both
+                heavy metals and mast cell biology.
+              </p>
+            </div>
+          </section>
+
+          {/* High Histamine Foods Image */}
+          <section className='mb-20'>
+            <div className='w-full'>
+              <h2 className='text-xl md:text-2xl font-semibold text-gray-900 mb-3'>
+                Why high histamine foods may be worth limiting
+              </h2>
+              <p className='text-base md:text-lg text-gray-700 mb-6'>
+                Genetics is only one part of the histamine picture. For some
+                people with vulnerable histamine pathways, eating a lot of
+                high-histamine foods can add to their overall histamine load and
+                make flares more likely. Some people feel better when they
+                temporarily lower these foods (with a clinician or nutritionist)
+                and then carefully test what they can bring back.
+              </p>
+              <HistamineFoodsImage />
+              <p className='mt-4 text-sm text-gray-600 text-center'>
+                Example of high histamine foods that some people with
+                histamine-related issues may choose to limit or avoid. Always
+                work with a knowledgeable healthcare provider or nutrition
+                professional when making dietary changes.
               </p>
             </div>
           </section>
 
           {/* Check Your DNA File CTA */}
-          <section className='mb-16 bg-gradient-to-br from-blue-50/80 to-indigo-50/80 rounded-3xl border border-blue-200/60 p-8 md:p-12 shadow-[0_2px_8px_rgba(0,0,0,0.06)]'>
-            <div className='text-center max-w-3xl mx-auto'>
+          <section className='mb-20 bg-gradient-to-br from-blue-50/80 to-indigo-50/80 rounded-3xl border border-blue-200/60 p-8 md:p-12 shadow-[0_2px_8px_rgba(0,0,0,0.06)]'>
+            <div className='text-center w-full'>
+              <p className='text-base md:text-lg text-gray-700 mb-4'>
+                If you already have a DNA raw data file from 23andMe,
+                AncestryDNA or similar services, you can quickly scan for many
+                of the histamine-related variants discussed below:
+              </p>
               <div className='flex items-center justify-center gap-3 mb-6'>
                 <span className='text-4xl'>📊</span>
                 <h2 className='text-2xl md:text-3xl font-semibold text-gray-900 tracking-tight'>
@@ -161,8 +243,20 @@ const DNAHistamineMCASPage = () => {
             </div>
           </section>
 
-          {/* Main Content Sections */}
-          <div className='space-y-12'>
+          {/* Main Genetic Content Sections */}
+          <section className='space-y-12'>
+            <div className='w-full text-gray-800 mb-4'>
+              <h2 className='text-2xl md:text-3xl font-semibold text-gray-900 mb-3'>
+                Key genetic areas to look at
+              </h2>
+              <p className='text-base md:text-lg text-gray-700'>
+                Below are the main genetic areas people often review when trying
+                to understand histamine intolerance and MCAS in the context of
+                gadolinium and other environmental triggers. These are not
+                diagnostic by themselves, but they can provide helpful context
+                when combined with symptoms and medical evaluation.
+              </p>
+            </div>
             {/* 1. Gut Histamine (AOC1/DAO) */}
             <section className='bg-white rounded-3xl shadow-[0_2px_8px_rgba(0,0,0,0.06)] border border-gray-200/60 p-8 md:p-12 hover:shadow-[0_8px_24px_rgba(0,0,0,0.12)] hover:border-gray-300/80 transition-all duration-500 ease-[cubic-bezier(0.4,0,0.2,1)]'>
               <div className='flex items-center gap-3 mb-6'>
@@ -447,12 +541,73 @@ const DNAHistamineMCASPage = () => {
               </div>
             </section>
 
-            {/* 6. Special Testing Required */}
+            {/* 6. Other (hEDS & HSD) */}
+            <section className='bg-white rounded-3xl shadow-[0_2px_8px_rgba(0,0,0,0.06)] border border-gray-200/60 p-8 md:p-12 hover:shadow-[0_8px_24px_rgba(0,0,0,0.12)] hover:border-gray-300/80 transition-all duration-500 ease-[cubic-bezier(0.4,0,0.2,1)]'>
+              <div className='flex items-center gap-3 mb-6'>
+                <span className='text-3xl'>🧵</span>
+                <h2 className='text-2xl md:text-3xl font-semibold text-gray-900 tracking-tight'>
+                  6) Other (hEDS &amp; HSD) — Connective Tissue &amp; Mast Cells
+                </h2>
+              </div>
+              <div className='space-y-4 text-gray-700'>
+                <p className='text-lg mb-4'>
+                  Some people with retained gadolinium also meet criteria for
+                  hypermobile Ehlers–Danlos syndrome (hEDS) or Hypermobility
+                  Spectrum Disorder (HSD). While these are clinical diagnoses,
+                  certain SNPs are sometimes discussed in community and research
+                  settings as potentially relevant connective-tissue or
+                  mast-cell related markers.
+                </p>
+                <div className='bg-slate-50 rounded-2xl p-6 border border-slate-200 space-y-4'>
+                  <div>
+                    <p className='font-semibold text-gray-900 mb-2'>
+                      rs2600746
+                    </p>
+                    <p className='mb-1'>
+                      <strong>Often discussed with:</strong> hEDS/HSD and
+                      connective-tissue fragility
+                    </p>
+                    <p>
+                      Community genetics tools may flag this SNP in the context
+                      of hypermobility and dysautonomia discussions. It is not
+                      diagnostic on its own, but can be a clue to look more
+                      closely at joint laxity and related symptoms with a
+                      knowledgeable clinician.
+                    </p>
+                  </div>
+                  <div>
+                    <p className='font-semibold text-gray-900 mb-2'>
+                      rs16880769
+                    </p>
+                    <p className='mb-1'>
+                      <strong>Often discussed with:</strong> hEDS/HSD, POTS and
+                      mast-cell–related symptom clusters
+                    </p>
+                    <p>
+                      This SNP sometimes appears in hypermobility/MCAS community
+                      reports. As with rs2600746, it should be viewed as a
+                      research/educational datapoint rather than a formal
+                      diagnostic marker.
+                    </p>
+                  </div>
+                  <p className='text-sm text-gray-600'>
+                    If your history suggests hypermobility (easy joint
+                    subluxations, soft or stretchy skin, frequent sprains),
+                    consider evaluation for hEDS/HSD and related conditions
+                    (such as POTS and MCAS) with a specialist. Genetics here is
+                    still evolving and should always be interpreted in a
+                    clinical context.
+                  </p>
+                </div>
+              </div>
+            </section>
+
+            {/* 7. Special Testing Required */}
             <section className='bg-white rounded-3xl shadow-[0_2px_8px_rgba(0,0,0,0.06)] border border-red-200/60 p-8 md:p-12 hover:shadow-[0_8px_24px_rgba(0,0,0,0.12)] hover:border-red-300/80 transition-all duration-500 ease-[cubic-bezier(0.4,0,0.2,1)]'>
               <div className='flex items-center gap-3 mb-6'>
                 <span className='text-3xl'>⚠️</span>
                 <h2 className='text-2xl md:text-3xl font-semibold text-gray-900 tracking-tight'>
-                  6) Not in Typical Raw SNP Lists (Needs Special Testing)
+                  7) Not in Typical Raw SNP Lists (Needs Special Testing)
                 </h2>
               </div>
               <div className='space-y-4 text-gray-700'>
@@ -486,7 +641,7 @@ const DNAHistamineMCASPage = () => {
                 <span className='text-2xl'>ℹ️</span>
                 <div>
                   <p className='font-semibold text-gray-900 mb-2'>
-                    Important Considerations:
+                    Before you interpret your results:
                   </p>
                   <ul className='space-y-2 text-gray-700 list-disc list-inside'>
                     <li>
@@ -511,7 +666,7 @@ const DNAHistamineMCASPage = () => {
                 </div>
               </div>
             </section>
-          </div>
+          </section>
         </main>
 
         <Footer />
