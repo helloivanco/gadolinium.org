@@ -131,7 +131,7 @@ const DNAHistamineMCASPage = () => {
               </p>
               <div className='rounded-2xl bg-gray-50 border border-gray-200 p-4 md:p-5'>
                 <p className='text-sm font-semibold text-gray-900 mb-2'>
-                  On this page you&apos;ll find:
+                  Read me first:
                 </p>
                 <ul className='list-disc list-inside text-sm md:text-base text-gray-700 space-y-1'>
                   <li>Why histamine and mast cells matter after gadolinium</li>
@@ -145,6 +145,9 @@ const DNAHistamineMCASPage = () => {
                   </li>
                 </ul>
                 <div className='mt-4'>
+                  <div className='inline-flex mr-2 text-sm font-semibold text-gray-800'>
+                    Take me straight to:
+                  </div>
                   <Link
                     href='/dna-checker'
                     className='inline-flex items-center rounded-lg bg-blue-600 px-4 py-2 text-xs font-semibold uppercase tracking-wide text-white hover:bg-blue-700 transition-colors duration-200 focus-visible:outline-2 focus-visible:outline-blue-600 focus-visible:outline-offset-2'>
