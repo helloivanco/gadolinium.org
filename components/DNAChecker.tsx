@@ -1,8 +1,10 @@
 'use client';
 
+import { jsPDF } from 'jspdf';
 import {
   AlertCircle,
   CheckCircle2,
+  Download,
   FileText,
   LoaderCircle,
   Lock,
@@ -514,6 +516,224 @@ const DNAChecker = () => {
     }
   };
 
+  const handleDownloadPDF = () => {
+    if (!results) return;
+
+    const doc = new jsPDF();
+    const pageWidth = doc.internal.pageSize.getWidth();
+    const pageHeight = doc.internal.pageSize.getHeight();
+    const margin = 20;
+    const maxWidth = pageWidth - 2 * margin;
+    let yPosition = margin;
+
+    // Helper function to add text with word wrapping
+    const addWrappedText = (
+      text: string,
+      x: number,
+      y: number,
+      maxWidth: number,
+      fontSize: number = 10,
+      fontStyle: string = 'normal'
+    ): number => {
+      doc.setFontSize(fontSize);
+      doc.setFont('helvetica', fontStyle);
+      const lines = doc.splitTextToSize(text, maxWidth);
+      doc.text(lines, x, y);
+      return y + lines.length * (fontSize * 0.4 + 2);
+    };
+
+    // Helper function to check if we need a new page
+    const checkNewPage = (requiredSpace: number): void => {
+      if (yPosition + requiredSpace > pageHeight - margin - 20) {
+        doc.addPage();
+        yPosition = margin;
+      }
+    };
+
+    // Title
+    doc.setFontSize(18);
+    doc.setFont('helvetica', 'bold');
+    doc.text('DNA Analysis Report', margin, yPosition);
+    yPosition += 10;
+
+    // Date
+    doc.setFontSize(10);
+    doc.setFont('helvetica', 'normal');
+    const date = new Date().toLocaleDateString('en-US', {
+      year: 'numeric',
+      month: 'long',
+      day: 'numeric',
+    });
+    doc.text(`Generated on: ${date}`, margin, yPosition);
+    yPosition += 6;
+
+    // Original filename
+    if (fileName) {
+      doc.text(`Source file: ${fileName}`, margin, yPosition);
+      yPosition += 8;
+    } else {
+      yPosition += 8;
+    }
+
+    // Summary
+    checkNewPage(20);
+    doc.setFontSize(12);
+    doc.setFont('helvetica', 'bold');
+    doc.text('Summary', margin, yPosition);
+    yPosition += 8;
+
+    doc.setFontSize(10);
+    doc.setFont('helvetica', 'normal');
+    const summaryText = `Total SNPs Found: ${totalFound} of ${totalSNPs} relevant variants${
+      totalAtRisk > 0 ? `\nSNPs with Risk Alleles: ${totalAtRisk}` : ''
+    }`;
+    yPosition = addWrappedText(summaryText, margin, yPosition, maxWidth, 10);
+    yPosition += 5;
+
+    // Process each category
+    results.forEach((categoryResult) => {
+      const foundSNPs = categoryResult.snps.filter((s) => s.found);
+      if (foundSNPs.length === 0) return;
+
+      checkNewPage(30);
+      yPosition += 5;
+
+      // Category header
+      doc.setFontSize(14);
+      doc.setFont('helvetica', 'bold');
+      const categoryTitle = `${categoryResult.category} (${foundSNPs.length} found)`;
+      yPosition = addWrappedText(
+        categoryTitle,
+        margin,
+        yPosition,
+        maxWidth,
+        14,
+        'bold'
+      );
+      yPosition += 5;
+
+      // Process each SNP in this category
+      foundSNPs.forEach((snp) => {
+        checkNewPage(40);
+
+        const isGood = snp.isProtective || snp.hasRisk === false;
+        const isBad = snp.hasRisk === true && !snp.isProtective;
+
+        // SNP ID and genotype
+        doc.setFontSize(11);
+        doc.setFont('helvetica', 'bold');
+        const snpTitle = `${snp.rsId}${
+          snp.userGenotype ? ` (Genotype: ${snp.userGenotype})` : ''
+        }`;
+        yPosition = addWrappedText(
+          snpTitle,
+          margin,
+          yPosition,
+          maxWidth,
+          11,
+          'bold'
+        );
+        yPosition += 3;
+
+        // Description
+        doc.setFontSize(10);
+        doc.setFont('helvetica', 'normal');
+        yPosition = addWrappedText(
+          snp.description,
+          margin,
+          yPosition,
+          maxWidth,
+          10
+        );
+        yPosition += 3;
+
+        // Risk explanation
+        if (snp.riskExplanation) {
+          doc.setFontSize(9);
+          doc.setFont('helvetica', isBad ? 'bold' : 'normal');
+          const riskColor = isBad
+            ? [220, 53, 69]
+            : isGood
+            ? [40, 167, 69]
+            : [108, 117, 125];
+          doc.setTextColor(riskColor[0], riskColor[1], riskColor[2]);
+          yPosition = addWrappedText(
+            `- ${snp.riskExplanation}`,
+            margin,
+            yPosition,
+            maxWidth,
+            9,
+            isBad ? 'bold' : 'normal'
+          );
+          doc.setTextColor(0, 0, 0); // Reset to black
+          yPosition += 3;
+        }
+
+        // Additional info
+        const additionalInfo: string[] = [];
+        if (snp.riskAllele) {
+          additionalInfo.push(`Risk allele: ${snp.riskAllele}`);
+        }
+        if (snp.lineNumber) {
+          additionalInfo.push(`Line number: ${snp.lineNumber}`);
+        }
+        if (additionalInfo.length > 0) {
+          doc.setFontSize(9);
+          doc.setFont('helvetica', 'italic');
+          doc.setTextColor(108, 117, 125);
+          yPosition = addWrappedText(
+            additionalInfo.join(' | '),
+            margin,
+            yPosition,
+            maxWidth,
+            9,
+            'italic'
+          );
+          doc.setTextColor(0, 0, 0); // Reset to black
+          yPosition += 3;
+        }
+
+        yPosition += 3; // Space between SNPs
+      });
+    });
+
+    // Footer on each page
+    const addFooter = (pageNum: number, totalPages: number) => {
+      doc.setFontSize(8);
+      doc.setFont('helvetica', 'normal');
+      doc.setTextColor(128, 128, 128);
+
+      // First line: Page info and website
+      const footerText1 = `Page ${pageNum} of ${totalPages} | Generated by gadolinium.org`;
+      const footerY1 = pageHeight - 18;
+      const textWidth1 = doc.getTextWidth(footerText1);
+      doc.text(footerText1, (pageWidth - textWidth1) / 2, footerY1);
+
+      // Second line: Disclaimer
+      const footerText2 =
+        'For educational purposes only. Please consult with qualified healthcare professionals.';
+      const footerY2 = pageHeight - 10;
+      const textWidth2 = doc.getTextWidth(footerText2);
+      doc.text(footerText2, (pageWidth - textWidth2) / 2, footerY2);
+
+      doc.setTextColor(0, 0, 0); // Reset to black
+    };
+
+    // Add footer to all pages
+    const totalPages = doc.getNumberOfPages();
+    for (let i = 1; i <= totalPages; i++) {
+      doc.setPage(i);
+      addFooter(i, totalPages);
+    }
+
+    // Generate filename
+    const timestamp = new Date().toISOString().split('T')[0];
+    const filename = `dna-analysis-report-${timestamp}.pdf`;
+
+    // Save the PDF
+    doc.save(filename);
+  };
+
   const totalFound =
     results?.reduce(
       (sum, cat) => sum + cat.snps.filter((s) => s.found).length,
@@ -666,11 +886,20 @@ const DNAChecker = () => {
                   )}
                 </p>
               </div>
-              <button
-                onClick={handleReset}
-                className='px-4 py-2 text-sm font-medium text-gray-700 bg-gray-100 rounded-xl hover:bg-gray-200 transition-colors duration-300'>
-                Upload Another File
-              </button>
+              <div className='flex items-center gap-3'>
+                <button
+                  onClick={handleDownloadPDF}
+                  aria-label='Download PDF report of DNA analysis results'
+                  className='inline-flex items-center gap-2 px-5 py-2.5 text-sm font-medium text-white bg-blue-600 rounded-xl hover:bg-blue-700 transition-colors duration-300 shadow-sm hover:shadow-md focus-visible:outline-2 focus-visible:outline-blue-600 focus-visible:outline-offset-2'>
+                  <Download className='w-4 h-4' aria-hidden='true' />
+                  Download PDF Report
+                </button>
+                <button
+                  onClick={handleReset}
+                  className='px-4 py-2 text-sm font-medium text-gray-700 bg-gray-100 rounded-xl hover:bg-gray-200 transition-colors duration-300'>
+                  Upload Another File
+                </button>
+              </div>
             </div>
 
             {results.map((categoryResult) => {
