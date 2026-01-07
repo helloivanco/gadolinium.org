@@ -9,8 +9,12 @@ const Footer = () => {
           <p className='text-gray-700 text-xl md:text-2xl font-semibold mb-4 tracking-tight'>
             Gadolinium Toxicity Resources
           </p>
-          <p className='text-gray-600 text-sm md:text-base mb-8 max-w-2xl mx-auto leading-relaxed font-light'>
+          <p className='text-gray-600 text-sm md:text-base mb-4 max-w-2xl mx-auto leading-relaxed font-light'>
             Providing information and support for those affected
+          </p>
+          <p className='text-gray-500 text-xs md:text-sm mb-8 max-w-2xl mx-auto leading-relaxed italic'>
+            For educational purposes only. Please consult with qualified
+            healthcare professionals.
           </p>
           <div className='space-y-3'>
             <p className='text-gray-500 text-xs md:text-sm'>
