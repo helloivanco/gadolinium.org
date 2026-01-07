@@ -1,10 +1,10 @@
 import Footer from '@/components/Footer';
 import Hero from '@/components/Hero';
 import StructuredData from '@/components/StructuredData';
+import { ChevronRight } from 'lucide-react';
 import type { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
-import { ChevronRight } from 'lucide-react';
 
 export const metadata: Metadata = {
   title:
@@ -82,9 +82,9 @@ export default function Home() {
               Navigate Gadolinium Toxicity with Clarity
             </h2>
             <p className='text-xl md:text-2xl text-gray-600 max-w-3xl mx-auto font-light leading-relaxed'>
-              Explore doctors, detox options, symptoms, practical remedies, clinics,
-              and trusted resources — all curated for patients affected by
-              gadolinium-based contrast agents.
+              Explore doctors, detox options, symptoms, practical remedies,
+              clinics, and trusted resources — all curated for patients affected
+              by gadolinium-based contrast agents.
             </p>
           </section>
 
@@ -156,8 +156,8 @@ export default function Home() {
                   What Helps
                 </h3>
                 <p className='text-gray-600 text-sm md:text-base leading-relaxed mb-6 flex-1'>
-                  Holistic guidance on diet, hydration, lifestyle, supplements, and
-                  personalized protocols from leading experts for managing
+                  Holistic guidance on diet, hydration, lifestyle, supplements,
+                  and personalized protocols from leading experts for managing
                   gadolinium toxicity.
                 </p>
                 <span className='inline-flex items-center justify-center px-6 py-3.5 rounded-xl bg-blue-600 text-white font-semibold text-sm md:text-base group-hover:bg-blue-700 shadow-[0_4px_12px_rgba(0,122,255,0.25)] group-hover:shadow-[0_6px_20px_rgba(0,122,255,0.35)] transition-all duration-300'>
@@ -272,8 +272,9 @@ export default function Home() {
                   Chelation Clinics
                 </h3>
                 <p className='text-gray-600 text-sm md:text-base leading-relaxed mb-6 flex-1'>
-                  Browse GadTTRAC-linked clinics and treatment centers worldwide,
-                  filter by region, and view a featured specialist clinic.
+                  Browse GadTTRAC-linked clinics and treatment centers
+                  worldwide, filter by region, and view a featured specialist
+                  clinic.
                 </p>
                 <span className='inline-flex items-center justify-center px-6 py-3.5 rounded-xl bg-blue-600 text-white font-semibold text-sm md:text-base group-hover:bg-blue-700 shadow-[0_4px_12px_rgba(0,122,255,0.25)] group-hover:shadow-[0_6px_20px_rgba(0,122,255,0.35)] transition-all duration-300'>
                   Find Clinics
@@ -332,10 +333,11 @@ export default function Home() {
                 Other Tools
               </h2>
               <p className='text-lg text-gray-600 max-w-2xl mx-auto'>
-                Additional resources to help you understand and manage your health
+                Additional resources to help you understand and manage your
+                health
               </p>
             </div>
-            <div className='grid gap-8 md:gap-10 md:grid-cols-1 lg:grid-cols-1 max-w-4xl mx-auto'>
+            <div className='grid gap-8 md:gap-10 md:grid-cols-1 lg:grid-cols-1'>
               {/* DNA Checker Tool */}
               <Link
                 href='/dna-checker'
@@ -346,7 +348,7 @@ export default function Home() {
                     alt='DNA checker tool for genetic variants'
                     fill
                     className='object-cover transition-transform duration-700 group-hover:scale-105'
-                    sizes='(max-width: 768px) 100vw, 100vw'
+                    sizes='100vw'
                     loading='lazy'
                   />
                   <div className='absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent' />
@@ -361,10 +363,11 @@ export default function Home() {
                     DNA Raw Data Checker
                   </h3>
                   <p className='text-gray-600 text-sm md:text-base leading-relaxed mb-6 flex-1'>
-                    Upload your DNA raw data file from 23andMe, AncestryDNA, or other
-                    providers to automatically scan for histamine and MCAS-related
-                    genetic variants. All processing happens locally in your browser—your
-                    DNA data never leaves your device.
+                    Upload your DNA raw data file from 23andMe, AncestryDNA, or
+                    other providers to automatically scan for histamine and
+                    MCAS-related genetic variants. All processing happens
+                    locally in your browser—your DNA data never leaves your
+                    device.
                   </p>
                   <span className='inline-flex items-center justify-center px-6 py-3.5 rounded-xl bg-blue-600 text-white font-semibold text-sm md:text-base group-hover:bg-blue-700 shadow-[0_4px_12px_rgba(0,122,255,0.25)] group-hover:shadow-[0_6px_20px_rgba(0,122,255,0.35)] transition-all duration-300'>
                     Check Your DNA File
@@ -376,6 +379,54 @@ export default function Home() {
                 </div>
               </Link>
             </div>
+          </section>
+
+          {/* About Section */}
+          <section className='mt-24'>
+            <div className='text-center mb-10'>
+              <h2 className='text-3xl md:text-4xl font-semibold text-gray-900 mb-4 tracking-tight'>
+                About Gadolinium.org
+              </h2>
+            </div>
+
+            <Link
+              href='/about'
+              className='bg-white rounded-3xl shadow-[0_2px_8px_rgba(0,0,0,0.06)] border border-gray-200/60 overflow-hidden flex flex-col group hover:shadow-[0_8px_24px_rgba(0,0,0,0.12)] hover:border-gray-300/80 transition-all duration-500 ease-[cubic-bezier(0.4,0,0.2,1)] focus-visible:outline-2 focus-visible:outline-blue-600 focus-visible:outline-offset-4'>
+              <div className='relative w-full h-48 overflow-hidden'>
+                <Image
+                  src='/time.jpg'
+                  alt='About the story behind Gadolinium.org'
+                  fill
+                  className='object-cover transition-transform duration-700 group-hover:scale-105'
+                  sizes='100vw'
+                  loading='lazy'
+                />
+                <div className='absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent' />
+                <div className='absolute bottom-4 left-4 right-4'>
+                  <p className='inline-flex items-center rounded-full bg-white/95 backdrop-blur-sm px-3.5 py-1.5 text-xs font-semibold text-gray-900 shadow-lg'>
+                    100% Human
+                  </p>
+                </div>
+              </div>
+              <div className='p-7 md:p-8 flex flex-col flex-1'>
+                <h3 className='text-2xl md:text-3xl font-semibold text-gray-900 mb-4 tracking-tight group-hover:text-blue-600 transition-colors duration-300'>
+                  Why I built this site
+                </h3>
+                <p className='text-gray-600 text-sm md:text-base leading-relaxed mb-6 flex-1'>
+                  Read how Gadolinium.org was created as a free resource by
+                  someone personally affected by gadolinium toxicity, and how
+                  affiliate earnings and personal donations are directed toward
+                  research and support.
+                </p>
+                <span className='inline-flex items-center justify-center px-6 py-3.5 rounded-xl bg-blue-600 text-white font-semibold text-sm md:text-base group-hover:bg-blue-700 shadow-[0_4px_12px_rgba(0,122,255,0.25)] group-hover:shadow-[0_6px_20px_rgba(0,122,255,0.35)] transition-all duration-300'>
+                  Visit About Page
+                  <ChevronRight
+                    className='w-4 h-4 ml-2 transition-transform duration-300 group-hover:translate-x-1'
+                    aria-hidden='true'
+                  />
+                </span>
+              </div>
+            </Link>
           </section>
         </main>
         <Footer />
