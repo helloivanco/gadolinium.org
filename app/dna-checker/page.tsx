@@ -119,10 +119,11 @@ const DNACheckPage = () => {
               <p className='text-xl text-gray-600 leading-relaxed mb-6'>
                 Upload your DNA raw data file to automatically scan for
                 histamine, MCAS, and hEDS/HSD-related genetic variants. This
-                tool checks multiple key SNPs across several categories and
-                shows you which variants you carry, along with your specific
-                genotypes. All processing happens locally in your browser—your
-                DNA data never leaves your device.
+                tool checks multiple key single nucleotide polymorphisms (SNPs)
+                across several categories and shows you which variants you
+                carry, along with your specific genotypes. All processing
+                happens locally in your browser—your DNA data never leaves your
+                device.
               </p>
             </div>
           </section>
@@ -270,4 +271,3 @@ const DNACheckPage = () => {
 };
 
 export default DNACheckPage;
-

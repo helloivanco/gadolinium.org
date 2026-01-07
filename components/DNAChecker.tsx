@@ -543,9 +543,9 @@ const DNAChecker = () => {
           <p className='text-gray-700 mb-4'>
             Upload your DNA raw data file below to automatically scan for
             histamine, MCAS, and hEDS/HSD-related genetic variants. The tool
-            checks multiple key SNPs across several categories and shows you
-            which variants you carry, along with your specific genotypes and
-            what they may mean for your health.
+            checks multiple key single nucleotide polymorphisms (SNPs) across
+            several categories and shows you which variants you carry, along
+            with your specific genotypes and what they may mean for your health.
           </p>
           <div className='bg-blue-50/80 rounded-xl p-4 border border-blue-200/60 mb-4'>
             <div className='flex items-start gap-3'>
