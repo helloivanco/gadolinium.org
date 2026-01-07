@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 const Footer = () => {
   return (
     <footer
@@ -16,6 +18,13 @@ const Footer = () => {
             For educational purposes only. Please consult with qualified
             healthcare professionals.
           </p>
+          <div className='mb-8'>
+            <Link
+              href='/about'
+              className='text-gray-600 hover:text-gray-900 text-sm md:text-base transition-colors duration-200 underline underline-offset-4'>
+              About Gadolinium.org
+            </Link>
+          </div>
           <div className='space-y-3'>
             <p className='text-gray-500 text-xs md:text-sm'>
               © {new Date().getFullYear()} Gadolinium.org. All rights reserved.
