@@ -164,6 +164,22 @@ const SNP_DEFINITIONS: Record<
     description: 'May increase inflammatory tendency',
     riskAllele: 'G',
   },
+
+  // Other (hEDS & HSD – Emerging Research)
+  rs2600746: {
+    category: 'Other (hEDS & HSD)',
+    emoji: '🧩',
+    description:
+      'Associated with hEDS/HSD in GWAS; C allele (especially CC) is linked to reduced ACKR3 expression in tibial nerve, higher pain sensitivity, and tissue laxity',
+    riskAllele: 'C',
+  },
+  rs16880769: {
+    category: 'Other (hEDS & HSD)',
+    emoji: '🧩',
+    description:
+      'Associated with hEDS/HSD in GWAS; A allele (especially AA) showed higher odds (OR ~1.66) of hEDS/HSD compared to the general population',
+    riskAllele: 'A',
+  },
 };
 
 const ALL_SNP_IDS = Object.keys(SNP_DEFINITIONS);
@@ -526,10 +542,10 @@ const DNAChecker = () => {
         <div className='bg-gray-50/80 rounded-2xl p-6 border border-gray-200/60'>
           <p className='text-gray-700 mb-4'>
             Upload your DNA raw data file below to automatically scan for
-            histamine and MCAS-related genetic variants. The tool checks for 20
-            key SNPs across 5 categories and shows you which variants you carry,
-            along with your specific genotypes and what they mean for your
-            health.
+            histamine, MCAS, and hEDS/HSD-related genetic variants. The tool
+            checks multiple key SNPs across several categories and shows you
+            which variants you carry, along with your specific genotypes and
+            what they may mean for your health.
           </p>
           <div className='bg-blue-50/80 rounded-xl p-4 border border-blue-200/60 mb-4'>
             <div className='flex items-start gap-3'>

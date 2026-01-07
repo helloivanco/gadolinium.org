@@ -118,10 +118,11 @@ const DNACheckPage = () => {
             <div className='prose prose-lg max-w-none text-gray-700'>
               <p className='text-xl text-gray-600 leading-relaxed mb-6'>
                 Upload your DNA raw data file to automatically scan for
-                histamine and MCAS-related genetic variants. This tool checks for
-                18 key SNPs across 5 categories and shows you which variants you
-                carry, along with your specific genotypes. All processing happens
-                locally in your browser—your DNA data never leaves your device.
+                histamine, MCAS, and hEDS/HSD-related genetic variants. This
+                tool checks multiple key SNPs across several categories and
+                shows you which variants you carry, along with your specific
+                genotypes. All processing happens locally in your browser—your
+                DNA data never leaves your device.
               </p>
             </div>
           </section>
