@@ -53,16 +53,16 @@ const AboutPage = () => {
 
             {/* Doctor Visit Image */}
             <div className='mb-12'>
-              <div className='relative w-full max-w-2xl mx-auto aspect-[4/3] rounded-2xl overflow-hidden border border-gray-200/80 shadow-[0_2px_8px_rgba(0,0,0,0.06)]'>
+              <div className='relative w-full aspect-[4/3] rounded-2xl overflow-hidden border border-gray-200/80 shadow-[0_2px_8px_rgba(0,0,0,0.06)]'>
                 <Image
                   src='/dr_visit.jpg'
                   alt='At Kidney Institute of New Mexico participating in their toxic exposures registry'
                   fill
                   className='object-cover'
-                  sizes='(max-width: 768px) 100vw, 800px'
+                  sizes='(max-width: 768px) 100vw, 896px'
                 />
               </div>
-              <p className='text-sm text-gray-600 text-center mt-4 max-w-2xl mx-auto leading-relaxed'>
+              <p className='text-sm text-gray-600 text-center mt-4 leading-relaxed'>
                 At Kidney Institute of New Mexico participating in their{' '}
                 <Link
                   href='/gadregistry.jpg'
@@ -107,13 +107,13 @@ const AboutPage = () => {
 
             {/* Donation Image */}
             <div className='mt-12'>
-              <div className='relative w-full max-w-2xl mx-auto aspect-[4/3] rounded-2xl overflow-hidden border border-gray-200/80 shadow-[0_2px_8px_rgba(0,0,0,0.06)]'>
+              <div className='relative w-full aspect-[4/3] rounded-2xl overflow-hidden border border-gray-200/80 shadow-[0_2px_8px_rgba(0,0,0,0.06)]'>
                 <Image
                   src='/donation.png'
                   alt='Donation thank you card'
                   fill
                   className='object-cover'
-                  sizes='(max-width: 768px) 100vw, 800px'
+                  sizes='(max-width: 768px) 100vw, 896px'
                 />
               </div>
             </div>
@@ -126,4 +126,3 @@ const AboutPage = () => {
 };
 
 export default AboutPage;
-

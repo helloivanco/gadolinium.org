@@ -140,7 +140,7 @@ const Navigation = () => {
               <Link
                 href='/dna-histamine-mcas'
                 onClick={handleLinkClick}
-                className='mt-2 px-5 py-3.5 text-base font-semibold text-white rounded-xl bg-blue-600 hover:bg-blue-700 shadow-[0_10px_24px_rgba(37,99,235,0.45)] transition-all duration-300 active:scale-[0.97] text-center'>
+                className='mt-2 px-5 py-3.5 text-base font-semibold text-white rounded-full bg-blue-600 hover:bg-blue-700 shadow-[0_10px_24px_rgba(37,99,235,0.45)] transition-all duration-300 active:scale-[0.97] text-center'>
                 DNA Checker
               </Link>
             </div>
