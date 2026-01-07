@@ -238,6 +238,12 @@ const DNACheckPage = () => {
                       Processing happens entirely in your browser—your data
                       never leaves your device
                     </li>
+                    <li>
+                      This tool does not replace medical-grade genetic testing,
+                      which is more accurate and comprehensive. Consult with
+                      qualified healthcare professionals for clinical genetic
+                      testing.
+                    </li>
                   </ul>
                 </div>
               </div>

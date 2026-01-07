@@ -52,26 +52,18 @@ export const metadata: Metadata = {
   classification: 'Medical Information Resource',
   icons: {
     icon: [
-      { url: '/favicon.ico', sizes: 'any' },
       { url: '/favicon-16x16.png', sizes: '16x16', type: 'image/png' },
       { url: '/favicon-32x32.png', sizes: '32x32', type: 'image/png' },
-      { url: '/favicon.svg', type: 'image/svg+xml' },
     ],
     apple: [
       { url: '/apple-touch-icon.png', sizes: '180x180', type: 'image/png' },
     ],
-    other: [
-      {
-        rel: 'android-chrome-192x192',
-        url: '/android-chrome-192x192.png',
-      },
-      {
-        rel: 'android-chrome-512x512',
-        url: '/android-chrome-512x512.png',
-      },
-    ],
   },
   manifest: '/manifest.json',
+  viewport: {
+    width: 'device-width',
+    initialScale: 1,
+  },
   formatDetection: {
     email: false,
     address: false,
@@ -138,12 +130,7 @@ export default function RootLayout({
   return (
     <html lang='en'>
       <head>
-        <link rel='icon' href='/favicon.ico' sizes='any' />
-        <link rel='icon' href='/favicon.svg' type='image/svg+xml' />
-        <link rel='apple-touch-icon' href='/apple-touch-icon.png' />
-        <link rel='manifest' href='/manifest.json' />
         <meta name='theme-color' content='#007aff' />
-        <meta name='viewport' content='width=device-width, initial-scale=1' />
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
