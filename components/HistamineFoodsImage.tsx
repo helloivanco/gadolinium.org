@@ -4,7 +4,7 @@ import Image from 'next/image';
 import {
   useEffect,
   useState,
-  type KeyboardEvent,
+  type KeyboardEvent as ReactKeyboardEvent,
   type MouseEvent,
 } from 'react';
 
@@ -20,7 +20,7 @@ const HistamineFoodsImage = () => {
     setIsOpen(false);
   };
 
-  const handleKeyDown = (event: KeyboardEvent<HTMLDivElement>) => {
+  const handleKeyDown = (event: ReactKeyboardEvent<HTMLDivElement>) => {
     if (event.key === 'Escape') {
       setIsOpen(false);
     }
@@ -93,7 +93,7 @@ const HistamineFoodsImage = () => {
                 alt='Enlarged illustration of common high histamine foods that some people may choose to limit or avoid.'
                 width={1600}
                 height={1066}
-                className='w-full h-auto object-contain'
+                className='w-full h-auto max-h-[75vh] md:max-h-[80vh] object-contain'
                 priority={false}
               />
             </div>

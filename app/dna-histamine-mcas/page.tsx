@@ -642,32 +642,46 @@ const DNAHistamineMCASPage = () => {
 
             {/* Important Note */}
             <section className='bg-amber-50/80 rounded-2xl p-8 border-l-4 border-amber-400 shadow-[0_1px_3px_rgba(0,0,0,0.08)]'>
-              <div className='flex items-start gap-3'>
-                <span className='text-2xl'>ℹ️</span>
-                <div>
-                  <p className='font-semibold text-gray-900 mb-2'>
-                    Before you interpret your results:
-                  </p>
-                  <ul className='space-y-2 text-gray-700 list-disc list-inside'>
-                    <li>
-                      Having risk alleles does not guarantee you will experience
-                      symptoms—genetics is just one piece of the puzzle
-                    </li>
-                    <li>
-                      Environmental factors, diet, stress, and other health
-                      conditions all play significant roles
-                    </li>
-                    <li>
-                      Always consult with a healthcare provider who understands
-                      genetics and histamine/MCAS before making treatment
-                      decisions based on genetic variants
-                    </li>
-                    <li>
-                      DNA raw data from services like 23andMe or AncestryDNA can
-                      be uploaded to third-party analysis tools to check these
-                      SNPs
-                    </li>
-                  </ul>
+              <div className='flex flex-col gap-6 md:flex-row md:items-start md:justify-between'>
+                <div className='flex items-start gap-3 md:max-w-3xl'>
+                  <span className='text-2xl'>ℹ️</span>
+                  <div>
+                    <p className='font-semibold text-gray-900 mb-2'>
+                      Before you interpret your results:
+                    </p>
+                    <ul className='space-y-2 text-gray-700 list-disc list-inside'>
+                      <li>
+                        Having risk alleles does not guarantee you will
+                        experience symptoms—genetics is just one piece of the
+                        puzzle
+                      </li>
+                      <li>
+                        Environmental factors, diet, stress, and other health
+                        conditions all play significant roles
+                      </li>
+                      <li>
+                        Always consult with a healthcare provider who
+                        understands genetics and histamine/MCAS before making
+                        treatment decisions based on genetic variants
+                      </li>
+                      <li>
+                        DNA raw data from services like 23andMe or AncestryDNA
+                        can be uploaded to third-party analysis tools to check
+                        these SNPs
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div className='md:self-center'>
+                  <Link
+                    href='/dna-checker'
+                    className='inline-flex items-center rounded-xl bg-blue-600 px-6 py-3 text-sm font-semibold text-white shadow-[0_8px_20px_rgba(37,99,235,0.35)] hover:bg-blue-700 hover:shadow-[0_10px_26px_rgba(37,99,235,0.45)] transition-all duration-300 focus-visible:outline-2 focus-visible:outline-blue-600 focus-visible:outline-offset-3'>
+                    <span>Go to DNA Checker</span>
+                    <ChevronRight
+                      className='w-4 h-4 ml-2 translate-x-0 group-hover:translate-x-0.5'
+                      aria-hidden='true'
+                    />
+                  </Link>
                 </div>
               </div>
             </section>
