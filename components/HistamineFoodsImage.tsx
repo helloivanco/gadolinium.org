@@ -1,7 +1,12 @@
 'use client';
 
 import Image from 'next/image';
-import { useState, type KeyboardEvent, type MouseEvent } from 'react';
+import {
+  useEffect,
+  useState,
+  type KeyboardEvent,
+  type MouseEvent,
+} from 'react';
 
 const HistamineFoodsImage = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -20,6 +25,30 @@ const HistamineFoodsImage = () => {
       setIsOpen(false);
     }
   };
+
+  const handleOverlayClick = (event: MouseEvent<HTMLDivElement>) => {
+    if (event.target === event.currentTarget) {
+      setIsOpen(false);
+    }
+  };
+
+  useEffect(() => {
+    if (!isOpen) {
+      return;
+    }
+
+    const handleEscape = (event: KeyboardEvent) => {
+      if (event.key === 'Escape') {
+        setIsOpen(false);
+      }
+    };
+
+    window.addEventListener('keydown', handleEscape);
+
+    return () => {
+      window.removeEventListener('keydown', handleEscape);
+    };
+  }, [isOpen]);
 
   return (
     <div className='w-full'>
@@ -48,7 +77,8 @@ const HistamineFoodsImage = () => {
           role='dialog'
           aria-modal='true'
           aria-label='Enlarged view of high histamine foods image'
-          onKeyDown={handleKeyDown}>
+          onKeyDown={handleKeyDown}
+          onClick={handleOverlayClick}>
           <button
             type='button'
             className='absolute top-4 right-4 text-white/80 hover:text-white text-sm md:text-base px-3 py-1.5 rounded-full bg-black/40 border border-white/30 backdrop-blur-sm focus-visible:outline-none'
@@ -75,5 +105,6 @@ const HistamineFoodsImage = () => {
 };
 
 export default HistamineFoodsImage;
+
 
 

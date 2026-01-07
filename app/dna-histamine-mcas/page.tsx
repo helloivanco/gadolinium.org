@@ -184,25 +184,30 @@ const DNAHistamineMCASPage = () => {
 
           {/* High Histamine Foods Image */}
           <section className='mb-20'>
-            <div className='w-full'>
-              <h2 className='text-xl md:text-2xl font-semibold text-gray-900 mb-3'>
-                Why high histamine foods may be worth limiting
-              </h2>
-              <p className='text-base md:text-lg text-gray-700 mb-6'>
-                Genetics is only one part of the histamine picture. For some
-                people with vulnerable histamine pathways, eating a lot of
-                high-histamine foods can add to their overall histamine load and
-                make flares more likely. Some people feel better when they
-                temporarily lower these foods (with a clinician or nutritionist)
-                and then carefully test what they can bring back.
-              </p>
-              <HistamineFoodsImage />
-              <p className='mt-4 text-sm text-gray-600 text-center'>
-                Example of high histamine foods that some people with
-                histamine-related issues may choose to limit or avoid. Always
-                work with a knowledgeable healthcare provider or nutrition
-                professional when making dietary changes.
-              </p>
+            <div className='w-full md:flex md:items-start md:gap-10'>
+              <div className='md:flex-1'>
+                <h2 className='text-xl md:text-2xl font-semibold text-gray-900 mb-3'>
+                  Why high histamine foods may be worth limiting
+                </h2>
+                <p className='text-base md:text-lg text-gray-700 mb-4 md:mb-6'>
+                  Genetics is only one part of the histamine picture. For some
+                  people with vulnerable histamine pathways, eating a lot of
+                  high-histamine foods can add to their overall histamine load
+                  and make flares more likely. Some people feel better when they
+                  temporarily lower these foods (with a clinician or
+                  nutritionist) and then carefully test what they can bring
+                  back.
+                </p>
+                <p className='mt-2 text-sm text-gray-600'>
+                  The image to the right is simply an example of foods that are
+                  often considered higher in histamine or histamine-releasing.
+                  It is not a strict list of &quot;never&quot; foods—diet should
+                  always be personalized with a knowledgeable clinician.
+                </p>
+              </div>
+              <div className='mt-6 md:mt-0 md:w-[320px] lg:w-[380px] md:flex-shrink-0'>
+                <HistamineFoodsImage />
+              </div>
             </div>
           </section>
 
